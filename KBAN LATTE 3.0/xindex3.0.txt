@@ -1,0 +1,37 @@
+Compiled list of Errors and Warnings              Jan 09, 2015@13:43:05 page 1
+
+PSODDPRE * *  217 Lines,  14719 Bytes, Checksum: B136880342
+         ;;7.0;OUTPATIENT PHARMACY;**251,375,387,379,390,372,416,11310000,LOCAL*
+          *;DEC 1997
+   PSODDPRE+1   S - 2nd line of routine violates the SAC.
+
+PSSHRIT  * *  452 Lines,  16441 Bytes, Checksum: B228085604
+         ;;1.0;PHARMACY DATA MANAGEMENT;**136,168,164,173,180,11310000,LOCAL**;9
+          /30/97
+   PSSHRIT+1    S - 2nd line of routine violates the SAC.
+
+PSSHRQ22 * *  262 Lines,  8734 Bytes, Checksum: B61729377
+         ;;1.0;PHARMACY DATA MANAGEMENT;**136,11310000,LOCAL**;9/30/97
+   PSSHRQ22+1   S - 2nd line of routine violates the SAC.
+
+PSSHRVAL * *  348 Lines,  14175 Bytes, Checksum: B163543481
+         ;;1.0;PHARMACY DATA MANAGEMENT;**136,160,11310000,LOCAL**;9/30/97
+   PSSHRVAL+1   S - 2nd line of routine violates the SAC.
+
+PSSHTTP  * *  157 Lines,  4831 Bytes, Checksum: B18435311
+         ;;1.0;PHARMACY DATA MANAGEMENT;**136,160,11310000,LOCAL**;9/30/97
+   PSSHTTP+1    S - 2nd line of routine violates the SAC.
+         DO PSS("restObject").InsertFormData(PSS("parameterName"),PSS("parameter
+          Value"))
+   PEPSPOST+29  F - Unmatched Parenthesis.
+   PEPSPOST+29  F - Unmatched Parenthesis.
+         . SET PSS("result")=##class(gov.va.med.pre.ws.XMLHandler).getHandleToXm
+          lDoc(PSS("restObject").HttpResponse.Data, .DOCHAND)
+   PEPSPOST+37  F - Unmatched Parenthesis.
+   PEPSPOST+37  F - Invalid or wrong number of arguments to a function.
+   PEPSPOST+37  F - Unrecognized argument in SET command.
+   PEPSPOST+37  F - UNDEFINED COMMAND (rest of line not checked).
+   PEPSPOST+29  F - Call to missing label 'PSS' in this routine.
+
+--- END ---
+

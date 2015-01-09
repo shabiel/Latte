@@ -1,0 +1,42 @@
+Latte and Latte/DIT Interface for VISTA 2.0/3.0
+
+Software (c) 2015 Sam Habiel. All rights reserved.
+
+Software License Agreement
+
+This Software is protected by United States Federal Copyright Law. Sam Habiel,
+the original software author, retains the title to and ownership of the
+Software, and the VISTA Expertise Network distributes the Software and License
+as his agent. You are licensed to use the Software on the following terms and
+conditions:
+
+LICENSEE: The Licensee is defined as the individual or company deploying the
+Software. LICENSE FEE: The Licensee agrees that the License is granted upon
+payment of the License Fee for each Medical Facility which will make use of the
+Software. A Medical Facility is defined to include its associated clinics or
+satellite facilities.
+
+LICENSE: VISTA Expertise Network hereby grants the Licensee a nonexclusive,
+perpetual License authorizing the Licensee to use the Software in production
+VISTA instances for the use of Medical Facilities. The Licensee is also
+permitted to deploy the Software in all backup, test, and development instances
+that are maintained as part of Licensee’s normal business.
+
+RESTRICTIONS: Licensee is not allowed to distribute, rent, sub-license, or
+otherwise make available to others the Software or copies thereof, except as
+expressly permitted in this License, without prior written consent from the
+VISTA Expertise Network. In the case of an authorized transfer, the transferee
+must agree to be bound by the terms and conditions of this License Agreement.
+You may not remove any proprietary notices, labels, or trademarks from the
+Software. You may not modify, de-compile, disassemble, reverse engineer, or
+translate the Software. Violation of these restrictions terminates, without
+notification, this License and the right to use the Software.
+
+LIMITED WARRANTY - The Software is sold “as is” without any warranty as to its
+performance, merchantability, or fitness for any particular purpose. The
+Licensee assumes the entire risk as to the quality and performance of the
+software. In no event shall VISTA Expertise Network or anyone else who has been
+involved in the creation, development, production, or delivery of this software
+be liable for any direct, incidental, or consequential damages, such as, but
+not limited to, loss of anticipated profits, benefits, use, or data resulting
+from the use of this software, or arising out of any breach of warranty. 

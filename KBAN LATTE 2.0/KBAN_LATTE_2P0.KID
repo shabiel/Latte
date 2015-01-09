@@ -1,0 +1,5946 @@
+KIDS Distribution saved on Feb 03, 2014@09:14:49
+Latte 2.0 Final
+**KIDS**:KBAN LATTE 2.0^
+
+**INSTALL NAME**
+KBAN LATTE 2.0
+"BLD",9274,0)
+KBAN LATTE 2.0^^0^3140203^n
+"BLD",9274,1,0)
+^^12^12^3130809^^
+"BLD",9274,1,1,0)
+Created by Sam Habiel, VISTA Expertise Network.
+"BLD",9274,1,2,0)
+(C) Sam Habiel 2013. All rights reserved.
+"BLD",9274,1,3,0)
+ 
+"BLD",9274,1,4,0)
+These modifications intercept MOCHA messages and pass them back to VISTA 
+"BLD",9274,1,5,0)
+where the drug checks are performed as follows:
+"BLD",9274,1,6,0)
+ 
+"BLD",9274,1,7,0)
+- Drug interactions are checked against the DRUG INTERACTION file.
+"BLD",9274,1,8,0)
+- Duplicate therapy checks are performed against the VA DRUG CLASS file 
+"BLD",9274,1,9,0)
+using the VA drug classes of the drugs.
+"BLD",9274,1,10,0)
+- Dosage checking is not performed. An empty stub is sent back to signify 
+"BLD",9274,1,11,0)
+that it happened successfully but no data is returned; this is done so 
+"BLD",9274,1,12,0)
+that the MOCHA-related Mumps code won't invoke the error handling.
+"BLD",9274,4,0)
+^9.64PA^^
+"BLD",9274,6.3)
+9
+"BLD",9274,"INIT")
+POST^KBANLATT
+"BLD",9274,"KRN",0)
+^9.67PA^779.2^20
+"BLD",9274,"KRN",.4,0)
+.4
+"BLD",9274,"KRN",.401,0)
+.401
+"BLD",9274,"KRN",.402,0)
+.402
+"BLD",9274,"KRN",.403,0)
+.403
+"BLD",9274,"KRN",.5,0)
+.5
+"BLD",9274,"KRN",.84,0)
+.84
+"BLD",9274,"KRN",3.6,0)
+3.6
+"BLD",9274,"KRN",3.8,0)
+3.8
+"BLD",9274,"KRN",9.2,0)
+9.2
+"BLD",9274,"KRN",9.8,0)
+9.8
+"BLD",9274,"KRN",9.8,"NM",0)
+^9.68A^9^9
+"BLD",9274,"KRN",9.8,"NM",1,0)
+KBANLATT^^0^B75813646
+"BLD",9274,"KRN",9.8,"NM",2,0)
+KBANLWRT^^0^B196654115
+"BLD",9274,"KRN",9.8,"NM",3,0)
+PSSHTTP^^0^B17204961
+"BLD",9274,"KRN",9.8,"NM",4,0)
+PSODDPRE^^0^B135966725
+"BLD",9274,"KRN",9.8,"NM",5,0)
+PSSHRVAL^^0^B153337864
+"BLD",9274,"KRN",9.8,"NM",6,0)
+PSSHRIT^^0^B219536105
+"BLD",9274,"KRN",9.8,"NM",7,0)
+KBANLDIT^^0^B235470197
+"BLD",9274,"KRN",9.8,"NM",8,0)
+KBANLUT1^^0^B159065169
+"BLD",9274,"KRN",9.8,"NM",9,0)
+PSSHRQ22^^0^B61732001
+"BLD",9274,"KRN",9.8,"NM","B","KBANLATT",1)
+
+"BLD",9274,"KRN",9.8,"NM","B","KBANLDIT",7)
+
+"BLD",9274,"KRN",9.8,"NM","B","KBANLUT1",8)
+
+"BLD",9274,"KRN",9.8,"NM","B","KBANLWRT",2)
+
+"BLD",9274,"KRN",9.8,"NM","B","PSODDPRE",4)
+
+"BLD",9274,"KRN",9.8,"NM","B","PSSHRIT",6)
+
+"BLD",9274,"KRN",9.8,"NM","B","PSSHRQ22",9)
+
+"BLD",9274,"KRN",9.8,"NM","B","PSSHRVAL",5)
+
+"BLD",9274,"KRN",9.8,"NM","B","PSSHTTP",3)
+
+"BLD",9274,"KRN",19,0)
+19
+"BLD",9274,"KRN",19.1,0)
+19.1
+"BLD",9274,"KRN",101,0)
+101
+"BLD",9274,"KRN",409.61,0)
+409.61
+"BLD",9274,"KRN",771,0)
+771
+"BLD",9274,"KRN",779.2,0)
+779.2
+"BLD",9274,"KRN",870,0)
+870
+"BLD",9274,"KRN",8989.51,0)
+8989.51
+"BLD",9274,"KRN",8989.51,"NM",0)
+^9.68A^1^1
+"BLD",9274,"KRN",8989.51,"NM",1,0)
+PSS KBAN LATTE ENABLE?^^0
+"BLD",9274,"KRN",8989.51,"NM","B","PSS KBAN LATTE ENABLE?",1)
+
+"BLD",9274,"KRN",8989.52,0)
+8989.52
+"BLD",9274,"KRN",8994,0)
+8994
+"BLD",9274,"KRN","B",.4,.4)
+
+"BLD",9274,"KRN","B",.401,.401)
+
+"BLD",9274,"KRN","B",.402,.402)
+
+"BLD",9274,"KRN","B",.403,.403)
+
+"BLD",9274,"KRN","B",.5,.5)
+
+"BLD",9274,"KRN","B",.84,.84)
+
+"BLD",9274,"KRN","B",3.6,3.6)
+
+"BLD",9274,"KRN","B",3.8,3.8)
+
+"BLD",9274,"KRN","B",9.2,9.2)
+
+"BLD",9274,"KRN","B",9.8,9.8)
+
+"BLD",9274,"KRN","B",19,19)
+
+"BLD",9274,"KRN","B",19.1,19.1)
+
+"BLD",9274,"KRN","B",101,101)
+
+"BLD",9274,"KRN","B",409.61,409.61)
+
+"BLD",9274,"KRN","B",771,771)
+
+"BLD",9274,"KRN","B",779.2,779.2)
+
+"BLD",9274,"KRN","B",870,870)
+
+"BLD",9274,"KRN","B",8989.51,8989.51)
+
+"BLD",9274,"KRN","B",8989.52,8989.52)
+
+"BLD",9274,"KRN","B",8994,8994)
+
+"BLD",9274,"QUES",0)
+^9.62^^
+"BLD",9274,"REQB",0)
+^9.611^4^4
+"BLD",9274,"REQB",1,0)
+XML PROCESSING UTILITIES 2.0T2^1
+"BLD",9274,"REQB",2,0)
+PSS*1.0*117^1
+"BLD",9274,"REQB",3,0)
+RXNORM FOR VISTA 2.2^0
+"BLD",9274,"REQB",4,0)
+XU*8.0*431^2
+"BLD",9274,"REQB","B","PSS*1.0*117",2)
+
+"BLD",9274,"REQB","B","RXNORM FOR VISTA 2.2",3)
+
+"BLD",9274,"REQB","B","XML PROCESSING UTILITIES 2.0T2",1)
+
+"BLD",9274,"REQB","B","XU*8.0*431",4)
+
+"INIT")
+POST^KBANLATT
+"KRN",8989.51,756,-1)
+0^1
+"KRN",8989.51,756,0)
+PSS KBAN LATTE ENABLE?^Enable Latte?^0^
+"KRN",8989.51,756,1)
+Y^^Latte is an alternate way to do pharmacy order checks. Choose yes to enable it.
+"KRN",8989.51,756,4,0)
+^8989.514^^0
+"KRN",8989.51,756,30,0)
+^8989.513I^2^2
+"KRN",8989.51,756,30,1,0)
+10^4.2
+"KRN",8989.51,756,30,2,0)
+20^9.4
+"MBREQ")
+0
+"ORD",20,8989.51)
+8989.51;20;;;PAR1E1^XPDTA2;PAR1F1^XPDIA3;PAR1E1^XPDIA3;PAR1F2^XPDIA3;;PAR1DEL^XPDIA3(%)
+"ORD",20,8989.51,0)
+PARAMETER DEFINITION
+"QUES","XPF1",0)
+Y
+"QUES","XPF1","??")
+^D REP^XPDH
+"QUES","XPF1","A")
+Shall I write over your |FLAG| File
+"QUES","XPF1","B")
+YES
+"QUES","XPF1","M")
+D XPF1^XPDIQ
+"QUES","XPF2",0)
+Y
+"QUES","XPF2","??")
+^D DTA^XPDH
+"QUES","XPF2","A")
+Want my data |FLAG| yours
+"QUES","XPF2","B")
+YES
+"QUES","XPF2","M")
+D XPF2^XPDIQ
+"QUES","XPI1",0)
+YO
+"QUES","XPI1","??")
+^D INHIBIT^XPDH
+"QUES","XPI1","A")
+Want KIDS to INHIBIT LOGONs during the install
+"QUES","XPI1","B")
+NO
+"QUES","XPI1","M")
+D XPI1^XPDIQ
+"QUES","XPM1",0)
+PO^VA(200,:EM
+"QUES","XPM1","??")
+^D MG^XPDH
+"QUES","XPM1","A")
+Enter the Coordinator for Mail Group '|FLAG|'
+"QUES","XPM1","B")
+
+"QUES","XPM1","M")
+D XPM1^XPDIQ
+"QUES","XPO1",0)
+Y
+"QUES","XPO1","??")
+^D MENU^XPDH
+"QUES","XPO1","A")
+Want KIDS to Rebuild Menu Trees Upon Completion of Install
+"QUES","XPO1","B")
+NO
+"QUES","XPO1","M")
+D XPO1^XPDIQ
+"QUES","XPZ1",0)
+Y
+"QUES","XPZ1","??")
+^D OPT^XPDH
+"QUES","XPZ1","A")
+Want to DISABLE Scheduled Options, Menu Options, and Protocols
+"QUES","XPZ1","B")
+NO
+"QUES","XPZ1","M")
+D XPZ1^XPDIQ
+"QUES","XPZ2",0)
+Y
+"QUES","XPZ2","??")
+^D RTN^XPDH
+"QUES","XPZ2","A")
+Want to MOVE routines to other CPUs
+"QUES","XPZ2","B")
+NO
+"QUES","XPZ2","M")
+D XPZ2^XPDIQ
+"RTN")
+9
+"RTN","KBANLATT")
+0^1^B75813646
+"RTN","KBANLATT",1,0)
+KBANLATT ; VEN/SMH - Imitate MOCHA Latte Sytle ;2013-11-18  2:41 PM
+"RTN","KBANLATT",2,0)
+ ;;0.5;SAM'S INDUSTRIAL CONGLOMORATES;;;Build 9
+"RTN","KBANLATT",3,0)
+ ; (c) Sam Habiel 2013.
+"RTN","KBANLATT",4,0)
+ ;
+"RTN","KBANLATT",5,0)
+ ; Usage is granted to the user under accompanying license.
+"RTN","KBANLATT",6,0)
+ ; If you can't find the license, you are not allowed to use the software.
+"RTN","KBANLATT",7,0)
+ ;
+"RTN","KBANLATT",8,0)
+EN(RESULT,DOCHAND) ; Public; Main Latte XML parser routine
+"RTN","KBANLATT",9,0)
+ ; RESULT - RPC style return, By Ref.
+"RTN","KBANLATT",10,0)
+ ; DOCHAND - MXML Document Hand; By Val
+"RTN","KBANLATT",11,0)
+ ;
+"RTN","KBANLATT",12,0)
+ ; Header node
+"RTN","KBANLATT",13,0)
+ N HDRNODE S HDRNODE=$$XPATH^MXMLPATH(,DOCHAND,"/PEPSRequest/Header")
+"RTN","KBANLATT",14,0)
+ I 'HDRNODE S $EC=",UHEADER-NODE-MISSING,"
+"RTN","KBANLATT",15,0)
+ ;
+"RTN","KBANLATT",16,0)
+ ; Ping Only? If yes, send reply and done.
+"RTN","KBANLATT",17,0)
+ I $$VALUE^MXMLDOM(DOCHAND,HDRNODE,"pingOnly")="true" D SENDPING^KBANLWRT(.RESULT) QUIT
+"RTN","KBANLATT",18,0)
+ ;
+"RTN","KBANLATT",19,0)
+ ; At this point, it's not just a ping. We have to test to see if we have the following requests.
+"RTN","KBANLATT",20,0)
+ ;
+"RTN","KBANLATT",21,0)
+ ; See if drugDoseCheck, drugTherapyCheck, drugDrugCheck are requested.
+"RTN","KBANLATT",22,0)
+ N DRUGDOSECHECK S DRUGDOSECHECK=$$XPATH^MXMLPATH(,DOCHAND,"/PEPSRequest/Body/drugCheck/checks/drugDoseCheck")
+"RTN","KBANLATT",23,0)
+ N DRUGTHERAPYCHECK S DRUGTHERAPYCHECK=$$XPATH^MXMLPATH(,DOCHAND,"/PEPSRequest/Body/drugCheck/checks/drugTherapyCheck")
+"RTN","KBANLATT",24,0)
+ N DRUGDRUGCHECK S DRUGDRUGCHECK=$$XPATH^MXMLPATH(,DOCHAND,"/PEPSRequest/Body/drugCheck/checks/drugDrugCheck")
+"RTN","KBANLATT",25,0)
+ ;
+"RTN","KBANLATT",26,0)
+ ; DEBUG.ASSERT that we got one of these. No point otherwise!
+"RTN","KBANLATT",27,0)
+ I '(DRUGDOSECHECK!DRUGTHERAPYCHECK!DRUGDRUGCHECK) S $EC=",UNO-OPERATION-REQUESTED,"
+"RTN","KBANLATT",28,0)
+ ;
+"RTN","KBANLATT",29,0)
+ N PROS S PROS=$$PROSPEC(DOCHAND) ; Prospective only?
+"RTN","KBANLATT",30,0)
+ ;
+"RTN","KBANLATT",31,0)
+ N DRUGS D DRUGS(.DRUGS,DOCHAND) ; Extract the drugs from the XML document
+"RTN","KBANLATT",32,0)
+ ;
+"RTN","KBANLATT",33,0)
+ N DRUGSNOTCHECKED ; Drugs not checked array; format: DRUGSNOTCHECKED(MXML DRUG NODE ID)=""
+"RTN","KBANLATT",34,0)
+ ;
+"RTN","KBANLATT",35,0)
+ ; Remove bad drugs from input array and put into DRUGSNOTCHECKED array.
+"RTN","KBANLATT",36,0)
+ N I F I=0:0 S I=$O(DRUGS("B",I)) Q:'I  D
+"RTN","KBANLATT",37,0)
+ . S DRUGSNOTCHECKED(I)="" ; ditto
+"RTN","KBANLATT",38,0)
+ . K DRUGS(I) ; remove drug entry
+"RTN","KBANLATT",39,0)
+ . N X F X="P","M","B" K DRUGS(X,I) ; Kill off indexes
+"RTN","KBANLATT",40,0)
+ ;
+"RTN","KBANLATT",41,0)
+ ; Do the real work here
+"RTN","KBANLATT",42,0)
+ N INTERACTIONS,DUPCLASS ; Return arrays to RESPOND^KBANLWRT
+"RTN","KBANLATT",43,0)
+ ;
+"RTN","KBANLATT",44,0)
+ ; Is there anything to check?
+"RTN","KBANLATT",45,0)
+ I '$D(DRUGS("P")),PROS  ; no prospective drugs and prospective? Do nothing.
+"RTN","KBANLATT",46,0)
+ ; 
+"RTN","KBANLATT",47,0)
+ ; We either have a non-prospective check or prospective and pros drugs in array.
+"RTN","KBANLATT",48,0)
+ ; ZEXCEPT: KBANFORCEINT - Unit test variable to force internal checking.
+"RTN","KBANLATT",49,0)
+ E  D
+"RTN","KBANLATT",50,0)
+ . I $L($T(INTERACT^KBANLDIT)),$$FIND1^DIC(18.12,,"XQ","DIT DI SERVICE","B"),'$G(KBANFORCEINT) D  ; DIT Interface available
+"RTN","KBANLATT",51,0)
+ . . D INTERACT^KBANLDIT(.INTERACTIONS,.DUPCLASS,.DRUGS,PROS,.DRUGSNOTCHECKED):(DRUGDRUGCHECK!DRUGTHERAPYCHECK)
+"RTN","KBANLATT",52,0)
+ . E  D
+"RTN","KBANLATT",53,0)
+ . . DO INTERACT(.INTERACTIONS,.DRUGS,PROS):DRUGDRUGCHECK
+"RTN","KBANLATT",54,0)
+ . . DO DUPCLASS(.DUPCLASS,.DRUGS,PROS):DRUGTHERAPYCHECK
+"RTN","KBANLATT",55,0)
+ ;
+"RTN","KBANLATT",56,0)
+ ; (debug note: zwrite INTERACTIONS and DUPCLASS here to see the results of the checks)
+"RTN","KBANLATT",57,0)
+ ;
+"RTN","KBANLATT",58,0)
+ ; Write the XML back in the RESULT array
+"RTN","KBANLATT",59,0)
+ D RESPOND^KBANLWRT(.RESULT,DOCHAND,.INTERACTIONS,.DUPCLASS,.DRUGSNOTCHECKED,DRUGDRUGCHECK,DRUGTHERAPYCHECK,DRUGDOSECHECK)
+"RTN","KBANLATT",60,0)
+ ;
+"RTN","KBANLATT",61,0)
+ QUIT
+"RTN","KBANLATT",62,0)
+ ;
+"RTN","KBANLATT",63,0)
+ ; === The rest of the entry points below are private ===
+"RTN","KBANLATT",64,0)
+ ;
+"RTN","KBANLATT",65,0)
+PROSPEC(DOCHAND) ; $$ - Private; Is this Prospective only?
+"RTN","KBANLATT",66,0)
+ ; DOCHAND, see above.
+"RTN","KBANLATT",67,0)
+ ; Get Prospective Only flag
+"RTN","KBANLATT",68,0)
+ ; If we are prospective only, check the prospective drugs against each other and the profile.
+"RTN","KBANLATT",69,0)
+ ; DO NOT check profile drugs against each other.
+"RTN","KBANLATT",70,0)
+ ;
+"RTN","KBANLATT",71,0)
+ ; Get Checks node.
+"RTN","KBANLATT",72,0)
+ N CHKSNODE S CHKSNODE=$$XPATH^MXMLPATH(,DOCHAND,"//Body/drugCheck/checks")
+"RTN","KBANLATT",73,0)
+ I 'CHKSNODE S $EC=",UCHECKS-NODE-NOT-FOUND,"
+"RTN","KBANLATT",74,0)
+ ;
+"RTN","KBANLATT",75,0)
+ ; Get prospectiveOnly attribute
+"RTN","KBANLATT",76,0)
+ N VALUE S VALUE=$$VALUE^MXMLDOM(DOCHAND,CHKSNODE,"prospectiveOnly")
+"RTN","KBANLATT",77,0)
+ N PROSPECTIVEONLY S PROSPECTIVEONLY=0
+"RTN","KBANLATT",78,0)
+ I $L(VALUE),$$UP^XLFSTR(VALUE)="TRUE" S PROSPECTIVEONLY=1
+"RTN","KBANLATT",79,0)
+ Q PROSPECTIVEONLY
+"RTN","KBANLATT",80,0)
+ ;
+"RTN","KBANLATT",81,0)
+DRUGS(DRUGS,DOCHAND) ; Procedure - Private; Extract drug data from XML document
+"RTN","KBANLATT",82,0)
+ ; DRUGS: Return Array. Pass by Ref.
+"RTN","KBANLATT",83,0)
+ ; -- Rosetta Stone:
+"RTN","KBANLATT",84,0)
+ ;    DRUGS(MXML NODE ID,"TYPE")="P" for Prospective or "M" for Medication Profile
+"RTN","KBANLATT",85,0)
+ ;                       "VUID") ; VUID from the XML
+"RTN","KBANLATT",86,0)
+ ;                       "VAPROD") ; Ien in the VA Product File
+"RTN","KBANLATT",87,0)
+ ;                       "VAGEN") ; Ien in the VA Generic File
+"RTN","KBANLATT",88,0)
+ ;                       "DINID") ; Drug interaction ID used to query file 56 (Drug Interactions)
+"RTN","KBANLATT",89,0)
+ ;                       "VACLS") ; VA Drug Class external form (not ien)
+"RTN","KBANLATT",90,0)
+ ;                       "BAD")   ; Can't use in interactions. No VUID or bad VUID.
+"RTN","KBANLATT",91,0)
+ ;                       "NOIXN") ; NDF in field 23 says don't check for ixns.
+"RTN","KBANLATT",92,0)
+ ;
+"RTN","KBANLATT",93,0)
+ ;    Index:
+"RTN","KBANLATT",94,0)
+ ;    DRUGS("P" or "M",MXML NODE ID)="" ; Used to aid looping in INTERACT
+"RTN","KBANLATT",95,0)
+ ;    DRUGS("B",MXML NODE ID)="" ; This drug is bad... can't be used in ixns.
+"RTN","KBANLATT",96,0)
+ ;    
+"RTN","KBANLATT",97,0)
+ ;
+"RTN","KBANLATT",98,0)
+ ; DOCHAND - See above
+"RTN","KBANLATT",99,0)
+ ;
+"RTN","KBANLATT",100,0)
+ N PROSPDRUGS ; Prospective Drugs
+"RTN","KBANLATT",101,0)
+ D XPATH^MXMLPATH(.PROSPDRUGS,DOCHAND,"//prospectiveDrugs/drug")
+"RTN","KBANLATT",102,0)
+ N PROFILEDRUGS ; Profile Drugs
+"RTN","KBANLATT",103,0)
+ D XPATH^MXMLPATH(.PROFILEDRUGS,DOCHAND,"//medicationProfile/drug")
+"RTN","KBANLATT",104,0)
+ ;
+"RTN","KBANLATT",105,0)
+ N X F X="PROSPDRUGS","PROFILEDRUGS" N I S I=0 F  S I=$O(@X@(I)) Q:'I  D  ; Loop through all drug nodes
+"RTN","KBANLATT",106,0)
+ . S DRUGS(I,"TYPE")=$S(X="PROSPDRUGS":"P",1:"M")
+"RTN","KBANLATT",107,0)
+ . S DRUGS(DRUGS(I,"TYPE"),I)="" ; Cross reference for looping in INTERACT
+"RTN","KBANLATT",108,0)
+ . S DRUGS(I,"NM")=$$VALUE^MXMLDOM(DOCHAND,I,"drugName") ; Name of Drug
+"RTN","KBANLATT",109,0)
+ . S DRUGS(I,"VUID")=$$VALUE^MXMLDOM(DOCHAND,I,"vuid") ; vuid...
+"RTN","KBANLATT",110,0)
+ . ;
+"RTN","KBANLATT",111,0)
+ . I 'DRUGS(I,"VUID") S DRUGS(I,"BAD")=1,DRUGS("B",I)="" QUIT  ; Bad Drug
+"RTN","KBANLATT",112,0)
+ . N % S %(1)=DRUGS(I,"VUID") S %(2)=1 ; Compound Index to get master entry
+"RTN","KBANLATT",113,0)
+ . S DRUGS(I,"VAPROD")=$$FIND1^DIC(50.68,"","QX",.%,"AMASTERVUID")
+"RTN","KBANLATT",114,0)
+ . I 'DRUGS(I,"VAPROD") S DRUGS(I,"BAD")=1,DRUGS("B",I)="" QUIT  ; Bad Drug
+"RTN","KBANLATT",115,0)
+ . ;
+"RTN","KBANLATT",116,0)
+ . S DRUGS(I,"NOIXN")=$$GET1^DIQ(50.68,DRUGS(I,"VAPROD"),23,"I") ; Don't interact?
+"RTN","KBANLATT",117,0)
+ . S DRUGS(I,"VAGEN")=$$GET1^DIQ(50.68,DRUGS(I,"VAPROD"),.05,"I") ; VA GENERIC ien
+"RTN","KBANLATT",118,0)
+ . S DRUGS(I,"VACLS")=$$GET1^DIQ(50.68,DRUGS(I,"VAPROD"),15) ; External VA Drug Class
+"RTN","KBANLATT",119,0)
+ . S DRUGS(I,"DINID")=DRUGS(I,"VAGEN")_"A"_DRUGS(I,"VAPROD") ; Drug interaction ID
+"RTN","KBANLATT",120,0)
+ QUIT
+"RTN","KBANLATT",121,0)
+ ;
+"RTN","KBANLATT",122,0)
+INTERACT(INTERACTIONS,DRUGS,PROS) ; Procedure - Private; Check drug interactions
+"RTN","KBANLATT",123,0)
+ ; .INTERACTIONS - Return Array
+"RTN","KBANLATT",124,0)
+ ; --> Output:
+"RTN","KBANLATT",125,0)
+ ;     INTERACTIONS(DRUG NODE 1,DRUG NODE 2)=S or C (Significant or Critical)
+"RTN","KBANLATT",126,0)
+ ;     INTERACTIONS(DRUG NODE 1,DRUG NODE 2,"TITLE")=INTERACTION TITLE
+"RTN","KBANLATT",127,0)
+ ; .DRUGS - Input Array as above
+"RTN","KBANLATT",128,0)
+ ; PROS - Is this prospective only? (Boolean)
+"RTN","KBANLATT",129,0)
+ ;
+"RTN","KBANLATT",130,0)
+ ; If prospective only, check interactions against each other and
+"RTN","KBANLATT",131,0)
+ ; and check interactions against profile medications for each.
+"RTN","KBANLATT",132,0)
+ ;
+"RTN","KBANLATT",133,0)
+ ; if not prospective only, check interactions for all medications.
+"RTN","KBANLATT",134,0)
+ ;
+"RTN","KBANLATT",135,0)
+ ; Please note, subscripts I and J are nodes in the XML document still...
+"RTN","KBANLATT",136,0)
+ ; We will still use those.
+"RTN","KBANLATT",137,0)
+ ;
+"RTN","KBANLATT",138,0)
+ ;
+"RTN","KBANLATT",139,0)
+ N DONELIST ; A tracker to make sure we don't test stuff against each other again.
+"RTN","KBANLATT",140,0)
+ IF PROS DO
+"RTN","KBANLATT",141,0)
+ . ; Loop 1: Check prospective drugs against each other; Concentric loops; There must be an easier way to do this.
+"RTN","KBANLATT",142,0)
+ . N I S I=0 F  S I=$O(DRUGS("P",I)) Q:'I  N J S J=0 F  S J=$O(DRUGS("P",J)) Q:'J  D
+"RTN","KBANLATT",143,0)
+ . . ;
+"RTN","KBANLATT",144,0)
+ . . I I=J QUIT  ; Same drug
+"RTN","KBANLATT",145,0)
+ . . I $D(DONELIST(I,J)) QUIT  ; Already done
+"RTN","KBANLATT",146,0)
+ . . I $D(DONELIST(J,I)) QUIT  ; ditto
+"RTN","KBANLATT",147,0)
+ . . D INTERAC2(.INTERACTIONS,.DRUGS,I,J)
+"RTN","KBANLATT",148,0)
+ . . S DONELIST(I,J)=""
+"RTN","KBANLATT",149,0)
+ . ;
+"RTN","KBANLATT",150,0)
+ . ;
+"RTN","KBANLATT",151,0)
+ . ; Loop 2: Check prospective drugs against profile; Concentric loops -- this one is easier!!!
+"RTN","KBANLATT",152,0)
+ . N I S I=0 F  S I=$O(DRUGS("P",I)) Q:'I  N J S J=0 F  S J=$O(DRUGS("M",J)) Q:'J  D
+"RTN","KBANLATT",153,0)
+ . . D INTERAC2(.INTERACTIONS,.DRUGS,I,J)
+"RTN","KBANLATT",154,0)
+ ;
+"RTN","KBANLATT",155,0)
+ ELSE  DO
+"RTN","KBANLATT",156,0)
+ . ; Only a single loop. Check all drugs against each other.
+"RTN","KBANLATT",157,0)
+ . N I S I=0 F  S I=$O(DRUGS(I)) Q:'I  N J S J=0 F  S J=$O(DRUGS(J)) Q:'J  D
+"RTN","KBANLATT",158,0)
+ . . ;
+"RTN","KBANLATT",159,0)
+ . . I I=J QUIT  ; Same drug
+"RTN","KBANLATT",160,0)
+ . . I $D(DONELIST(I,J)) QUIT  ; Already done
+"RTN","KBANLATT",161,0)
+ . . I $D(DONELIST(J,I)) QUIT  ; ditto
+"RTN","KBANLATT",162,0)
+ . . D INTERAC2(.INTERACTIONS,.DRUGS,I,J)
+"RTN","KBANLATT",163,0)
+ . . S DONELIST(I,J)=""
+"RTN","KBANLATT",164,0)
+ QUIT
+"RTN","KBANLATT",165,0)
+ ;
+"RTN","KBANLATT",166,0)
+INTERAC2(INTERACTIONS,DRUGS,I,J) ; Private; Core drug interaction code
+"RTN","KBANLATT",167,0)
+ ; INTERACTIONS - Return array as above
+"RTN","KBANLATT",168,0)
+ ; I, J are DRUGS array subscripts.
+"RTN","KBANLATT",169,0)
+ N DINID1 S DINID1=DRUGS(I,"DINID") ; Grab ID
+"RTN","KBANLATT",170,0)
+ N DINID2 S DINID2=DRUGS(J,"DINID") ; ditto
+"RTN","KBANLATT",171,0)
+ N INT S INT=$O(^PS(56,"APD",DINID1,DINID2,"")) ; Check drug interaction table
+"RTN","KBANLATT",172,0)
+ I 'INT QUIT  ; No interaction found
+"RTN","KBANLATT",173,0)
+ N SEVERITY
+"RTN","KBANLATT",174,0)
+ S SEVERITY=$P(^PS(56,INT,0),U,4)
+"RTN","KBANLATT",175,0)
+ S SEVERITY=$S(SEVERITY=1:"C",1:"S") ; Critical or Significant
+"RTN","KBANLATT",176,0)
+ S INTERACTIONS(I,J)=SEVERITY ; Return array
+"RTN","KBANLATT",177,0)
+ S INTERACTIONS(I,J,"TITLE")=$P(^PS(56,INT,0),U)
+"RTN","KBANLATT",178,0)
+ QUIT
+"RTN","KBANLATT",179,0)
+ ;
+"RTN","KBANLATT",180,0)
+DUPCLASS(DUPCLASS,DRUGS,PROS) ; Private Proc; Perform duplicate class checking
+"RTN","KBANLATT",181,0)
+ ; Output:
+"RTN","KBANLATT",182,0)
+ ; DUPCLASS - Return array formatted as 
+"RTN","KBANLATT",183,0)
+ ; - DUPCLASS(Drug Node ID 1, Drug Node ID 2)=Duplicate Class Name (full name/external)
+"RTN","KBANLATT",184,0)
+ ; 
+"RTN","KBANLATT",185,0)
+ ; ;
+"RTN","KBANLATT",186,0)
+ ; Input:
+"RTN","KBANLATT",187,0)
+ ; - DRUGS: Drugs array, as outlined above (by Ref)
+"RTN","KBANLATT",188,0)
+ ; - PROS: Boolean for Prospective Only (By Value)
+"RTN","KBANLATT",189,0)
+ ;
+"RTN","KBANLATT",190,0)
+ ; Simulated error for Unit tests
+"RTN","KBANLATT",191,0)
+ ; ZEXCEPT: KBANSIMERR
+"RTN","KBANLATT",192,0)
+ I $D(KBANSIMERR) S $EC=",U-SIMULATED-ERROR,"
+"RTN","KBANLATT",193,0)
+ ;
+"RTN","KBANLATT",194,0)
+ N DONELIST ; A tracker to make sure we don't test stuff against each other again.
+"RTN","KBANLATT",195,0)
+ IF PROS DO
+"RTN","KBANLATT",196,0)
+ . ; Loop 1: Check prospective drugs against each other; Concentric loops; There must be an easier way to do this.
+"RTN","KBANLATT",197,0)
+ . N I S I=0 F  S I=$O(DRUGS("P",I)) Q:'I  N J S J=0 F  S J=$O(DRUGS("P",J)) Q:'J  D
+"RTN","KBANLATT",198,0)
+ . . ;
+"RTN","KBANLATT",199,0)
+ . . I I=J QUIT  ; Same drug
+"RTN","KBANLATT",200,0)
+ . . I $D(DONELIST(I,J)) QUIT  ; Already done
+"RTN","KBANLATT",201,0)
+ . . I $D(DONELIST(J,I)) QUIT  ; ditto
+"RTN","KBANLATT",202,0)
+ . . D DUPCLAS2(.DUPCLASS,.DRUGS,I,J)
+"RTN","KBANLATT",203,0)
+ . . S DONELIST(I,J)=""
+"RTN","KBANLATT",204,0)
+ . ;
+"RTN","KBANLATT",205,0)
+ . ;
+"RTN","KBANLATT",206,0)
+ . ; Loop 2: Check prospective drugs against profile; Concentric loops -- this one is easier!!!
+"RTN","KBANLATT",207,0)
+ . N I S I=0 F  S I=$O(DRUGS("P",I)) Q:'I  N J S J=0 F  S J=$O(DRUGS("M",J)) Q:'J  D
+"RTN","KBANLATT",208,0)
+ . . D DUPCLAS2(.DUPCLASS,.DRUGS,I,J)
+"RTN","KBANLATT",209,0)
+ ;
+"RTN","KBANLATT",210,0)
+ ELSE  DO
+"RTN","KBANLATT",211,0)
+ . ; Only a single loop. Check all drugs against each other.
+"RTN","KBANLATT",212,0)
+ . N I S I=0 F  S I=$O(DRUGS(I)) Q:'I  N J S J=0 F  S J=$O(DRUGS(J)) Q:'J  D
+"RTN","KBANLATT",213,0)
+ . . ;
+"RTN","KBANLATT",214,0)
+ . . I I=J QUIT  ; Same drug
+"RTN","KBANLATT",215,0)
+ . . I $D(DONELIST(I,J)) QUIT  ; Already done
+"RTN","KBANLATT",216,0)
+ . . I $D(DONELIST(J,I)) QUIT  ; ditto
+"RTN","KBANLATT",217,0)
+ . . D DUPCLAS2(.DUPCLASS,.DRUGS,I,J)
+"RTN","KBANLATT",218,0)
+ . . S DONELIST(I,J)=""
+"RTN","KBANLATT",219,0)
+ QUIT
+"RTN","KBANLATT",220,0)
+ ;
+"RTN","KBANLATT",221,0)
+DUPCLAS2(DUPCLASS,DRUGS,I,J) ; Private Procedure; Perform Duplicate Dose Checking Core function
+"RTN","KBANLATT",222,0)
+ ; DUPCLASS - See above
+"RTN","KBANLATT",223,0)
+ ; DRUGS - See above
+"RTN","KBANLATT",224,0)
+ ; I and J are DRUGS subscripts.
+"RTN","KBANLATT",225,0)
+ ;
+"RTN","KBANLATT",226,0)
+ ; Code here mirrors code in PSODRDUP
+"RTN","KBANLATT",227,0)
+ ;
+"RTN","KBANLATT",228,0)
+ N CLS1 S CLS1=$E(DRUGS(I,"VACLS"),1,4) ; Abbreviated Class of first drug
+"RTN","KBANLATT",229,0)
+ N CLS2 S CLS2=$E(DRUGS(J,"VACLS"),1,4) ; Abbreviated Class of second drug
+"RTN","KBANLATT",230,0)
+ ;
+"RTN","KBANLATT",231,0)
+ I CLS1'=CLS2 QUIT  ; Not the same; no duplication
+"RTN","KBANLATT",232,0)
+ ;
+"RTN","KBANLATT",233,0)
+ I $E(CLS1,1,2)="HA" QUIT  ; no drug interaction checking on Herbals per PSODRDU1 pre-Mocha version.
+"RTN","KBANLATT",234,0)
+ I $E(CLS2,1,2)="HA" QUIT  ; ditto
+"RTN","KBANLATT",235,0)
+ ;
+"RTN","KBANLATT",236,0)
+ ; Otherwise, we have a duplication.
+"RTN","KBANLATT",237,0)
+ ; What's the class name?
+"RTN","KBANLATT",238,0)
+ ; Do an order using the partial class name (4 chars as above) to get to the base class first which ends with a zero.
+"RTN","KBANLATT",239,0)
+ N CLS,IEN S CLS=$O(^PS(50.605,"B",CLS1)) S IEN=$O(^(CLS,"")) ; Code will crash if we can't find the class. Intended!
+"RTN","KBANLATT",240,0)
+ N CLASSNAME S CLASSNAME=$P(^PS(50.605,IEN,0),U,2) ; #1 CLASSIFICATION
+"RTN","KBANLATT",241,0)
+ S DUPCLASS(I,J)=CLASSNAME
+"RTN","KBANLATT",242,0)
+ QUIT
+"RTN","KBANLATT",243,0)
+ ;
+"RTN","KBANLATT",244,0)
+POST ; Post install hook for KIDS...
+"RTN","KBANLATT",245,0)
+ ; Enable Latte by default.
+"RTN","KBANLATT",246,0)
+ N KBANERR
+"RTN","KBANLATT",247,0)
+ D PUT^XPAR("PKG","PSS KBAN LATTE ENABLE?",1,1,.KBANERR)
+"RTN","KBANLATT",248,0)
+ I $G(KBANERR) D MES^XPDUTL("Error: "_KBANERR)
+"RTN","KBANLATT",249,0)
+ QUIT
+"RTN","KBANLDIT")
+0^7^B235470197
+"RTN","KBANLDIT",1,0)
+KBANLDIT ; VEN/SMH - Latte against DIT;2013-11-19  12:41 PM
+"RTN","KBANLDIT",2,0)
+ ;;0.4;SAM'S INDUSTRIAL CONGLOMORATES;;;Build 9
+"RTN","KBANLDIT",3,0)
+ ; (c) Sam Habiel 2013.
+"RTN","KBANLDIT",4,0)
+ ;
+"RTN","KBANLDIT",5,0)
+ ; Usage is granted to the user under accompanying license.
+"RTN","KBANLDIT",6,0)
+ ; If you can't find the license, you are not allowed to use the software.
+"RTN","KBANLDIT",7,0)
+ ;
+"RTN","KBANLDIT",8,0)
+ ;
+"RTN","KBANLDIT",9,0)
+ ;
+"RTN","KBANLDIT",10,0)
+INTERACT(INTERACTIONS,DUPCLASS,DRUGS,PROS,NOCHECKDRUGS) ; Private; DIT drug interaction/duplicates code
+"RTN","KBANLDIT",11,0)
+ ; INTERACTIONS: Return Array. Pass by Ref. Starts empty. 
+"RTN","KBANLDIT",12,0)
+ ; -- Rosetta Stone:
+"RTN","KBANLDIT",13,0)
+ ;    INTERACTIONS(MXML NODE ID OF DRUG1 (D1), DITTO DRUG2 (D2))="C or S"
+"RTN","KBANLDIT",14,0)
+ ;                               i.e. Critical or Significant
+"RTN","KBANLDIT",15,0)
+ ;    INTERACTIONS(D1,D2,"TITLE")="Title of Interaction, usu drug1/drug2)
+"RTN","KBANLDIT",16,0)
+ ;    INTERACTIONS(D1,D2,"source")="DIT" ; hardcoded
+"RTN","KBANLDIT",17,0)
+ ;    INTERACTIONS(D1,D2,"shortText")="Short interaction description"
+"RTN","KBANLDIT",18,0)
+ ;    INTERACTIONS(D1,D2,"disclaimer")="Drug information vendor disclaimer"
+"RTN","KBANLDIT",19,0)
+ ;    INTERACTIONS(D1,D2,"monographTitle")="Title for Monograph statement"
+"RTN","KBANLDIT",20,0)
+ ;    INTERACTIONS(D1,D2,"severityLevel")="Description of severity of interaction in more detail"
+"RTN","KBANLDIT",21,0)
+ ;    INTERACTIONS(D1,D2,"mechanismOfAction")="Mechanism string"
+"RTN","KBANLDIT",22,0)
+ ;    INTERACTIONS(D1,D2,"clinicalEffects")="Detailed clinical effects"
+"RTN","KBANLDIT",23,0)
+ ;    INTERACTIONS(D1,D2,"preDisposingFactors")="Pre-disposing factors for interaction"
+"RTN","KBANLDIT",24,0)
+ ;    INTERACTIONS(D1,D2,"patientManagement")="How to deal with the interactions"
+"RTN","KBANLDIT",25,0)
+ ;    INTERACTIONS(D1,D2,"discussion")="Further information"
+"RTN","KBANLDIT",26,0)
+ ; 
+"RTN","KBANLDIT",27,0)
+ ; DUPCLASS - Return array. Pass by Ref. Starts empty.
+"RTN","KBANLDIT",28,0)
+ ; -- Rosetta Stone:
+"RTN","KBANLDIT",29,0)
+ ;    DUPCLASS(Drug Node ID 1, Drug Node ID 2)=Duplicate Class Name (full name/external)
+"RTN","KBANLDIT",30,0)
+ ;    DUPCLASS(D1,D2,"duplicateAllowance")=Duplication allowance (hardcoded to zero here)
+"RTN","KBANLDIT",31,0)
+ ;    DUPCLASS(D1,D2,"shortText")="Description of the duplication"
+"RTN","KBANLDIT",32,0)
+ ;    DUPCLASS(D1,D2,"source")="DIT" ; hardcoded
+"RTN","KBANLDIT",33,0)
+ ;
+"RTN","KBANLDIT",34,0)
+ ;
+"RTN","KBANLDIT",35,0)
+ ; DRUGS: Reference Array containing drugs to check for ixns.  Pass by Ref.
+"RTN","KBANLDIT",36,0)
+ ; -- Rosetta Stone:
+"RTN","KBANLDIT",37,0)
+ ;    DRUGS(MXML NODE ID,"TYPE")="P" for Prospective or "M" for Medication Profile
+"RTN","KBANLDIT",38,0)
+ ;                       "VUID") ; VUID from the XML
+"RTN","KBANLDIT",39,0)
+ ;                       "VAPROD") ; Ien in the VA Product File
+"RTN","KBANLDIT",40,0)
+ ;                       "VAGEN") ; Ien in the VA Generic File
+"RTN","KBANLDIT",41,0)
+ ;                       "DINID") ; Drug interaction ID used to query file 56 (Drug Interactions)
+"RTN","KBANLDIT",42,0)
+ ;                       "VACLS") ; VA Drug Class external form (not ien)
+"RTN","KBANLDIT",43,0)
+ ;                       ; "NDC")   ; Active NDC for the Drug obtained from RxNorm --> not used anymore.
+"RTN","KBANLDIT",44,0)
+ ;                       "RXN")   ; RxNorm SCD/CD CUI
+"RTN","KBANLDIT",45,0)
+ ;                       "NM")    ; Drug Name extracted from VISTA MOCHA message
+"RTN","KBANLDIT",46,0)
+ ;                       "DITCL") ; DIT Drug Class
+"RTN","KBANLDIT",47,0)
+ ;                       "NOIXN") ; File 50.68,23 says don't track interaction for this drug.
+"RTN","KBANLDIT",48,0)
+ ;
+"RTN","KBANLDIT",49,0)
+ ;    Indexes:
+"RTN","KBANLDIT",50,0)
+ ;    DRUGS("M" --> Med Profile drugs
+"RTN","KBANLDIT",51,0)
+ ;    DRUGS("P" --> Prospective drugs
+"RTN","KBANLDIT",52,0)
+ ;    ; DRUGS("NDC" --> NDC index --> not used anymore.
+"RTN","KBANLDIT",53,0)
+ ;    DRUGS("RXN" --> RXNCUI index
+"RTN","KBANLDIT",54,0)
+ ;    DRUGS("SYN10" --> DIT SYN10 index
+"RTN","KBANLDIT",55,0)
+ ;
+"RTN","KBANLDIT",56,0)
+ ; PROS: By value: Is this interaction check for prospective drugs only?
+"RTN","KBANLDIT",57,0)
+ ;                 In general, this is not used as we pull the prospective
+"RTN","KBANLDIT",58,0)
+ ;                 flags from the drugs themselves; yet we support it.
+"RTN","KBANLDIT",59,0)
+ ;
+"RTN","KBANLDIT",60,0)
+ ; NOCHECKDRUGS -> In case we fail to find an RxNorm match
+"RTN","KBANLDIT",61,0)
+ ; to a drug, we put it here so that it be reported back
+"RTN","KBANLDIT",62,0)
+ ; to the user that we failed to do a drug match.
+"RTN","KBANLDIT",63,0)
+ ; By Ref. May already contain other drugs we couldn't check
+"RTN","KBANLDIT",64,0)
+ ; from KBANLATT.
+"RTN","KBANLDIT",65,0)
+ ;
+"RTN","KBANLDIT",66,0)
+ ; Collect RxNorm codes
+"RTN","KBANLDIT",67,0)
+ N I F I=0:0 S I=$O(DRUGS(I)) Q:'I  D
+"RTN","KBANLDIT",68,0)
+ . ; N VAP S VAP=$P(DRUGS(I,"DINID"),"A",2) ; not needed! 
+"RTN","KBANLDIT",69,0)
+ . N VUID S VUID=DRUGS(I,"VUID")
+"RTN","KBANLDIT",70,0)
+ . ;
+"RTN","KBANLDIT",71,0)
+ . N RXN S RXN=$$RXN(VUID)
+"RTN","KBANLDIT",72,0)
+ . I RXN="" DO  QUIT  ; Remove drug from list if no suitable RxNorm
+"RTN","KBANLDIT",73,0)
+ . . S NOCHECKDRUGS(I)=""
+"RTN","KBANLDIT",74,0)
+ . . K DRUGS(I)
+"RTN","KBANLDIT",75,0)
+ . . N S F S="M","P","RXN","SYN10" K DRUGS(S,I) ; Remove indexes
+"RTN","KBANLDIT",76,0)
+ . S DRUGS(I,"RXN")=RXN
+"RTN","KBANLDIT",77,0)
+ . S DRUGS("RXN",RXN,I)="" ; Index
+"RTN","KBANLDIT",78,0)
+ ;   
+"RTN","KBANLDIT",79,0)
+ ; Mash RXNs into CSVs
+"RTN","KBANLDIT",80,0)
+ N RXNS S RXNS=""
+"RTN","KBANLDIT",81,0)
+ N I F I=0:0 S I=$O(DRUGS(I)) Q:'I  S RXNS=RXNS_DRUGS(I,"RXN")_","
+"RTN","KBANLDIT",82,0)
+ S $E(RXNS,$L(RXNS))="" ; rm trailing comma
+"RTN","KBANLDIT",83,0)
+ ;
+"RTN","KBANLDIT",84,0)
+ I $L(RXNS,",")=1 QUIT  ; Only one... no Reactions.
+"RTN","KBANLDIT",85,0)
+ ;
+"RTN","KBANLDIT",86,0)
+ ; Get syn10 codes and drug classes for each of the drugs using DIT Drug Info call
+"RTN","KBANLDIT",87,0)
+ D DITINFO(.DRUGS)
+"RTN","KBANLDIT",88,0)
+ ;
+"RTN","KBANLDIT",89,0)
+ ;DEBUG
+"RTN","KBANLDIT",90,0)
+ ;ZWRITE DRUGS
+"RTN","KBANLDIT",91,0)
+ ;DEBUG
+"RTN","KBANLDIT",92,0)
+ ;
+"RTN","KBANLDIT",93,0)
+ ; Run web service call for drug interaction
+"RTN","KBANLDIT",94,0)
+ N IXNS ; Interactions
+"RTN","KBANLDIT",95,0)
+ D DITDI(.IXNS,RXNS)
+"RTN","KBANLDIT",96,0)
+ ;
+"RTN","KBANLDIT",97,0)
+ ; DEBUG
+"RTN","KBANLDIT",98,0)
+ ; ZWRITE IXNS
+"RTN","KBANLDIT",99,0)
+ ; DEBUG
+"RTN","KBANLDIT",100,0)
+ ;
+"RTN","KBANLDIT",101,0)
+ ; Remove interactions for profile drugs against other profile drugs
+"RTN","KBANLDIT",102,0)
+ ; && remove unimportant interactions && remove exluded interactions per
+"RTN","KBANLDIT",103,0)
+ ; file 50.68,23
+"RTN","KBANLDIT",104,0)
+ D CLEAN(.IXNS,.DRUGS,PROS)
+"RTN","KBANLDIT",105,0)
+ ;
+"RTN","KBANLDIT",106,0)
+ ; Get Monographs for Interaction
+"RTN","KBANLDIT",107,0)
+ N I F I=0:0 S I=$O(IXNS(I)) Q:'I  D
+"RTN","KBANLDIT",108,0)
+ . I (IXNS(I,"InteractionCcode")=11111111) DO  QUIT  ; Duplicate drug code. Doesn't return anything from web service.
+"RTN","KBANLDIT",109,0)
+ .. S IXNS(I,"Management")=""
+"RTN","KBANLDIT",110,0)
+ .. S IXNS(I,"Mechanism")=""
+"RTN","KBANLDIT",111,0)
+ . N MGMT,MECH
+"RTN","KBANLDIT",112,0)
+ . D DITDIM(IXNS(I,"InteractionCcode"),.MGMT,.MECH)
+"RTN","KBANLDIT",113,0)
+ . M IXNS(I,"Management")=MGMT
+"RTN","KBANLDIT",114,0)
+ . M IXNS(I,"Mechanism")=MECH
+"RTN","KBANLDIT",115,0)
+ ;
+"RTN","KBANLDIT",116,0)
+ ; DEBUG
+"RTN","KBANLDIT",117,0)
+ ; ZWRITE IXNS R %
+"RTN","KBANLDIT",118,0)
+ ; DEBUG
+"RTN","KBANLDIT",119,0)
+ ;
+"RTN","KBANLDIT",120,0)
+ ; Construct return array (DUPCLASS)
+"RTN","KBANLDIT",121,0)
+ N I F I=0:0 S I=$O(IXNS(I)) Q:'I  D
+"RTN","KBANLDIT",122,0)
+ . I $$UP^XLFSTR(IXNS(I,"EffLong"))'["DUPLICATE THERAPY" QUIT
+"RTN","KBANLDIT",123,0)
+ . ;
+"RTN","KBANLDIT",124,0)
+ . N SYN1 S SYN1=IXNS(I,"SynCcode1")
+"RTN","KBANLDIT",125,0)
+ . N SYN2 S SYN2=IXNS(I,"SynCcode2")
+"RTN","KBANLDIT",126,0)
+ . N D1 S D1=$O(DRUGS("SYN10",SYN1,""))
+"RTN","KBANLDIT",127,0)
+ . N D2 S D2=$O(DRUGS("SYN10",SYN2,""))
+"RTN","KBANLDIT",128,0)
+ . ;
+"RTN","KBANLDIT",129,0)
+ . I 'D1!('D2) S $EC=",U-SYN-CODES-DONT-MATCH,"
+"RTN","KBANLDIT",130,0)
+ . ;
+"RTN","KBANLDIT",131,0)
+ . I D1>D2 N T S T=D1,D1=D2,D2=T K T ; b/c of the finicky requirements of interface, make sure first and second drug are in the right order.
+"RTN","KBANLDIT",132,0)
+ . ;
+"RTN","KBANLDIT",133,0)
+ . S DUPCLASS(D1,D2)=DRUGS(D1,"DITCL")
+"RTN","KBANLDIT",134,0)
+ . S DUPCLASS(D1,D2,"source")="DIT" ; hardcoded
+"RTN","KBANLDIT",135,0)
+ . S DUPCLASS(D1,D2,"duplicateAllowance")=0 ; hardcoded for now
+"RTN","KBANLDIT",136,0)
+ . S DUPCLASS(D1,D2,"shortText")="Use of "_DRUGS(D1,"NM")_" and "_DRUGS(D2,"NM")_" may represent a duplication in therapy based on their association to the therapeutic drug class "_DRUGS(D1,"DITCL")
+"RTN","KBANLDIT",137,0)
+ ;
+"RTN","KBANLDIT",138,0)
+ ; Construct return array (INTERACTIONS)
+"RTN","KBANLDIT",139,0)
+ N I F I=0:0 S I=$O(IXNS(I)) Q:'I  D
+"RTN","KBANLDIT",140,0)
+ . I $$UP^XLFSTR(IXNS(I,"EffLong"))["DUPLICATE THERAPY" QUIT
+"RTN","KBANLDIT",141,0)
+ . N SYN1 S SYN1=IXNS(I,"SynCcode1")
+"RTN","KBANLDIT",142,0)
+ . N SYN2 S SYN2=IXNS(I,"SynCcode2")
+"RTN","KBANLDIT",143,0)
+ . N D1 S D1=$O(DRUGS("SYN10",SYN1,""))
+"RTN","KBANLDIT",144,0)
+ . N D2 S D2=$O(DRUGS("SYN10",SYN2,""))
+"RTN","KBANLDIT",145,0)
+ . ; 
+"RTN","KBANLDIT",146,0)
+ . I D1>D2 N T S T=D1,D1=D2,D2=T K T ; b/c of the finicky requirements of interface, make sure first and second drug are in the right order.
+"RTN","KBANLDIT",147,0)
+ . ;
+"RTN","KBANLDIT",148,0)
+ . I 'D1!('D2) S $EC=",U-SYN-CODES-DONT-MATCH,"
+"RTN","KBANLDIT",149,0)
+ . ;
+"RTN","KBANLDIT",150,0)
+ . ; DEBUG ONLY - VISTA INTERACTIONS FOR COMPARISON
+"RTN","KBANLDIT",151,0)
+ . ;  D INTERAC2^KBANLATT(.INTERACTIONS,.DRUGS,D1,D2)
+"RTN","KBANLDIT",152,0)
+ . ;  N VISTASEV S VISTASEV=$GET(INTERACTIONS(D1,D2))
+"RTN","KBANLDIT",153,0)
+ . ; END DEBUG
+"RTN","KBANLDIT",154,0)
+ . ;
+"RTN","KBANLDIT",155,0)
+ . S INTERACTIONS(D1,D2)=$$SEVERITY(IXNS(I,"Relevance"),IXNS(I,"Frequency"))
+"RTN","KBANLDIT",156,0)
+ . S INTERACTIONS(D1,D2,"source")="DIT" ; hardcoded
+"RTN","KBANLDIT",157,0)
+ . N VAG1 S VAG1=$P(DRUGS(D1,"DINID"),"A",1) ; VA Generic
+"RTN","KBANLDIT",158,0)
+ . N VAG2 S VAG2=$P(DRUGS(D2,"DINID"),"A",1) ; Ditto
+"RTN","KBANLDIT",159,0)
+ . S INTERACTIONS(D1,D2,"TITLE")=$$GET1^DIQ(50.6,VAG1,.01)_"/"_$$GET1^DIQ(50.6,VAG2,.01)
+"RTN","KBANLDIT",160,0)
+ . N EFFTXT S EFFTXT=IXNS(I,"EffLong")_" / Relevance: "_$$REL2TXT(IXNS(I,"Relevance"))_" / Frequency: "_$$FRQ2TXT(IXNS(I,"Frequency"))
+"RTN","KBANLDIT",161,0)
+ . ; DEBUG ONLY
+"RTN","KBANLDIT",162,0)
+ . ;  S EFFTXT=EFFTXT_" / VISTA Severity: "_$S($L(VISTASEV):VISTASEV,1:"Interaction not found in VISTA")
+"RTN","KBANLDIT",163,0)
+ . ; END DEBUG
+"RTN","KBANLDIT",164,0)
+ . ;
+"RTN","KBANLDIT",165,0)
+ . S INTERACTIONS(D1,D2,"shortText")=EFFTXT
+"RTN","KBANLDIT",166,0)
+ . S INTERACTIONS(D1,D2,"disclaimer")="DIT Drug Information Technologies, Inc., claim that the information content and drug interactions measured by any of its medical application software (product) "
+"RTN","KBANLDIT",167,0)
+ . S INTERACTIONS(D1,D2,"disclaimer")=INTERACTIONS(D1,D2,"disclaimer")_"are intended only to be a source of information for healthcare providers (""Users"") and not to specifically provide medical advice for individual problems."
+"RTN","KBANLDIT",168,0)
+ . S INTERACTIONS(D1,D2,"monographTitle")=INTERACTIONS(D1,D2,"TITLE")
+"RTN","KBANLDIT",169,0)
+ . S INTERACTIONS(D1,D2,"severityLevel")=$$SEVTEXT(IXNS(I,"Relevance"),IXNS(I,"Frequency"))
+"RTN","KBANLDIT",170,0)
+ . M INTERACTIONS(D1,D2,"mechanismOfAction")=IXNS(I,"Mechanism")
+"RTN","KBANLDIT",171,0)
+ . S INTERACTIONS(D1,D2,"clinicalEffects")=EFFTXT
+"RTN","KBANLDIT",172,0)
+ . S INTERACTIONS(D1,D2,"preDisposingFactors")="See Patient Management."
+"RTN","KBANLDIT",173,0)
+ . M INTERACTIONS(D1,D2,"patientManagement")=IXNS(I,"Management")
+"RTN","KBANLDIT",174,0)
+ . S INTERACTIONS(D1,D2,"discussion")="See other sections."
+"RTN","KBANLDIT",175,0)
+ ; 
+"RTN","KBANLDIT",176,0)
+ ; DEBUG
+"RTN","KBANLDIT",177,0)
+ ; ZWRITE INTERACTIONS R %
+"RTN","KBANLDIT",178,0)
+ ; DEBUG
+"RTN","KBANLDIT",179,0)
+ ;
+"RTN","KBANLDIT",180,0)
+ QUIT
+"RTN","KBANLDIT",181,0)
+ ;
+"RTN","KBANLDIT",182,0)
+TEXT(DOCHAND,C) ; Private; Return first line of MXML Text Node
+"RTN","KBANLDIT",183,0)
+ N T
+"RTN","KBANLDIT",184,0)
+ D TEXT^MXMLDOM(DOCHAND,C,$NA(T))
+"RTN","KBANLDIT",185,0)
+ Q:$D(T) @$Q(T)  Q ""
+"RTN","KBANLDIT",186,0)
+ ;
+"RTN","KBANLDIT",187,0)
+ ;
+"RTN","KBANLDIT",188,0)
+ ;
+"RTN","KBANLDIT",189,0)
+RXN(VUID) ; Private $$; Obtain RxNorm by VUID. Only get RXNS that have NDCs.
+"RTN","KBANLDIT",190,0)
+ N RXN S RXN=+$$VUI2RXN^C0CRXNLK(VUID) ; Get first RxNorm code
+"RTN","KBANLDIT",191,0)
+ N NDCS S NDCS=$$RXN2NDC^C0CRXNLK(RXN) ; Convert RXN to NDCs...
+"RTN","KBANLDIT",192,0)
+ ;
+"RTN","KBANLDIT",193,0)
+ ; No NDCs? Try getting NDCs for Brand Names, brand after brand
+"RTN","KBANLDIT",194,0)
+ I NDCS="" D
+"RTN","KBANLDIT",195,0)
+ . N BRRXNS S BRRXNS=$$GEN2BR^C0CRXNLK(RXN)
+"RTN","KBANLDIT",196,0)
+ . I BRRXNS="" S RXN="" QUIT
+"RTN","KBANLDIT",197,0)
+ . N J F J=1:1:$L(BRRXNS,U) S NDCS=$$RXN2NDC^C0CRXNLK($P(BRRXNS,U,J)) Q:$L(NDCS)
+"RTN","KBANLDIT",198,0)
+ . S RXN=$P(BRRXNS,U,J)
+"RTN","KBANLDIT",199,0)
+ ;
+"RTN","KBANLDIT",200,0)
+ QUIT RXN
+"RTN","KBANLDIT",201,0)
+ ;
+"RTN","KBANLDIT",202,0)
+NDC(VUID) ; Private $$; Obtain NDC by VUID from RxNorm
+"RTN","KBANLDIT",203,0)
+ ;
+"RTN","KBANLDIT",204,0)
+ ; NB: Old code to get NDC from VISTA using VA Product.
+"RTN","KBANLDIT",205,0)
+ ; N NDCP S NDCP=$O(^PSNDF(50.68,"ANDC",VAP,""),-1)
+"RTN","KBANLDIT",206,0)
+ ; I 'NDCP S $EC=",U-NO-NDC-FOUND,"
+"RTN","KBANLDIT",207,0)
+ ; N NDC S NDC=$P(^PSNDF(50.67,NDCP,0),U,2)
+"RTN","KBANLDIT",208,0)
+ ; S $E(NDC)="" ; Remove first zero -- so damn sneaky!!!
+"RTN","KBANLDIT",209,0)
+ ; QUIT NDC
+"RTN","KBANLDIT",210,0)
+ ;
+"RTN","KBANLDIT",211,0)
+ N RXN S RXN=$$RXN(VUID) ; Get first RxNorm code
+"RTN","KBANLDIT",212,0)
+ N NDCS S NDCS=$$RXN2NDC^C0CRXNLK(RXN) ; Convert RXN to NDCs...
+"RTN","KBANLDIT",213,0)
+ ;
+"RTN","KBANLDIT",214,0)
+ I NDCS="" S $EC=",U-NDC-NOT-FOUND,"
+"RTN","KBANLDIT",215,0)
+ ;
+"RTN","KBANLDIT",216,0)
+ ; Choose an NDC at random from all the NDCs we get back.
+"RTN","KBANLDIT",217,0)
+ N N S N=$L(NDCS,U)
+"RTN","KBANLDIT",218,0)
+ Q $P(NDCS,U,$R(N)+1)
+"RTN","KBANLDIT",219,0)
+ ;
+"RTN","KBANLDIT",220,0)
+ ;
+"RTN","KBANLDIT",221,0)
+ ;
+"RTN","KBANLDIT",222,0)
+DITDI(RTN,RXNS) ; Private; Call DIT for drug interactions with these RxNorm codes
+"RTN","KBANLDIT",223,0)
+ ; RTN - RPC Style return
+"RTN","KBANLDIT",224,0)
+ ;
+"RTN","KBANLDIT",225,0)
+ ; Error simulation for Unit Testing.
+"RTN","KBANLDIT",226,0)
+ ; ZEXCEPT: KBANSIMERR
+"RTN","KBANLDIT",227,0)
+ I $D(KBANSIMERR) S $EC=",U-SIMULATED-ERROR,"
+"RTN","KBANLDIT",228,0)
+ ;
+"RTN","KBANLDIT",229,0)
+ ; Web Service call.
+"RTN","KBANLDIT",230,0)
+ N RETURN,HEADERS
+"RTN","KBANLDIT",231,0)
+ D GETGTM(.RETURN,.HEADERS,"DIT DI SERVICE","DIT IXNS",RXNS_"?format=xml")
+"RTN","KBANLDIT",232,0)
+ ;
+"RTN","KBANLDIT",233,0)
+ ; UTF BOM; if not removed XML parser will choke!
+"RTN","KBANLDIT",234,0)
+ N %1 S %1=$O(RETURN(""))
+"RTN","KBANLDIT",235,0)
+ I $E(RETURN(%1),1,3)=$C(239,187,191) S $E(RETURN(%1),1,3)=""
+"RTN","KBANLDIT",236,0)
+ ;
+"RTN","KBANLDIT",237,0)
+ ; DEBUG
+"RTN","KBANLDIT",238,0)
+ ; ZWRITE RETURN
+"RTN","KBANLDIT",239,0)
+ ; DEBUG
+"RTN","KBANLDIT",240,0)
+ ;
+"RTN","KBANLDIT",241,0)
+ ; Parse XML
+"RTN","KBANLDIT",242,0)
+ K ^TMP($J,"INPUT XML")
+"RTN","KBANLDIT",243,0)
+ M ^TMP($J,"INPUT XML")=RETURN
+"RTN","KBANLDIT",244,0)
+ N DOCHAND S DOCHAND=$$EN^MXMLDOM($NA(^TMP($J,"INPUT XML")),"W")
+"RTN","KBANLDIT",245,0)
+ K ^TMP($J,"INPUT XML")
+"RTN","KBANLDIT",246,0)
+ ;
+"RTN","KBANLDIT",247,0)
+ ; Get interaction nodes using XPATH.
+"RTN","KBANLDIT",248,0)
+ N RTNPATH
+"RTN","KBANLDIT",249,0)
+ D XPATH^MXMLPATH(.RTNPATH,DOCHAND,"//InteractionList/Interaction")
+"RTN","KBANLDIT",250,0)
+ ;
+"RTN","KBANLDIT",251,0)
+ ; Loop through interaction nodes and pull data from their sub-nodes
+"RTN","KBANLDIT",252,0)
+ ; CNT = Counter; P = Parent interaction; C = Child interaction
+"RTN","KBANLDIT",253,0)
+ N CNT S CNT=0
+"RTN","KBANLDIT",254,0)
+ N P F P=0:0 S P=$O(RTNPATH(P)) Q:'P  D
+"RTN","KBANLDIT",255,0)
+ . S CNT=CNT+1
+"RTN","KBANLDIT",256,0)
+ . N C F C=0:0 S C=$$CHILD^MXMLDOM(DOCHAND,P,C) Q:'C  D
+"RTN","KBANLDIT",257,0)
+ .. S RTN(CNT,$$NAME^MXMLDOM(DOCHAND,C))=$$TEXT(DOCHAND,C)
+"RTN","KBANLDIT",258,0)
+ ;
+"RTN","KBANLDIT",259,0)
+ ; Clean handle
+"RTN","KBANLDIT",260,0)
+ D DELETE^MXMLDOM(DOCHAND)
+"RTN","KBANLDIT",261,0)
+ QUIT
+"RTN","KBANLDIT",262,0)
+ ;
+"RTN","KBANLDIT",263,0)
+DITDIM(ID,MANAGEMENT,MECHANISM) ; Private; DIT Drug interaction monograph
+"RTN","KBANLDIT",264,0)
+ ; ID - Interaction ID
+"RTN","KBANLDIT",265,0)
+ ; Management - Output by ref
+"RTN","KBANLDIT",266,0)
+ ; Mechanism - Output by ref
+"RTN","KBANLDIT",267,0)
+ ; Web Service call.
+"RTN","KBANLDIT",268,0)
+ N RTN,HEADERS
+"RTN","KBANLDIT",269,0)
+ D GETGTM(.RTN,.HEADERS,"DIT DI SERVICE","DIT IXN MONOGRAPH",ID_"?format=xml")
+"RTN","KBANLDIT",270,0)
+ ;
+"RTN","KBANLDIT",271,0)
+ ; UTF BOM; if not removed XML parser will choke!
+"RTN","KBANLDIT",272,0)
+ N %1 S %1=$O(RTN(""))
+"RTN","KBANLDIT",273,0)
+ I $E(RTN(%1),1,3)=$C(239,187,191) S $E(RTN(%1),1,3)=""
+"RTN","KBANLDIT",274,0)
+ ;
+"RTN","KBANLDIT",275,0)
+ ; DEBUG
+"RTN","KBANLDIT",276,0)
+ ; ZWRITE RTN
+"RTN","KBANLDIT",277,0)
+ ; DEBUG
+"RTN","KBANLDIT",278,0)
+ ; Parse XML
+"RTN","KBANLDIT",279,0)
+ K ^TMP($J,"INPUT XML")
+"RTN","KBANLDIT",280,0)
+ M ^TMP($J,"INPUT XML")=RTN
+"RTN","KBANLDIT",281,0)
+ N DOCHAND S DOCHAND=$$EN^MXMLDOM($NA(^TMP($J,"INPUT XML")),"W")
+"RTN","KBANLDIT",282,0)
+ K ^TMP($J,"INPUT XML")
+"RTN","KBANLDIT",283,0)
+ ;
+"RTN","KBANLDIT",284,0)
+ ; Pull Management node
+"RTN","KBANLDIT",285,0)
+ N MGMTNODE S MGMTNODE=$$XPATH^MXMLPATH(,DOCHAND,"//Management/d4p1:string")
+"RTN","KBANLDIT",286,0)
+ I 'MGMTNODE S MANAGEMENT=""
+"RTN","KBANLDIT",287,0)
+ E  D TEXT^MXMLDOM(DOCHAND,MGMTNODE,$NA(MANAGEMENT))
+"RTN","KBANLDIT",288,0)
+ . ; N I F I=0:0 S I=$O(MANAGEMENT(I)) Q:'I  S MANAGEMENT=$G(MANAGEMENT)_MANAGEMENT(I) K MANAGEMENT(I)
+"RTN","KBANLDIT",289,0)
+ ;
+"RTN","KBANLDIT",290,0)
+ ; Pull Mechanism node
+"RTN","KBANLDIT",291,0)
+ N MECHNODE S MECHNODE=$$XPATH^MXMLPATH(,DOCHAND,"//Mechanism/d4p1:string")
+"RTN","KBANLDIT",292,0)
+ I 'MECHNODE S MECHANISM=""
+"RTN","KBANLDIT",293,0)
+ E  D TEXT^MXMLDOM(DOCHAND,MECHNODE,$NA(MECHANISM))
+"RTN","KBANLDIT",294,0)
+ . ; N I F I=0:0 S I=$O(MECHANISM(I)) Q:'I  S MECHANISM=$G(MECHANISM)_MECHANISM(I) K MECHANISM(I)
+"RTN","KBANLDIT",295,0)
+ QUIT
+"RTN","KBANLDIT",296,0)
+ ;
+"RTN","KBANLDIT",297,0)
+DITINFO(DRUGS) ; Private; Call DIT for info with these RxNorms's
+"RTN","KBANLDIT",298,0)
+ ;    ---> to populate the SYN10 codes.
+"RTN","KBANLDIT",299,0)
+ ;    ---> (also a new addition) to populate the drug classes.
+"RTN","KBANLDIT",300,0)
+ ; If ixns call returns rxn's, we don't need this call anymore.
+"RTN","KBANLDIT",301,0)
+ ; DRUGS - Input and Output!
+"RTN","KBANLDIT",302,0)
+ ;
+"RTN","KBANLDIT",303,0)
+ ; For each drug...
+"RTN","KBANLDIT",304,0)
+ N I F I=0:0 S I=$O(DRUGS(I)) Q:'I  D
+"RTN","KBANLDIT",305,0)
+ . N RXN S RXN=DRUGS(I,"RXN")
+"RTN","KBANLDIT",306,0)
+ . N RTN,HEADERS
+"RTN","KBANLDIT",307,0)
+ . D GETGTM(.RTN,.HEADERS,"DIT DI SERVICE","DIT INFO",RXN_"?format=xml")
+"RTN","KBANLDIT",308,0)
+ . ;
+"RTN","KBANLDIT",309,0)
+ . ; UTF BOM; if not removed XML parser will choke!
+"RTN","KBANLDIT",310,0)
+ . N %1 S %1=$O(RTN(""))
+"RTN","KBANLDIT",311,0)
+ . I $E(RTN(%1),1,3)=$C(239,187,191) S $E(RTN(%1),1,3)=""
+"RTN","KBANLDIT",312,0)
+ . ;
+"RTN","KBANLDIT",313,0)
+ . ; Parse XML
+"RTN","KBANLDIT",314,0)
+ . K ^TMP($J,"INPUT XML")
+"RTN","KBANLDIT",315,0)
+ . M ^TMP($J,"INPUT XML")=RTN
+"RTN","KBANLDIT",316,0)
+ . N DOCHAND S DOCHAND=$$EN^MXMLDOM($NA(^TMP($J,"INPUT XML")),"W")
+"RTN","KBANLDIT",317,0)
+ . K ^TMP($J,"INPUT XML")
+"RTN","KBANLDIT",318,0)
+ . ;
+"RTN","KBANLDIT",319,0)
+ . ; Extract Syn10 codes; N = Node
+"RTN","KBANLDIT",320,0)
+ . N N S N=$$XPATH^MXMLPATH(,DOCHAND,"/DrugsResponse/DrugList/Drug/SynCode10")
+"RTN","KBANLDIT",321,0)
+ . N SYN10 S SYN10=$$TEXT(DOCHAND,N)
+"RTN","KBANLDIT",322,0)
+ . S DRUGS(I,"SYN10")=SYN10
+"RTN","KBANLDIT",323,0)
+ . S DRUGS("SYN10",SYN10,I)="" ; Index for looking up the drugs in the array.
+"RTN","KBANLDIT",324,0)
+ . ;
+"RTN","KBANLDIT",325,0)
+ . ; Extract Therapy class; N = Node
+"RTN","KBANLDIT",326,0)
+ . N N S N=$$XPATH^MXMLPATH(,DOCHAND,"/DrugsResponse/DrugList/Drug/TherapyClass")
+"RTN","KBANLDIT",327,0)
+ . N T D TEXT^MXMLDOM(DOCHAND,N,$NA(T))
+"RTN","KBANLDIT",328,0)
+ . N J,DITCL F J=0:0 S J=$O(T(J)) Q:'J  S DITCL=$G(DITCL)_T(J) ; DITCL = DIT Class
+"RTN","KBANLDIT",329,0)
+ . S DRUGS(I,"DITCL")=DITCL
+"RTN","KBANLDIT",330,0)
+ . ;
+"RTN","KBANLDIT",331,0)
+ . D DELETE^MXMLDOM(DOCHAND)
+"RTN","KBANLDIT",332,0)
+ QUIT
+"RTN","KBANLDIT",333,0)
+ ;
+"RTN","KBANLDIT",334,0)
+SEVERITY(REL,FREQ) ; $$ - Public ; DIT Criticality conversion to VISTA
+"RTN","KBANLDIT",335,0)
+ ;
+"RTN","KBANLDIT",336,0)
+ ; NB: CAREFUL HERE. THIS CONTROLS WHAT THE VISTA USER WILL SEE.
+"RTN","KBANLDIT",337,0)
+ ; ANYTHING NOT C OR S WILL NOT SHOW UP FOR THE USER.
+"RTN","KBANLDIT",338,0)
+ ; MOST CPRS USERS WILL NOT SEE S.
+"RTN","KBANLDIT",339,0)
+ ; PHARMACISTAS ALWAYS SEE S.
+"RTN","KBANLDIT",340,0)
+ ; In general: RED = Critical; YELLOW = Significant
+"RTN","KBANLDIT",341,0)
+ ; RED/YELLOW classification comes from DIT Traffic Lights Customer Table.
+"RTN","KBANLDIT",342,0)
+ ;
+"RTN","KBANLDIT",343,0)
+ ; Input: By Value: Relvance and Frequency
+"RTN","KBANLDIT",344,0)
+ ;
+"RTN","KBANLDIT",345,0)
+ ; RETURN:
+"RTN","KBANLDIT",346,0)
+ ; C = Critical
+"RTN","KBANLDIT",347,0)
+ ; S = Significant
+"RTN","KBANLDIT",348,0)
+ ; U = Unsignificant
+"RTN","KBANLDIT",349,0)
+ ;
+"RTN","KBANLDIT",350,0)
+ I REL=5 Q "C" ; Red
+"RTN","KBANLDIT",351,0)
+ I REL=4&(678[FREQ) Q "C" ; Red
+"RTN","KBANLDIT",352,0)
+ I REL=4&(54321[FREQ) Q "S" ; Yellow
+"RTN","KBANLDIT",353,0)
+ Q "U"
+"RTN","KBANLDIT",354,0)
+ ;
+"RTN","KBANLDIT",355,0)
+REL2TXT(REL) ; $$ - Public ; DIT Relevance Number to Relevance Text
+"RTN","KBANLDIT",356,0)
+ I REL=1 Q "No Interaction"
+"RTN","KBANLDIT",357,0)
+ I REL=2 Q "No Interaction"
+"RTN","KBANLDIT",358,0)
+ I REL=3 Q "Minor"
+"RTN","KBANLDIT",359,0)
+ I REL=4 Q "Important"
+"RTN","KBANLDIT",360,0)
+ I REL=5 Q "Dangerous"
+"RTN","KBANLDIT",361,0)
+ S $EC=",U-NO-RELEVANCE-TRANSLATION-FOUND,"
+"RTN","KBANLDIT",362,0)
+ Q ""
+"RTN","KBANLDIT",363,0)
+ ;
+"RTN","KBANLDIT",364,0)
+FRQ2TXT(FRQ) ; $$ - Public ; DIT Frequency Number to Frequency Text
+"RTN","KBANLDIT",365,0)
+ I 1234[FRQ Q "Possible"
+"RTN","KBANLDIT",366,0)
+ I FRQ=5 Q "Frequent"
+"RTN","KBANLDIT",367,0)
+ I FRQ=6 Q "Probable"
+"RTN","KBANLDIT",368,0)
+ I FRQ=7 Q "Very Frequent"
+"RTN","KBANLDIT",369,0)
+ I FRQ=8 Q "Sure"
+"RTN","KBANLDIT",370,0)
+ S $EC=",U-NO-FREQUENCY-TRANSLATION-FOUND,"
+"RTN","KBANLDIT",371,0)
+ Q ""
+"RTN","KBANLDIT",372,0)
+ ;
+"RTN","KBANLDIT",373,0)
+SEVTEXT(REL,FREQ) ; $$ - Public ; DIT drug interaction severity text
+"RTN","KBANLDIT",374,0)
+ ; Text taken from Traffic Lights Customer Table (dangerous in 5 replaced w/ CRITICAL).
+"RTN","KBANLDIT",375,0)
+ I REL=5 Q "There is a CRITICAL drug interaction which should be avoided."
+"RTN","KBANLDIT",376,0)
+ I REL=4,876[FREQ Q "There is an important drug interaction which should be avoided."
+"RTN","KBANLDIT",377,0)
+ I REL=4,FREQ=5 Q "There may be an important drug interaction which should be avoided."
+"RTN","KBANLDIT",378,0)
+ I REL=4,1234[FREQ Q "There may be a drug interaction, which are in most cases not relevant or normally of minor importance."
+"RTN","KBANLDIT",379,0)
+ I REL=3 Q "There may be a drug interaction, which is normally of minor importance."
+"RTN","KBANLDIT",380,0)
+ Q "There is no drug interaction"
+"RTN","KBANLDIT",381,0)
+ ;
+"RTN","KBANLDIT",382,0)
+CLEAN(IXNS,DRUGS,PROS) ; Private Procedure; Clean Interactions
+"RTN","KBANLDIT",383,0)
+ ; Pass IXNS and DRUGS by reference.
+"RTN","KBANLDIT",384,0)
+ ; IXNS modified in place and is the return as well.
+"RTN","KBANLDIT",385,0)
+ ; 1. Remove unimportant interactions
+"RTN","KBANLDIT",386,0)
+ ; 2. Remove interactions between Med Profile drugs
+"RTN","KBANLDIT",387,0)
+ ; 3. Remove interactions between No-interaction drugs (50.68,23)
+"RTN","KBANLDIT",388,0)
+ ;
+"RTN","KBANLDIT",389,0)
+ ; PROS = 1 or 0. Is this a prospective only check?
+"RTN","KBANLDIT",390,0)
+ ;
+"RTN","KBANLDIT",391,0)
+ ; 1. Remove unimportant interactions
+"RTN","KBANLDIT",392,0)
+ N I F I=0:0 S I=$O(IXNS(I)) Q:'I  D
+"RTN","KBANLDIT",393,0)
+ . ; Keep this!! No freq/severity are supplied with dups; otherwise we will get "U"
+"RTN","KBANLDIT",394,0)
+ . I $$UP^XLFSTR(IXNS(I,"EffLong"))["DUPLICATE THERAPY" QUIT
+"RTN","KBANLDIT",395,0)
+ . I $$SEVERITY(IXNS(I,"Relevance"),IXNS(I,"Frequency"))="U" KILL IXNS(I)
+"RTN","KBANLDIT",396,0)
+ ;
+"RTN","KBANLDIT",397,0)
+ ; 3. Remove interactions between No-interaction drugs (50.68,23)
+"RTN","KBANLDIT",398,0)
+ N I F I=0:0 S I=$O(IXNS(I)) Q:'I  D
+"RTN","KBANLDIT",399,0)
+ . N SYN1 S SYN1=IXNS(I,"SynCcode1")
+"RTN","KBANLDIT",400,0)
+ . N SYN2 S SYN2=IXNS(I,"SynCcode2")
+"RTN","KBANLDIT",401,0)
+ . N D1 S D1=$O(DRUGS("SYN10",SYN1,""))
+"RTN","KBANLDIT",402,0)
+ . N D2 S D2=$O(DRUGS("SYN10",SYN2,""))
+"RTN","KBANLDIT",403,0)
+ . N D1X,D2X ; Exclude interaction?
+"RTN","KBANLDIT",404,0)
+ . S D1X=DRUGS(D1,"NOIXN")
+"RTN","KBANLDIT",405,0)
+ . S D2X=DRUGS(D2,"NOIXN")
+"RTN","KBANLDIT",406,0)
+ . I (D1X!D2X)&($$UP^XLFSTR(IXNS(I,"EffLong"))'["DUPLICATE THERAPY") K IXNS(I)
+"RTN","KBANLDIT",407,0)
+ ;
+"RTN","KBANLDIT",408,0)
+ ; If the check isn't prospective only (i.e. entire profile), 
+"RTN","KBANLDIT",409,0)
+ ; then display all interactions. In our case, don't remove profile drug
+"RTN","KBANLDIT",410,0)
+ ; interactions
+"RTN","KBANLDIT",411,0)
+ I 'PROS QUIT
+"RTN","KBANLDIT",412,0)
+ ;
+"RTN","KBANLDIT",413,0)
+ ; 2. Remove profile drug interactions/duplications with each other
+"RTN","KBANLDIT",414,0)
+ N I F I=0:0 S I=$O(IXNS(I)) Q:'I  D
+"RTN","KBANLDIT",415,0)
+ . N SYN1 S SYN1=IXNS(I,"SynCcode1")
+"RTN","KBANLDIT",416,0)
+ . N SYN2 S SYN2=IXNS(I,"SynCcode2")
+"RTN","KBANLDIT",417,0)
+ . N D1 S D1=$O(DRUGS("SYN10",SYN1,""))
+"RTN","KBANLDIT",418,0)
+ . N D2 S D2=$O(DRUGS("SYN10",SYN2,""))
+"RTN","KBANLDIT",419,0)
+ . ;
+"RTN","KBANLDIT",420,0)
+ . N D1M,D2M ; Med Profile Drug (Boolean)
+"RTN","KBANLDIT",421,0)
+ . S D1M=''$D(DRUGS("M",D1))
+"RTN","KBANLDIT",422,0)
+ . S D2M=''$D(DRUGS("M",D2))
+"RTN","KBANLDIT",423,0)
+ . I D1M&D2M K IXNS(I)
+"RTN","KBANLDIT",424,0)
+ ;
+"RTN","KBANLDIT",425,0)
+ QUIT
+"RTN","KBANLDIT",426,0)
+ ;
+"RTN","KBANLDIT",427,0)
+GETGTM(RETURN,HEADERS,SERVER,SERVICE,PATH) ; PEP -- GET on GT.M using many fileses
+"RTN","KBANLDIT",428,0)
+ ; RETURN  - Output
+"RTN","KBANLDIT",429,0)
+ ; HEADERS - Output
+"RTN","KBANLDIT",430,0)
+ ; SERVER  - NAME in WEB SERVER file
+"RTN","KBANLDIT",431,0)
+ ; SERVICE - NAME in WEB SERVICE file
+"RTN","KBANLDIT",432,0)
+ ; PATH    - PATH to append to the
+"RTN","KBANLDIT",433,0)
+ ;
+"RTN","KBANLDIT",434,0)
+ ;
+"RTN","KBANLDIT",435,0)
+ ; Get Server IEN
+"RTN","KBANLDIT",436,0)
+ N SERVERIEN S SERVERIEN=+$ORDER(^XOB(18.12,"B",SERVER,0)) ; per getWebServerId
+"RTN","KBANLDIT",437,0)
+ I 'SERVERIEN S %XOBWERR=186005_U_SERVER,$EC=",UXOBW," ;##class(xobw.error.DialogError).forceError(186005_"^"_webServerName)
+"RTN","KBANLDIT",438,0)
+ ;
+"RTN","KBANLDIT",439,0)
+ ; Get Service IEN
+"RTN","KBANLDIT",440,0)
+ N SERVICEIEN S SERVICEIEN=+$order(^XOB(18.02,"B",SERVICE,0)) ; per getWebServiceId(webServiceName)
+"RTN","KBANLDIT",441,0)
+ I 'SERVICEIEN S %XOBWERR=186006_U_SERVICE,$EC=",UXOBW," ; #class(xobw.error.DialogError).forceError(186006_"^"_webServiceName)
+"RTN","KBANLDIT",442,0)
+ ;
+"RTN","KBANLDIT",443,0)
+ ; Service Type must be REST
+"RTN","KBANLDIT",444,0)
+ I $P(^XOB(18.02,SERVICEIEN,0),U,2)'=2 S %XOBWERR=186007,$EC=",UXOBW," ; forceError(186007)
+"RTN","KBANLDIT",445,0)
+ ;
+"RTN","KBANLDIT",446,0)
+ ; Is Web Server disabled?
+"RTN","KBANLDIT",447,0)
+ N Z S Z=^XOB(18.12,SERVERIEN,0) ; Zero node
+"RTN","KBANLDIT",448,0)
+ I '$P(Z,U,6) S %XOBWERR=186002_U_$P(Z,U),$EC=",UXOBW,"  ; ##class(xobw.error.DialogError).forceError(186002_"^"_webServer.name)
+"RTN","KBANLDIT",449,0)
+ ;
+"RTN","KBANLDIT",450,0)
+ ; Is web service authorized? per getAuthorizedWebServiceId
+"RTN","KBANLDIT",451,0)
+ N SUBSERVICEIEN S SUBSERVICEIEN=$O(^XOB(18.12,SERVERIEN,100,"B",SERVICEIEN,""))
+"RTN","KBANLDIT",452,0)
+ I 'SUBSERVICEIEN S %XOBWERR=186003_U_$P(^XOB(18.02,SERVICEIEN,0),U)_U_$P(Z,U),$EC=",UXOBW," ;forceError(186003_"^"_..webServiceMetadata.name_"^"_webServer.name)
+"RTN","KBANLDIT",453,0)
+ ;
+"RTN","KBANLDIT",454,0)
+ ; Is the service disabled at the server level?
+"RTN","KBANLDIT",455,0)
+ N SN S SN=^XOB(18.12,SERVERIEN,100,SUBSERVICEIEN,0) ; SN = service node
+"RTN","KBANLDIT",456,0)
+ I '$P(SN,U,6) S %XOBWERR=186004_U_$P(^XOB(18.02,SERVICEIEN,0),U)_U_$P(Z,U),$EC=",UXOBW" ; forceError(186004_"^"_..webServiceMetadata.name_"^"_webServer.name)
+"RTN","KBANLDIT",457,0)
+ ;
+"RTN","KBANLDIT",458,0)
+ ; Get Username and password if present
+"RTN","KBANLDIT",459,0)
+ ; TODO: Not implemented by Sam. Easy to implement.
+"RTN","KBANLDIT",460,0)
+ ; Note: Code below different than Cache logic. Will only get un/pw if
+"RTN","KBANLDIT",461,0)
+ ; it's Yes. Cache code gets it if Yes or empty.
+"RTN","KBANLDIT",462,0)
+ ; I $G(^XOB(18.12,SERVERIEN,1)) D
+"RTN","KBANLDIT",463,0)
+ ; . N UN S UN=^XOB(18.12,SERVERIEN,200)
+"RTN","KBANLDIT",464,0)
+ ; . N PW S PW=$$DECRYP^XOBVPWD($G(^XOB(18.12,SERVERIEN,300)))
+"RTN","KBANLDIT",465,0)
+ ; ;
+"RTN","KBANLDIT",466,0)
+ ; Then
+"RTN","KBANLDIT",467,0)
+ ; curl un:pw@url
+"RTN","KBANLDIT",468,0)
+ ;
+"RTN","KBANLDIT",469,0)
+ N FQDN S FQDN=$P(Z,U,4) ; IP or Domain name
+"RTN","KBANLDIT",470,0)
+ N PORT S PORT=$P(Z,U,3) ; Http Port
+"RTN","KBANLDIT",471,0)
+ N TO S TO=$P(Z,U,7) ; HTTP Timeout
+"RTN","KBANLDIT",472,0)
+ N ISTLS S ISTLS=$P($G(^XOB(18.12,SERVERIEN,3)),U) ; Is SSL/TLS on?
+"RTN","KBANLDIT",473,0)
+ I ISTLS S PORT=$P($G(^XOB(18.12,SERVERIEN,3)),U,3) ; replace port
+"RTN","KBANLDIT",474,0)
+ N CONTEXT S CONTEXT=$G(^XOB(18.02,SERVICEIEN,200)) ; really, just the path on the server.
+"RTN","KBANLDIT",475,0)
+ ;
+"RTN","KBANLDIT",476,0)
+ ; Create URL
+"RTN","KBANLDIT",477,0)
+ N URL S URL="http"_$S(ISTLS:"s",1:"")_"://"_FQDN_":"_PORT_CONTEXT_PATH
+"RTN","KBANLDIT",478,0)
+ ;
+"RTN","KBANLDIT",479,0)
+ ; Action
+"RTN","KBANLDIT",480,0)
+ D %^%WC(.RETURN,"GET",URL,,,TO,.HEADERS)
+"RTN","KBANLDIT",481,0)
+ ;
+"RTN","KBANLDIT",482,0)
+ ; Check status code to be 200.
+"RTN","KBANLDIT",483,0)
+ I HEADERS("STATUS")'=200 S %XOBWERR=HEADERS("STATUS"),$EC=",UXOBWHTTP,"
+"RTN","KBANLDIT",484,0)
+ QUIT
+"RTN","KBANLUT1")
+0^8^B159065169
+"RTN","KBANLUT1",1,0)
+KBANLUT1 ; VEN/SMH - Unit tests for Latte ;2013-11-18  2:42 PM
+"RTN","KBANLUT1",2,0)
+ ;;0.1;SAM'S INDUSTRIAL CONGLOMERATES;;;Build 9
+"RTN","KBANLUT1",3,0)
+ ;
+"RTN","KBANLUT1",4,0)
+ ; (c) Sam Habiel 2013
+"RTN","KBANLUT1",5,0)
+ ;
+"RTN","KBANLUT1",6,0)
+ ; Usage is granted to the user under accompanying license.
+"RTN","KBANLUT1",7,0)
+ ; If you can't find the license, you are not allowed to use the software.
+"RTN","KBANLUT1",8,0)
+ ;
+"RTN","KBANLUT1",9,0)
+TEST ; M-Unit Entry point for Unit Testing the MOCHA Interface
+"RTN","KBANLUT1",10,0)
+ W $C(9),$$RED,"Latte checks inside of VISTA",!!,$$RESET
+"RTN","KBANLUT1",11,0)
+ N KBANFORCEINT S KBANFORCEINT=1 ; Force checked to be inside of VISTA.
+"RTN","KBANLUT1",12,0)
+ S IO=$PRINCIPAL
+"RTN","KBANLUT1",13,0)
+ N DIQUIET S DIQUIET=1
+"RTN","KBANLUT1",14,0)
+ D DT^DICRW
+"RTN","KBANLUT1",15,0)
+ D EN^XTMUNIT($T(+0),1)
+"RTN","KBANLUT1",16,0)
+ ;
+"RTN","KBANLUT1",17,0)
+ W !!
+"RTN","KBANLUT1",18,0)
+ W $C(9),$$RED,"Latte checks against DIT",!!,$$RESET
+"RTN","KBANLUT1",19,0)
+ K KBANFORCEINT
+"RTN","KBANLUT1",20,0)
+ S IO=$PRINCIPAL
+"RTN","KBANLUT1",21,0)
+ N DIQUIET S DIQUIET=1
+"RTN","KBANLUT1",22,0)
+ D DT^DICRW
+"RTN","KBANLUT1",23,0)
+ D EN^XTMUNIT($T(+0),1)
+"RTN","KBANLUT1",24,0)
+ QUIT
+"RTN","KBANLUT1",25,0)
+ ;
+"RTN","KBANLUT1",26,0)
+CONCHK ; @TEST - Connection Check
+"RTN","KBANLUT1",27,0)
+ N STATUS S STATUS=$$PINGTST^PSSHRIT()
+"RTN","KBANLUT1",28,0)
+ D CHKEQ^XTMUNIT(STATUS,0,"Connection check failed.")
+"RTN","KBANLUT1",29,0)
+ QUIT
+"RTN","KBANLUT1",30,0)
+ ;
+"RTN","KBANLUT1",31,0)
+INTERTST ; @TEST - Drug-Drug Interaction Check
+"RTN","KBANLUT1",32,0)
+ ; I 'KBANFORCEINT,'$$FIND1^DIC(18.12,,"XQ","DIT DI SERVICE","B") QUIT
+"RTN","KBANLUT1",33,0)
+ N PSORDER,PSDRUG1,PSDRUG2,BASE,INFO,PSSPEC
+"RTN","KBANLUT1",34,0)
+ S BASE=$T(+0)
+"RTN","KBANLUT1",35,0)
+ K ^TMP($J,BASE)
+"RTN","KBANLUT1",36,0)
+ S ^TMP($J,BASE,"IN","DRUGDRUG")=""
+"RTN","KBANLUT1",37,0)
+ S PSORDER="I;1464P;PROSPECTIVE;2",PSDRUG1="WARFARIN 10MG TAB",PSDRUG2="ASPIRIN 325MG TAB"
+"RTN","KBANLUT1",38,0)
+ SET ^TMP($JOB,BASE,"IN","PROSPECTIVE","I;1464P;PROSPECTIVE;2")="6559^4005201^^WARFARIN 10MG TAB"
+"RTN","KBANLUT1",39,0)
+ SET ^TMP($JOB,BASE,"IN","PROSPECTIVE","I;91464P;PROSPECTIVE;2")="4376^4005735^^ASPIRIN 325MG TAB"
+"RTN","KBANLUT1",40,0)
+ D IN^PSSHRQ2(BASE)
+"RTN","KBANLUT1",41,0)
+ ;
+"RTN","KBANLUT1",42,0)
+ S INFO=$G(^TMP($J,BASE,"OUT","DRUGDRUG","S",PSDRUG1,PSORDER,1,"PMON",9,0)) ;
+"RTN","KBANLUT1",43,0)
+ I INFO="" S INFO=$G(^TMP($J,BASE,"OUT","DRUGDRUG","C",PSDRUG1,PSORDER,1,"PMON",9,0)) ; ven/smh for DIT -- different severity.
+"RTN","KBANLUT1",44,0)
+ D CHKTF^XTMUNIT($L(INFO),"Drug-drug interaction check failed")
+"RTN","KBANLUT1",45,0)
+ QUIT
+"RTN","KBANLUT1",46,0)
+ ;
+"RTN","KBANLUT1",47,0)
+DUPTHRPY ; @TEST - Duplicate therapy check
+"RTN","KBANLUT1",48,0)
+ N PSORDER,PSDRUG1,PSDRUG2,BASE,CLAS1,CLAS2,LINE1,LINE2
+"RTN","KBANLUT1",49,0)
+ N PSSLEFT S PSSLEFT=4     ; left margin for results
+"RTN","KBANLUT1",50,0)
+ S BASE=$T(+0)
+"RTN","KBANLUT1",51,0)
+ K ^TMP($J,BASE)
+"RTN","KBANLUT1",52,0)
+ S ^TMP($J,BASE,"IN","THERAPY")=""
+"RTN","KBANLUT1",53,0)
+ S PSORDER="O;403931;PROFILE;3"
+"RTN","KBANLUT1",54,0)
+ S PSDRUG1="CIMETIDINE 300MG TAB"
+"RTN","KBANLUT1",55,0)
+ S PSDRUG2="RANITIDINE 150MG TAB"
+"RTN","KBANLUT1",56,0)
+ S ^TMP($J,BASE,"IN","PROFILE","O;403931;PROFILE;3")="11666^4006826^^CIMETIDINE 300MG TAB^O"
+"RTN","KBANLUT1",57,0)
+ S ^TMP($J,BASE,"IN","PROSPECTIVE","Z;1;PROSPECTIVE;1")="11673^4007038^^RANITIDINE 150MG TAB"
+"RTN","KBANLUT1",58,0)
+ D IN^PSSHRQ2(BASE)
+"RTN","KBANLUT1",59,0)
+ ; 
+"RTN","KBANLUT1",60,0)
+ S CLAS1=$G(^TMP($J,BASE,"OUT","THERAPY",1,1,"CLASS"))
+"RTN","KBANLUT1",61,0)
+ S CLAS2=$G(^TMP($J,BASE,"OUT","THERAPY",1,2,"CLASS"))
+"RTN","KBANLUT1",62,0)
+ D CHKTF^XTMUNIT($L(CLAS1)!$L(CLAS2),"Duplicate therapy check failed")
+"RTN","KBANLUT1",63,0)
+ QUIT
+"RTN","KBANLUT1",64,0)
+ ;
+"RTN","KBANLUT1",65,0)
+CUSTOM ; @TEST - Custom drug-drug interaction check
+"RTN","KBANLUT1",66,0)
+ N INFO,INTRO,ORDER,DRUG1,DRUG2,BASE,STATUS,PSSPEC
+"RTN","KBANLUT1",67,0)
+ S INFO=""
+"RTN","KBANLUT1",68,0)
+ S BASE=$T(+0)
+"RTN","KBANLUT1",69,0)
+ S ORDER="Z;1;PROSPECTIVE;1"
+"RTN","KBANLUT1",70,0)
+ S DRUG1="CLARITHROMYCIN 250MG TAB",DRUG2="DIAZEPAM 5MG TAB"
+"RTN","KBANLUT1",71,0)
+ K ^TMP($J,BASE)
+"RTN","KBANLUT1",72,0)
+ S ^TMP($J,BASE,"IN","DRUGDRUG")=""
+"RTN","KBANLUT1",73,0)
+ S ^TMP($J,BASE,"IN","PROSPECTIVE","Z;1;PROSPECTIVE;1")="16373^4010075F^^CLARITHROMYCIN 250MG TAB"
+"RTN","KBANLUT1",74,0)
+ S ^TMP($J,BASE,"IN","PROFILE","I;10U;PROFILE;10")="3768^4002216^^DIAZEPAM 5MG TAB" ; VEN/SMH - Changed b/c VUID wrong in FOIA
+"RTN","KBANLUT1",75,0)
+ D IN^PSSHRQ2(BASE)
+"RTN","KBANLUT1",76,0)
+ I $D(^TMP($J,BASE,"OUT","DRUGDRUG","S",DRUG1,ORDER,1)) S INFO=$G(^TMP($J,BASE,"OUT","DRUGDRUG","S",DRUG1,ORDER,1,"PMON",9,0))
+"RTN","KBANLUT1",77,0)
+ E  I $D(^TMP($J,BASE,"OUT","DRUGDRUG","S",DRUG2,"I;10U;PROFILE;10",1)) S INFO=$G(^TMP($J,BASE,"OUT","DRUGDRUG","S",DRUG2,"I;10U;PROFILE;10",1,"PMON",9,0))
+"RTN","KBANLUT1",78,0)
+ D CHKTF^XTMUNIT($L(INFO),"Custom drug-drug interaction check")
+"RTN","KBANLUT1",79,0)
+ QUIT
+"RTN","KBANLUT1",80,0)
+ ;
+"RTN","KBANLUT1",81,0)
+MASSTEST ; @TEST - Test interactions of 30 drugs together
+"RTN","KBANLUT1",82,0)
+ N START S START=$P($H,",",2)
+"RTN","KBANLUT1",83,0)
+ N PSDRUG
+"RTN","KBANLUT1",84,0)
+ N BASE S BASE=$T(+0)
+"RTN","KBANLUT1",85,0)
+ K ^TMP($J,BASE)
+"RTN","KBANLUT1",86,0)
+ S ^TMP($J,BASE,"IN","THERAPY")=""
+"RTN","KBANLUT1",87,0)
+ S ^TMP($J,BASE,"IN","DRUGDRUG")=""
+"RTN","KBANLUT1",88,0)
+ S PSDRUG(1)="CIMETIDINE 300MG TAB"
+"RTN","KBANLUT1",89,0)
+ S PSDRUG(2)="SIMVASTATIN 20MG TAB"
+"RTN","KBANLUT1",90,0)
+ S PSDRUG(3)="RANITIDINE HCL 150MG TAB"
+"RTN","KBANLUT1",91,0)
+ S PSDRUG(4)="WARFARIN NA 5MG TAB"
+"RTN","KBANLUT1",92,0)
+ S PSDRUG(5)="AMLODIPINE BESYLATE 10MG/ATORVASTATIN CA 40MG TAB"
+"RTN","KBANLUT1",93,0)
+ S PSDRUG(6)="KETOCONAZOLE 2% CREAM,TOP"
+"RTN","KBANLUT1",94,0)
+ S PSDRUG(7)="TRIAMCINOLONE ACETONIDE 0.1% CREAM,TOP"
+"RTN","KBANLUT1",95,0)
+ S PSDRUG(8)="DIGOXIN 0.125MG TAB"
+"RTN","KBANLUT1",96,0)
+ S PSDRUG(9)="ALBUTEROL SO4 0.083% INHL,3ML"
+"RTN","KBANLUT1",97,0)
+ S PSDRUG(10)="TIOTROPIUM 18MCG CAP,INHL,30"
+"RTN","KBANLUT1",98,0)
+ S PSDRUG(11)="AMIODARONE HCL 200MG TAB"
+"RTN","KBANLUT1",99,0)
+ S PSDRUG(12)="CARVEDILOL 12.5MG TAB"
+"RTN","KBANLUT1",100,0)
+ S PSDRUG(13)="METOPROLOL SUCCINATE 100MG TAB,SA"
+"RTN","KBANLUT1",101,0)
+ S PSDRUG(14)="SELENIUM SULFIDE 1% SHAMPOO"
+"RTN","KBANLUT1",102,0)
+ S PSDRUG(15)="RAMIPRIL 5MG CAP"
+"RTN","KBANLUT1",103,0)
+ S PSDRUG(16)="CIPROFLOXACIN 500MG TAB,SA"
+"RTN","KBANLUT1",104,0)
+ S PSDRUG(17)="METHADONE HCL 10MG TAB,UD"
+"RTN","KBANLUT1",105,0)
+ S PSDRUG(18)="ALPRAZOLAM 0.5MG TAB"
+"RTN","KBANLUT1",106,0)
+ S PSDRUG(19)="FLUOXETINE HCL 20MG CAP"
+"RTN","KBANLUT1",107,0)
+ S PSDRUG(20)="OLANZAPINE 2.5MG TAB"
+"RTN","KBANLUT1",108,0)
+ S PSDRUG(21)="CALCIUM 600MG (AS CARBONATE)/VITAMIN D 400UNIT TAB"
+"RTN","KBANLUT1",109,0)
+ S PSDRUG(22)="METHOCARBAMOL 750MG TAB"
+"RTN","KBANLUT1",110,0)
+ S PSDRUG(23)="MULTIVITAMIN TAB"
+"RTN","KBANLUT1",111,0)
+ S PSDRUG(24)="ACETAMINOPHEN 500MG TAB"
+"RTN","KBANLUT1",112,0)
+ S PSDRUG(25)="DOXYLAMINE SUCCINATE 25MG TAB"
+"RTN","KBANLUT1",113,0)
+ S PSDRUG(26)="BENZOYL PEROXIDE 10% GEL,TOP"
+"RTN","KBANLUT1",114,0)
+ S PSDRUG(27)="ENTACAPONE 200MG TAB"
+"RTN","KBANLUT1",115,0)
+ S PSDRUG(28)="BENZTROPINE MESYLATE 1MG/ML INJ"
+"RTN","KBANLUT1",116,0)
+ S PSDRUG(29)="ROPINIROLE HCL 1MG TAB"
+"RTN","KBANLUT1",117,0)
+ S PSDRUG(30)="CARBIDOPA 25MG/LEVODOPA 100MG TAB,SA"
+"RTN","KBANLUT1",118,0)
+ S ^TMP($J,BASE,"IN","PROFILE",$$SUBBLD("I",,1))=$$NODEBLD(PSDRUG(1))
+"RTN","KBANLUT1",119,0)
+ N I F I=1:0 S I=$O(PSDRUG(I)) Q:'I  D
+"RTN","KBANLUT1",120,0)
+ . S ^TMP($J,BASE,"IN","PROSPECTIVE",$$SUBBLD("Z",1,I))=$$NODEBLD(PSDRUG(I))
+"RTN","KBANLUT1",121,0)
+ D IN^PSSHRQ2(BASE)
+"RTN","KBANLUT1",122,0)
+ N END S END=$P($H,",",2)
+"RTN","KBANLUT1",123,0)
+ W "Time elapsed: "_(END-START),!
+"RTN","KBANLUT1",124,0)
+ ;
+"RTN","KBANLUT1",125,0)
+ ; DEBUG
+"RTN","KBANLUT1",126,0)
+ ; ZWRITE ^TMP($J,BASE,*)
+"RTN","KBANLUT1",127,0)
+ ; Just assert that we didn't crash.
+"RTN","KBANLUT1",128,0)
+ D CHKTF^XTMUNIT(+^TMP($J,BASE,"OUT",0)'=-1,"Check succeeded")
+"RTN","KBANLUT1",129,0)
+ ; DEBUG
+"RTN","KBANLUT1",130,0)
+ ;
+"RTN","KBANLUT1",131,0)
+ QUIT
+"RTN","KBANLUT1",132,0)
+ ;
+"RTN","KBANLUT1",133,0)
+PROFILET ; @TEST - Test that profile drug interactions show up in non-prospective only checks.
+"RTN","KBANLUT1",134,0)
+ N START S START=$P($H,",",2)
+"RTN","KBANLUT1",135,0)
+ N PSDRUG
+"RTN","KBANLUT1",136,0)
+ N BASE S BASE=$T(+0)
+"RTN","KBANLUT1",137,0)
+ K ^TMP($J,BASE)
+"RTN","KBANLUT1",138,0)
+ S ^TMP($J,BASE,"IN","THERAPY")=""
+"RTN","KBANLUT1",139,0)
+ S ^TMP($J,BASE,"IN","DRUGDRUG")=""
+"RTN","KBANLUT1",140,0)
+ S ^TMP($J,BASE,"IN","PROFILEVPROFILE")="" ; Prospective only = false
+"RTN","KBANLUT1",141,0)
+ S PSDRUG(1)="CIMETIDINE 300MG TAB"
+"RTN","KBANLUT1",142,0)
+ S PSDRUG(2)="SIMVASTATIN 20MG TAB"
+"RTN","KBANLUT1",143,0)
+ S PSDRUG(3)="RANITIDINE HCL 150MG TAB"
+"RTN","KBANLUT1",144,0)
+ S PSDRUG(4)="WARFARIN NA 5MG TAB"
+"RTN","KBANLUT1",145,0)
+ S PSDRUG(5)="AMLODIPINE BESYLATE 10MG/ATORVASTATIN CA 40MG TAB"
+"RTN","KBANLUT1",146,0)
+ S ^TMP($J,BASE,"IN","PROFILE",$$SUBBLD("R",,1))=$$NODEBLD(PSDRUG(1))
+"RTN","KBANLUT1",147,0)
+ S ^TMP($J,BASE,"IN","PROFILE",$$SUBBLD("R",,2))=$$NODEBLD(PSDRUG(2))
+"RTN","KBANLUT1",148,0)
+ S ^TMP($J,BASE,"IN","PROFILE",$$SUBBLD("R",,3))=$$NODEBLD(PSDRUG(4))
+"RTN","KBANLUT1",149,0)
+ S ^TMP($J,BASE,"IN","PROFILE",$$SUBBLD("O",,4))=$$NODEBLD(PSDRUG(5))
+"RTN","KBANLUT1",150,0)
+ S ^TMP($J,BASE,"IN","PROSPECTIVE",$$SUBBLD("Z",1,1))=$$NODEBLD(PSDRUG(3))
+"RTN","KBANLUT1",151,0)
+ D IN^PSSHRQ2(BASE)
+"RTN","KBANLUT1",152,0)
+ N END S END=$P($H,",",2)
+"RTN","KBANLUT1",153,0)
+ ; W !,"Time elapsed: "_(END-START),!
+"RTN","KBANLUT1",154,0)
+ ;
+"RTN","KBANLUT1",155,0)
+ ; DEBUG
+"RTN","KBANLUT1",156,0)
+ ; ZWRITE ^TMP($J,BASE,*)
+"RTN","KBANLUT1",157,0)
+ ; DEBUG
+"RTN","KBANLUT1",158,0)
+ ;
+"RTN","KBANLUT1",159,0)
+ N IXNTRUE S IXNTRUE=0
+"RTN","KBANLUT1",160,0)
+ I $D(^TMP($J,BASE,"OUT","DRUGDRUG","C",PSDRUG(1)))!($D(^TMP($J,BASE,"OUT","DRUGDRUG","C",PSDRUG(4)))) S IXNTRUE=1
+"RTN","KBANLUT1",161,0)
+ D CHKTF^XTMUNIT(IXNTRUE,"Cimetidine is supposed to show up in message")
+"RTN","KBANLUT1",162,0)
+ ;
+"RTN","KBANLUT1",163,0)
+ QUIT
+"RTN","KBANLUT1",164,0)
+ ;
+"RTN","KBANLUT1",165,0)
+PROSTEST ; @TEST - Test that profile drug interactions etc don't show up in Prospective only checks.
+"RTN","KBANLUT1",166,0)
+ N START S START=$P($H,",",2)
+"RTN","KBANLUT1",167,0)
+ N PSDRUG
+"RTN","KBANLUT1",168,0)
+ N BASE S BASE=$T(+0)
+"RTN","KBANLUT1",169,0)
+ K ^TMP($J,BASE)
+"RTN","KBANLUT1",170,0)
+ S ^TMP($J,BASE,"IN","THERAPY")=""
+"RTN","KBANLUT1",171,0)
+ S ^TMP($J,BASE,"IN","DRUGDRUG")=""
+"RTN","KBANLUT1",172,0)
+ ; S ^TMP($J,BASE,"IN","PROFILEVPROFILE")="" ; Prospective only = true now
+"RTN","KBANLUT1",173,0)
+ S PSDRUG(1)="CIMETIDINE 300MG TAB"
+"RTN","KBANLUT1",174,0)
+ S PSDRUG(2)="SIMVASTATIN 20MG TAB"
+"RTN","KBANLUT1",175,0)
+ S PSDRUG(3)="RANITIDINE HCL 150MG TAB"
+"RTN","KBANLUT1",176,0)
+ S PSDRUG(4)="WARFARIN NA 5MG TAB"
+"RTN","KBANLUT1",177,0)
+ S PSDRUG(5)="AMLODIPINE BESYLATE 10MG/ATORVASTATIN CA 40MG TAB"
+"RTN","KBANLUT1",178,0)
+ S ^TMP($J,BASE,"IN","PROFILE",1)=$$NODEBLD(PSDRUG(1))
+"RTN","KBANLUT1",179,0)
+ S ^TMP($J,BASE,"IN","PROFILE",2)=$$NODEBLD(PSDRUG(2))
+"RTN","KBANLUT1",180,0)
+ S ^TMP($J,BASE,"IN","PROFILE",3)=$$NODEBLD(PSDRUG(4))
+"RTN","KBANLUT1",181,0)
+ S ^TMP($J,BASE,"IN","PROFILE",4)=$$NODEBLD(PSDRUG(5))
+"RTN","KBANLUT1",182,0)
+ S ^TMP($J,BASE,"IN","PROSPECTIVE",1)=$$NODEBLD(PSDRUG(3))
+"RTN","KBANLUT1",183,0)
+ D IN^PSSHRQ2(BASE)
+"RTN","KBANLUT1",184,0)
+ N END S END=$P($H,",",2)
+"RTN","KBANLUT1",185,0)
+ ; W !,"Time elapsed: "_(END-START),!
+"RTN","KBANLUT1",186,0)
+ ;
+"RTN","KBANLUT1",187,0)
+ D CHKTF^XTMUNIT('$D(^TMP($J,BASE,"OUT","DRUGDRUG","C",PSDRUG(1))),"Cimetidine is not supposed to show up in message")
+"RTN","KBANLUT1",188,0)
+ ;
+"RTN","KBANLUT1",189,0)
+ QUIT
+"RTN","KBANLUT1",190,0)
+ ;
+"RTN","KBANLUT1",191,0)
+SINGLET ; @TEST - Make sure that a single drug does not trip off an error
+"RTN","KBANLUT1",192,0)
+ N PSDRUG
+"RTN","KBANLUT1",193,0)
+ N BASE S BASE=$T(+0)
+"RTN","KBANLUT1",194,0)
+ K ^TMP($J,BASE)
+"RTN","KBANLUT1",195,0)
+ S ^TMP($J,BASE,"IN","THERAPY")=""
+"RTN","KBANLUT1",196,0)
+ S ^TMP($J,BASE,"IN","DRUGDRUG")=""
+"RTN","KBANLUT1",197,0)
+ S PSDRUG(1)="CIMETIDINE 300MG TAB"
+"RTN","KBANLUT1",198,0)
+ S ^TMP($J,BASE,"IN","PROSPECTIVE",1)=$$NODEBLD(PSDRUG(1))
+"RTN","KBANLUT1",199,0)
+ D IN^PSSHRQ2(BASE)
+"RTN","KBANLUT1",200,0)
+ ;
+"RTN","KBANLUT1",201,0)
+ D CHKEQ^XTMUNIT(^TMP($J,BASE,"OUT",0),0,"No output is expected")
+"RTN","KBANLUT1",202,0)
+ ;
+"RTN","KBANLUT1",203,0)
+ QUIT
+"RTN","KBANLUT1",204,0)
+ ;
+"RTN","KBANLUT1",205,0)
+DNOTCHK1 ; @TEST - Test Drugs not checked 1: Profile drug missing VUID
+"RTN","KBANLUT1",206,0)
+ N START S START=$P($H,",",2)
+"RTN","KBANLUT1",207,0)
+ N PSDRUG
+"RTN","KBANLUT1",208,0)
+ N BASE S BASE=$T(+0)
+"RTN","KBANLUT1",209,0)
+ K ^TMP($J,BASE)
+"RTN","KBANLUT1",210,0)
+ S ^TMP($J,BASE,"IN","THERAPY")=""
+"RTN","KBANLUT1",211,0)
+ S ^TMP($J,BASE,"IN","DRUGDRUG")=""
+"RTN","KBANLUT1",212,0)
+ S PSDRUG(1)="CIMETIDINE 300MG TAB"
+"RTN","KBANLUT1",213,0)
+ S PSDRUG(2)="SIMVASTATIN 20MG TAB"
+"RTN","KBANLUT1",214,0)
+ S PSDRUG(3)="RANITIDINE HCL 150MG TAB"
+"RTN","KBANLUT1",215,0)
+ S PSDRUG(4)="WARFARIN NA 5MG TAB"
+"RTN","KBANLUT1",216,0)
+ S PSDRUG(5)="AMLODIPINE BESYLATE 10MG/ATORVASTATIN CA 40MG TAB"
+"RTN","KBANLUT1",217,0)
+ S ^TMP($J,BASE,"IN","PROFILE",$$SUBBLD("O",,1))=$$NODEBLD(PSDRUG(1))
+"RTN","KBANLUT1",218,0)
+ S ^TMP($J,BASE,"IN","PROFILE",$$SUBBLD("O",,2))=$$NODEBLD(PSDRUG(2))
+"RTN","KBANLUT1",219,0)
+ S ^TMP($J,BASE,"IN","PROFILE",$$SUBBLD("O",,3))=$$NODEBLD(PSDRUG(4))
+"RTN","KBANLUT1",220,0)
+ S ^TMP($J,BASE,"IN","PROFILE",$$SUBBLD("O",,4))=$$NODEBLD(PSDRUG(5))
+"RTN","KBANLUT1",221,0)
+ S ^TMP($J,BASE,"IN","PROSPECTIVE",$$SUBBLD("O",1,1))=$$NODEBLD(PSDRUG(3))
+"RTN","KBANLUT1",222,0)
+ ;
+"RTN","KBANLUT1",223,0)
+ S $P(^TMP($J,BASE,"IN","PROFILE",$$SUBBLD("O",,2)),U,2)="" ; Remove VUID from Simvastatin
+"RTN","KBANLUT1",224,0)
+ ;
+"RTN","KBANLUT1",225,0)
+ D IN^PSSHRQ2(BASE)
+"RTN","KBANLUT1",226,0)
+ N END S END=$P($H,",",2)
+"RTN","KBANLUT1",227,0)
+ ; W $C(9)_$$GREEN()_"Time elapsed: "_(END-START)_$$RESET()
+"RTN","KBANLUT1",228,0)
+ ;
+"RTN","KBANLUT1",229,0)
+ ; Descend two down and grab the node... should contain SIMVASTATIN.
+"RTN","KBANLUT1",230,0)
+ N KBANTRUE S KBANTRUE=0
+"RTN","KBANLUT1",231,0)
+ D
+"RTN","KBANLUT1",232,0)
+ . I '$D(^TMP($J,BASE,"OUT","EXCEPTIONS")) QUIT
+"RTN","KBANLUT1",233,0)
+ . N S1,S2 S S1=$O(^("EXCEPTIONS","")),S2=$O(^(S1,""))
+"RTN","KBANLUT1",234,0)
+ . N N S N=^(S2) I N["SIMVASTATIN" S KBANTRUE=1
+"RTN","KBANLUT1",235,0)
+ ;
+"RTN","KBANLUT1",236,0)
+ D CHKTF^XTMUNIT(KBANTRUE,"Simvastain should be found in the exception node")
+"RTN","KBANLUT1",237,0)
+ ;
+"RTN","KBANLUT1",238,0)
+ QUIT
+"RTN","KBANLUT1",239,0)
+ ;
+"RTN","KBANLUT1",240,0)
+DNOTCHK2 ; @TEST - Test Drugs not checked 2: Prospective drug missing VUID
+"RTN","KBANLUT1",241,0)
+ N START S START=$P($H,",",2)
+"RTN","KBANLUT1",242,0)
+ N PSDRUG
+"RTN","KBANLUT1",243,0)
+ N BASE S BASE=$T(+0)
+"RTN","KBANLUT1",244,0)
+ K ^TMP($J,BASE)
+"RTN","KBANLUT1",245,0)
+ S ^TMP($J,BASE,"IN","THERAPY")=""
+"RTN","KBANLUT1",246,0)
+ S ^TMP($J,BASE,"IN","DRUGDRUG")=""
+"RTN","KBANLUT1",247,0)
+ S PSDRUG(1)="CIMETIDINE 300MG TAB"
+"RTN","KBANLUT1",248,0)
+ S PSDRUG(2)="SIMVASTATIN 20MG TAB"
+"RTN","KBANLUT1",249,0)
+ S PSDRUG(3)="RANITIDINE HCL 150MG TAB"
+"RTN","KBANLUT1",250,0)
+ S PSDRUG(4)="WARFARIN NA 5MG TAB"
+"RTN","KBANLUT1",251,0)
+ S PSDRUG(5)="AMLODIPINE BESYLATE 10MG/ATORVASTATIN CA 40MG TAB"
+"RTN","KBANLUT1",252,0)
+ S ^TMP($J,BASE,"IN","PROFILE",$$SUBBLD("O",,1))=$$NODEBLD(PSDRUG(1))
+"RTN","KBANLUT1",253,0)
+ S ^TMP($J,BASE,"IN","PROFILE",$$SUBBLD("O",,2))=$$NODEBLD(PSDRUG(2))
+"RTN","KBANLUT1",254,0)
+ S ^TMP($J,BASE,"IN","PROFILE",$$SUBBLD("O",,3))=$$NODEBLD(PSDRUG(4))
+"RTN","KBANLUT1",255,0)
+ S ^TMP($J,BASE,"IN","PROFILE",$$SUBBLD("O",,4))=$$NODEBLD(PSDRUG(5))
+"RTN","KBANLUT1",256,0)
+ S ^TMP($J,BASE,"IN","PROSPECTIVE",$$SUBBLD("O",1,1))=$$NODEBLD(PSDRUG(3))
+"RTN","KBANLUT1",257,0)
+ ;
+"RTN","KBANLUT1",258,0)
+ S $P(^TMP($J,BASE,"IN","PROSPECTIVE",$$SUBBLD("O",1,1)),U,2)="" ; Remove VUID from Prospective drug
+"RTN","KBANLUT1",259,0)
+ ;
+"RTN","KBANLUT1",260,0)
+ D IN^PSSHRQ2(BASE)
+"RTN","KBANLUT1",261,0)
+ N END S END=$P($H,",",2)
+"RTN","KBANLUT1",262,0)
+ ; W !,"Time elapsed: "_(END-START),!
+"RTN","KBANLUT1",263,0)
+ ;
+"RTN","KBANLUT1",264,0)
+ ; Descend two down and grab the node... should contain Ranitidine.
+"RTN","KBANLUT1",265,0)
+ N KBANTRUE S KBANTRUE=0
+"RTN","KBANLUT1",266,0)
+ D
+"RTN","KBANLUT1",267,0)
+ . I '$D(^TMP($J,BASE,"OUT","EXCEPTIONS")) QUIT
+"RTN","KBANLUT1",268,0)
+ . N S1,S2 S S1=$O(^("EXCEPTIONS","")),S2=$O(^(S1,""))
+"RTN","KBANLUT1",269,0)
+ . N N S N=^(S2) I N["RANITIDINE" S KBANTRUE=1
+"RTN","KBANLUT1",270,0)
+ ;
+"RTN","KBANLUT1",271,0)
+ D CHKTF^XTMUNIT(KBANTRUE,"Ranitidine should be found in the exception node")
+"RTN","KBANLUT1",272,0)
+ ;
+"RTN","KBANLUT1",273,0)
+ QUIT
+"RTN","KBANLUT1",274,0)
+ ;
+"RTN","KBANLUT1",275,0)
+DXIXT ; @TEST - Test drugs that are excluded from interacting
+"RTN","KBANLUT1",276,0)
+ N BASE S BASE=$T(+0)
+"RTN","KBANLUT1",277,0)
+ K ^TMP($J,BASE)
+"RTN","KBANLUT1",278,0)
+ S ^TMP($J,BASE,"IN","THERAPY")=""
+"RTN","KBANLUT1",279,0)
+ S ^TMP($J,BASE,"IN","DRUGDRUG")=""
+"RTN","KBANLUT1",280,0)
+ N PSDRUG
+"RTN","KBANLUT1",281,0)
+ S PSDRUG(1)="HYDROCORTISONE ACETATE 1% OINT,TOP"
+"RTN","KBANLUT1",282,0)
+ S PSDRUG(2)="TRIAMCINOLONE ACETONIDE 0.1% PASTE,DENTAL"
+"RTN","KBANLUT1",283,0)
+ S PSDRUG(3)="KETOCONAZOLE 2% SHAMPOO"
+"RTN","KBANLUT1",284,0)
+ S PSDRUG(4)="ATORVASTATIN CA 80MG TAB"
+"RTN","KBANLUT1",285,0)
+ S ^TMP($J,BASE,"IN","PROSPECTIVE",$$SUBBLD("O",1,1))=$$NODEBLD(PSDRUG(1))
+"RTN","KBANLUT1",286,0)
+ S ^TMP($J,BASE,"IN","PROSPECTIVE",$$SUBBLD("O",1,2))=$$NODEBLD(PSDRUG(2))
+"RTN","KBANLUT1",287,0)
+ S ^TMP($J,BASE,"IN","PROSPECTIVE",$$SUBBLD("O",1,3))=$$NODEBLD(PSDRUG(3))
+"RTN","KBANLUT1",288,0)
+ S ^TMP($J,BASE,"IN","PROSPECTIVE",$$SUBBLD("O",1,4))=$$NODEBLD(PSDRUG(4))
+"RTN","KBANLUT1",289,0)
+ D IN^PSSHRQ2(BASE)
+"RTN","KBANLUT1",290,0)
+ D CHKTF^XTMUNIT('$D(^TMP($J,BASE,"OUT","DRUGDRUG","S","TRIAMCINOLONE ACETONIDE 0.1% PASTE,DENTAL")),"TAC dental shouldn't be in the drug interaction section")
+"RTN","KBANLUT1",291,0)
+ QUIT
+"RTN","KBANLUT1",292,0)
+ ;
+"RTN","KBANLUT1",293,0)
+SUPPLYT ; @TEST - Test drugs that can't be found in RxNorm.
+"RTN","KBANLUT1",294,0)
+ ; Quit if we are just using VISTA internally.
+"RTN","KBANLUT1",295,0)
+ Q:$D(KBANFORCEINT)
+"RTN","KBANLUT1",296,0)
+ N BASE S BASE=$T(+0)
+"RTN","KBANLUT1",297,0)
+ K ^TMP($J,BASE)
+"RTN","KBANLUT1",298,0)
+ S ^TMP($J,BASE,"IN","THERAPY")=""
+"RTN","KBANLUT1",299,0)
+ S ^TMP($J,BASE,"IN","DRUGDRUG")=""
+"RTN","KBANLUT1",300,0)
+ N PSDRUG
+"RTN","KBANLUT1",301,0)
+ S PSDRUG(1)="DRESSING,PRIMAPORE 11.75IN X 4IN"
+"RTN","KBANLUT1",302,0)
+ S PSDRUG(2)="WINGS CONTOURED INCONTINENT BRIEF LARGE"
+"RTN","KBANLUT1",303,0)
+ S ^TMP($J,BASE,"IN","PROSPECTIVE",$$SUBBLD("O",1,1))=$$NODEBLD(PSDRUG(1))
+"RTN","KBANLUT1",304,0)
+ S ^TMP($J,BASE,"IN","PROSPECTIVE",$$SUBBLD("O",1,2))=$$NODEBLD(PSDRUG(2))
+"RTN","KBANLUT1",305,0)
+ D IN^PSSHRQ2(BASE)
+"RTN","KBANLUT1",306,0)
+ D CHKTF^XTMUNIT($D(^TMP($J,BASE,"OUT","EXCEPTIONS")),"Exceptions expected because drugs move to not checked list.")
+"RTN","KBANLUT1",307,0)
+ QUIT
+"RTN","KBANLUT1",308,0)
+ ;
+"RTN","KBANLUT1",309,0)
+SIMERRT ; @TEST - Simulate an error and see that we degrade gracefully
+"RTN","KBANLUT1",310,0)
+ N BASE S BASE=$T(+0)
+"RTN","KBANLUT1",311,0)
+ K ^TMP($J,BASE)
+"RTN","KBANLUT1",312,0)
+ S ^TMP($J,BASE,"IN","THERAPY")=""
+"RTN","KBANLUT1",313,0)
+ S ^TMP($J,BASE,"IN","DRUGDRUG")=""
+"RTN","KBANLUT1",314,0)
+ N PSDRUG
+"RTN","KBANLUT1",315,0)
+ S PSDRUG(1)="TRIAMCINOLONE ACETONIDE 0.05% OINT,TOP"
+"RTN","KBANLUT1",316,0)
+ S PSDRUG(2)="ATORVASTATIN CA 80MG TAB"
+"RTN","KBANLUT1",317,0)
+ S ^TMP($J,BASE,"IN","PROSPECTIVE",$$SUBBLD("O",1,1))=$$NODEBLD(PSDRUG(1))
+"RTN","KBANLUT1",318,0)
+ S ^TMP($J,BASE,"IN","PROSPECTIVE",$$SUBBLD("O",1,2))=$$NODEBLD(PSDRUG(2))
+"RTN","KBANLUT1",319,0)
+ N KBANSIMERR S KBANSIMERR=1 ; Force an error to occur in KBANLDIT...
+"RTN","KBANLUT1",320,0)
+ D IN^PSSHRQ2(BASE)
+"RTN","KBANLUT1",321,0)
+ D CHKEQ^XTMUNIT(+^TMP($J,BASE,"OUT",0),-1,"Error condition should be reported")
+"RTN","KBANLUT1",322,0)
+ QUIT
+"RTN","KBANLUT1",323,0)
+ ;
+"RTN","KBANLUT1",324,0)
+DITERRT ; @TEST - Make sure DIT doesn't fail on drugs with different routes...
+"RTN","KBANLUT1",325,0)
+ ; Quit if we are just using VISTA internally.
+"RTN","KBANLUT1",326,0)
+ Q:$D(KBANFORCEINT)
+"RTN","KBANLUT1",327,0)
+ N BASE S BASE=$T(+0)
+"RTN","KBANLUT1",328,0)
+ K ^TMP($J,BASE)
+"RTN","KBANLUT1",329,0)
+ S ^TMP($J,BASE,"IN","THERAPY")=""
+"RTN","KBANLUT1",330,0)
+ S ^TMP($J,BASE,"IN","DRUGDRUG")=""
+"RTN","KBANLUT1",331,0)
+ N PSDRUG
+"RTN","KBANLUT1",332,0)
+ S PSDRUG(1)="TRIAMCINOLONE ACETONIDE 0.05% OINT,TOP"
+"RTN","KBANLUT1",333,0)
+ S PSDRUG(2)="SIMVASTATIN 20MG TAB"
+"RTN","KBANLUT1",334,0)
+ S ^TMP($J,BASE,"IN","PROSPECTIVE",$$SUBBLD("O",1,1))=$$NODEBLD(PSDRUG(1))
+"RTN","KBANLUT1",335,0)
+ S ^TMP($J,BASE,"IN","PROSPECTIVE",$$SUBBLD("O",1,2))=$$NODEBLD(PSDRUG(2))
+"RTN","KBANLUT1",336,0)
+ D IN^PSSHRQ2(BASE)
+"RTN","KBANLUT1",337,0)
+ D CHKEQ^XTMUNIT(^TMP($J,BASE,"OUT",0),0,"No output expected.")
+"RTN","KBANLUT1",338,0)
+ QUIT
+"RTN","KBANLUT1",339,0)
+NODEBLD(DRUGNM) ; Build node for drug based on drug name.
+"RTN","KBANLUT1",340,0)
+ N VAP S VAP=$O(^PSNDF(50.68,"B",DRUGNM,""))
+"RTN","KBANLUT1",341,0)
+ I 'VAP S $EC=",U-NO-VAP-FOUND,"
+"RTN","KBANLUT1",342,0)
+ I $L($$GET1^DIQ(50.68,VAP,"INACTIVATION DATE")) S $EC=",U-VAP-INACTIVE,"
+"RTN","KBANLUT1",343,0)
+ I $$GET1^DIQ(50.68,VAP,"MASTER ENTRY FOR VUID")'="YES" S $EC=",U-VAP-NO-MASTER,"
+"RTN","KBANLUT1",344,0)
+ N GCN S GCN=$$GET1^DIQ(50.68,VAP,"GCNSEQNO")
+"RTN","KBANLUT1",345,0)
+ N VUID S VUID=$$GET1^DIQ(50.68,VAP,"VUID")
+"RTN","KBANLUT1",346,0)
+ Q GCN_U_VUID_U_VAP_U_DRUGNM_U_$R(2233)_U_"O"
+"RTN","KBANLUT1",347,0)
+ ;
+"RTN","KBANLUT1",348,0)
+SUBBLD(TYPE,PROS,NO) ; Build subscript node for testing
+"RTN","KBANLUT1",349,0)
+ Q TYPE_";"_5555_";"_$S($G(PROS):"PROSPECTIVE",1:"PROFILE")_";"_NO
+"RTN","KBANLUT1",350,0)
+ ;
+"RTN","KBANLUT1",351,0)
+GREEN() Q $C(27)_"[1;32m" ; VT100 text green bold
+"RTN","KBANLUT1",352,0)
+RESET() Q $C(27)_"[0m" ; VT100 reset
+"RTN","KBANLUT1",353,0)
+RED() Q $C(27)_"[1;31m" ; VT100 red bold
+"RTN","KBANLWRT")
+0^2^B196654115
+"RTN","KBANLWRT",1,0)
+KBANLWRT ; VEN/SMH - KBAN Latte Response Writer ;2013-11-19  12:40 PM
+"RTN","KBANLWRT",2,0)
+ ;;0.4;SAM'S INDUSTRIAL CONGLOMORATES;;;Build 9
+"RTN","KBANLWRT",3,0)
+ ; (c) Sam Habiel 2013.
+"RTN","KBANLWRT",4,0)
+ ;
+"RTN","KBANLWRT",5,0)
+ ; Usage is granted to the user under accompanying license.
+"RTN","KBANLWRT",6,0)
+ ; If you can't find the license, you are not allowed to use the software.
+"RTN","KBANLWRT",7,0)
+ ;
+"RTN","KBANLWRT",8,0)
+ ; All entry points here are private
+"RTN","KBANLWRT",9,0)
+ ;
+"RTN","KBANLWRT",10,0)
+SENDPING(RESULT) ; Private; Send a Ping Reply; Internal to this routine.
+"RTN","KBANLWRT",11,0)
+ ; RESULT - Return array for XML.
+"RTN","KBANLWRT",12,0)
+ ;
+"RTN","KBANLWRT",13,0)
+ ; See GTDBINFO^PSSHRQ2O for parsing logic for pings
+"RTN","KBANLWRT",14,0)
+ ; <?xml version="1.0" encoding="ASCII" standalone="yes"?>
+"RTN","KBANLWRT",15,0)
+ ; <PEPSResponse xsi:schemaLocation="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+"RTN","KBANLWRT",16,0)
+ ;     <Header pingOnly="true">
+"RTN","KBANLWRT",17,0)
+ ;         <Time value="3130514"/>
+"RTN","KBANLWRT",18,0)
+ ;         <MServer namespace="" uci="" ip="" serverName="" stationNumber="500"></MServer>
+"RTN","KBANLWRT",19,0)
+ ;         <MUser userName="PROGRAMMER,ONE" duz="1" jobNumber="7137"></MUser>
+"RTN","KBANLWRT",20,0)
+ ;         <PEPSVersion difIssueDate="20130324" difBuildVersion="1.0" difDbVersion="3.2"></PEPSVersion>
+"RTN","KBANLWRT",21,0)
+ ;     </Header>
+"RTN","KBANLWRT",22,0)
+ ; </PEPSResponse>
+"RTN","KBANLWRT",23,0)
+ ;
+"RTN","KBANLWRT",24,0)
+ D PUT^MXMLBLD(.RESULT,$$XMLHDR^MXMLUTL)
+"RTN","KBANLWRT",25,0)
+ N %
+"RTN","KBANLWRT",26,0)
+ S %("xsi:schemaLocation")=""
+"RTN","KBANLWRT",27,0)
+ S %("xmlns:xsi")="http://www.w3.org/2001/XMLSchema-instance"
+"RTN","KBANLWRT",28,0)
+ D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("PEPSResponse",.%,,0))
+"RTN","KBANLWRT",29,0)
+ ;
+"RTN","KBANLWRT",30,0)
+ N % S %("pingOnly")="true"
+"RTN","KBANLWRT",31,0)
+ D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("Header",.%,,0))
+"RTN","KBANLWRT",32,0)
+ N % S %("value")=DT
+"RTN","KBANLWRT",33,0)
+ D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("Time",.%))
+"RTN","KBANLWRT",34,0)
+ D PEPSVER(.RESULT)
+"RTN","KBANLWRT",35,0)
+ ;
+"RTN","KBANLWRT",36,0)
+ D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("/Header"))
+"RTN","KBANLWRT",37,0)
+ D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("/PEPSResponse"))
+"RTN","KBANLWRT",38,0)
+ QUIT
+"RTN","KBANLWRT",39,0)
+ ;
+"RTN","KBANLWRT",40,0)
+PEPSVER(RESULT) ; Private. Write PEPSVersion tag. Shared among several EPs.
+"RTN","KBANLWRT",41,0)
+ N REVDATE S REVDATE=1700+$E(DT,1,3)_$E(DT,4,5)_$E(DT,6,7)
+"RTN","KBANLWRT",42,0)
+ N %
+"RTN","KBANLWRT",43,0)
+ S %("difIssueDate")=REVDATE
+"RTN","KBANLWRT",44,0)
+ S %("difBuildVersion")="VISTA"
+"RTN","KBANLWRT",45,0)
+ S %("difDbVersion")="VISTA"
+"RTN","KBANLWRT",46,0)
+ S %("customIssueDate")="VISTA"
+"RTN","KBANLWRT",47,0)
+ S %("customBuildVersion")="VISTA"
+"RTN","KBANLWRT",48,0)
+ S %("customDbVersion")="VISTA"
+"RTN","KBANLWRT",49,0)
+ D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("PEPSVersion",.%))
+"RTN","KBANLWRT",50,0)
+ QUIT
+"RTN","KBANLWRT",51,0)
+ ;
+"RTN","KBANLWRT",52,0)
+RESPOND(RESULT,DOCHAND,INTERACTIONS,DUPCLASS,DRUGSNOTCHECKED,DRUGDRUGCHECK,DRUGTHERAPYCHECK,DRUGDOSECHECK) ; XML Response Writer; Private
+"RTN","KBANLWRT",53,0)
+ ; Output:
+"RTN","KBANLWRT",54,0)
+ ; - .RESULT -> Return array for XML
+"RTN","KBANLWRT",55,0)
+ ; 
+"RTN","KBANLWRT",56,0)
+ ; Input:
+"RTN","KBANLWRT",57,0)
+ ; - DOCHAND -> MXML Original Input document Handle
+"RTN","KBANLWRT",58,0)
+ ; - .INTERACTIONS -> Array of Interactions. May be empty.
+"RTN","KBANLWRT",59,0)
+ ; - .DUPCLASS -> Array of duplicate classes. May be empty.
+"RTN","KBANLWRT",60,0)
+ ; - .DRUGSNOTCHECKED -> Array of drugs not checked. May be empty.
+"RTN","KBANLWRT",61,0)
+ ; - DRUGDRUGCHECK -> Boolean. Was a drug-drug check requested?
+"RTN","KBANLWRT",62,0)
+ ; - DRUGTHERAPYCHECK -> Boolean. Was a duplicate drug class check requested?
+"RTN","KBANLWRT",63,0)
+ ; - DRUGDOSECHECK -> Boolean. Was a dosing check requested?
+"RTN","KBANLWRT",64,0)
+ ;
+"RTN","KBANLWRT",65,0)
+ ; Outline:
+"RTN","KBANLWRT",66,0)
+ ; - Write <?xml
+"RTN","KBANLWRT",67,0)
+ ; - Open <PEPSResponse>, Write <Header> block, open <Body>, <drugCheck>
+"RTN","KBANLWRT",68,0)
+ ; - Write specific sections (Drug-Drug, Drug Therapy Duplication, Dosage checks)
+"RTN","KBANLWRT",69,0)
+ ; - Write </drugCheck>, </Body>, </PEPSResponse>
+"RTN","KBANLWRT",70,0)
+ ;
+"RTN","KBANLWRT",71,0)
+ D PUT^MXMLBLD(.RESULT,$$XMLHDR^MXMLUTL) ; <?xml etc...
+"RTN","KBANLWRT",72,0)
+ ;
+"RTN","KBANLWRT",73,0)
+ N %
+"RTN","KBANLWRT",74,0)
+ S %("xsi:schemaLocation")="gov/va/med/pharmacy/peps/external/common/preencapsulation/vo/drug/check/response drugCheckSchemaOutput.xsd"
+"RTN","KBANLWRT",75,0)
+ S %("xmlns:xsi")="http://www.w3.org/2001/XMLSchema-instance"
+"RTN","KBANLWRT",76,0)
+ S %("xmlns")="gov/va/med/pharmacy/peps/external/common/preencapsulation/vo/drug/check/response"
+"RTN","KBANLWRT",77,0)
+ D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("PEPSResponse",.%,,0)) ; <PEPSResponse ...
+"RTN","KBANLWRT",78,0)
+ ;
+"RTN","KBANLWRT",79,0)
+ D HEADER(.RESULT)
+"RTN","KBANLWRT",80,0)
+ ;
+"RTN","KBANLWRT",81,0)
+ D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("Body",,,0)) ; <Body>
+"RTN","KBANLWRT",82,0)
+ D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("drugCheck",,,0)) ; <drugCheck>
+"RTN","KBANLWRT",83,0)
+ ;
+"RTN","KBANLWRT",84,0)
+ ;
+"RTN","KBANLWRT",85,0)
+ D:$D(DRUGSNOTCHECKED) RITEDNCK(.RESULT,.DRUGSNOTCHECKED,DOCHAND) ; Drugs not checked.
+"RTN","KBANLWRT",86,0)
+ ;
+"RTN","KBANLWRT",87,0)
+ ;
+"RTN","KBANLWRT",88,0)
+ D:DRUGDRUGCHECK RITEDGDG(.RESULT,.INTERACTIONS,DOCHAND) ; Drug-Drug Interaction
+"RTN","KBANLWRT",89,0)
+ D:DRUGTHERAPYCHECK RITEDUP(.RESULT,.DUPCLASS,DOCHAND) ; Duplicate Therapy
+"RTN","KBANLWRT",90,0)
+ D:DRUGDOSECHECK RITEDOSE(.RESULT) ; Drug-dose check
+"RTN","KBANLWRT",91,0)
+ ;
+"RTN","KBANLWRT",92,0)
+ ;
+"RTN","KBANLWRT",93,0)
+ ; Close
+"RTN","KBANLWRT",94,0)
+ D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("/drugCheck"))
+"RTN","KBANLWRT",95,0)
+ D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("/Body"))
+"RTN","KBANLWRT",96,0)
+ D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("/PEPSResponse"))
+"RTN","KBANLWRT",97,0)
+ QUIT
+"RTN","KBANLWRT",98,0)
+ ;
+"RTN","KBANLWRT",99,0)
+HEADER(RESULT) ; Private; Create XML Header Block.
+"RTN","KBANLWRT",100,0)
+ ;   <Header>
+"RTN","KBANLWRT",101,0)
+ ;       <Time value="0845"/>
+"RTN","KBANLWRT",102,0)
+ ;       <MServer namespace="VISTA" uci="text" ip="127.0.000.1"
+"RTN","KBANLWRT",103,0)
+ ;           serverName="Server Name" stationNumber="45"/>
+"RTN","KBANLWRT",104,0)
+ ;       <MUser userName="user" duz="88660079" jobNumber="1001"/>
+"RTN","KBANLWRT",105,0)
+ ;       <PEPSVersion difIssueDate="20091002" difBuildVersion="6" difDbVersion="3.2"/>
+"RTN","KBANLWRT",106,0)
+ ;   </Header>
+"RTN","KBANLWRT",107,0)
+ D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("Header",,,0)) ; <Header>
+"RTN","KBANLWRT",108,0)
+ ;
+"RTN","KBANLWRT",109,0)
+ N % S %("value")=$$NOW^XLFDT() D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("Time",.%)) ; <Time value="0845"/>
+"RTN","KBANLWRT",110,0)
+ ;
+"RTN","KBANLWRT",111,0)
+ D  ; <MServer namespace="VISTA" uci="text" ip="127.0.0.1" serverName="Server Name" stationNumber="45" />
+"RTN","KBANLWRT",112,0)
+ . N Y D GETENV^%ZOSV
+"RTN","KBANLWRT",113,0)
+ . N %
+"RTN","KBANLWRT",114,0)
+ . S %("namespace")=$P(Y,U)
+"RTN","KBANLWRT",115,0)
+ . S %("uci")=$P(Y,U)
+"RTN","KBANLWRT",116,0)
+ . S %("ip")="127.0.0.1"
+"RTN","KBANLWRT",117,0)
+ . S %("serverName")=$P(Y,U,3)
+"RTN","KBANLWRT",118,0)
+ . S %("stationNumber")=$P($$SITE^VASITE(),U,3)
+"RTN","KBANLWRT",119,0)
+ . D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("MServer",.%))
+"RTN","KBANLWRT",120,0)
+ ;
+"RTN","KBANLWRT",121,0)
+ D  ; <MUser userName="user" duz="88660079" jobNumber="1001"/>
+"RTN","KBANLWRT",122,0)
+ . N %
+"RTN","KBANLWRT",123,0)
+ . S %("duz")=$S($G(DUZ):DUZ,1:.5)
+"RTN","KBANLWRT",124,0)
+ . S %("userName")=$P(^VA(200,%("duz"),0),U)
+"RTN","KBANLWRT",125,0)
+ . S %("jobNumber")=$JOB
+"RTN","KBANLWRT",126,0)
+ . D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("MUser",.%))
+"RTN","KBANLWRT",127,0)
+ ;
+"RTN","KBANLWRT",128,0)
+ D PEPSVER(.RESULT) ; <PEPSVersion difIssueDate="20091002" difBuildVersion="6" difDbVersion="3.2"/>
+"RTN","KBANLWRT",129,0)
+ ;
+"RTN","KBANLWRT",130,0)
+ D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("/Header"))
+"RTN","KBANLWRT",131,0)
+ QUIT
+"RTN","KBANLWRT",132,0)
+ ;
+"RTN","KBANLWRT",133,0)
+ ;
+"RTN","KBANLWRT",134,0)
+ ;
+"RTN","KBANLWRT",135,0)
+RITEDGDG(RESULT,INTERACTIONS,DOCHAND) ; Private; Write the XML Response for Drug Interaction part
+"RTN","KBANLWRT",136,0)
+ ; Output (appending):
+"RTN","KBANLWRT",137,0)
+ ; - .RESULT
+"RTN","KBANLWRT",138,0)
+ ;
+"RTN","KBANLWRT",139,0)
+ ; Input:
+"RTN","KBANLWRT",140,0)
+ ; - INTERACTIONS
+"RTN","KBANLWRT",141,0)
+ ; - DOCHAND
+"RTN","KBANLWRT",142,0)
+ ;
+"RTN","KBANLWRT",143,0)
+ ; See above for descriptions
+"RTN","KBANLWRT",144,0)
+ ;
+"RTN","KBANLWRT",145,0)
+ D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("drugDrugChecks",,,0)) ; <drugDrugChecks>
+"RTN","KBANLWRT",146,0)
+ ;
+"RTN","KBANLWRT",147,0)
+ ; D1=Drug 1 and D2=Drug 2
+"RTN","KBANLWRT",148,0)
+ N D1 S D1=0 F  S D1=$O(INTERACTIONS(D1)) Q:'D1  D
+"RTN","KBANLWRT",149,0)
+ . N D2 S D2=0 F  S D2=$O(INTERACTIONS(D1,D2)) Q:'D2  D
+"RTN","KBANLWRT",150,0)
+ . . D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("drugDrugCheck",,,0)) ; <drugDrugCheck>
+"RTN","KBANLWRT",151,0)
+ . . ;
+"RTN","KBANLWRT",152,0)
+ . . ; Id tag not needed.
+"RTN","KBANLWRT",153,0)
+ . . ; Source
+"RTN","KBANLWRT",154,0)
+ . . I $D(INTERACTIONS(D1,D2,"source")) D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("source",,$$ESC(INTERACTIONS(D1,D2,"source"))))
+"RTN","KBANLWRT",155,0)
+ . . E  D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("source",,"VISTA")) ; <source>VISTA</source>; also not needed but I want it.
+"RTN","KBANLWRT",156,0)
+ . . ;
+"RTN","KBANLWRT",157,0)
+ . . D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("interactedDrugList",,,0)) ; <interactedDrugList>
+"RTN","KBANLWRT",158,0)
+ . . ;
+"RTN","KBANLWRT",159,0)
+ . . D  ; <drug orderNumber="Z;2;Prospect" ien="455" gcnSeqNo="25485"/>
+"RTN","KBANLWRT",160,0)
+ . . . N %
+"RTN","KBANLWRT",161,0)
+ . . . S %("orderNumber")=$$VALUE^MXMLDOM(DOCHAND,D1,"orderNumber")
+"RTN","KBANLWRT",162,0)
+ . . . S %("ien")=$$VALUE^MXMLDOM(DOCHAND,D1,"ien")
+"RTN","KBANLWRT",163,0)
+ . . . S %("vuid")=$$VALUE^MXMLDOM(DOCHAND,D1,"vuid")
+"RTN","KBANLWRT",164,0)
+ . . . S %("drugName")=$$VALUE^MXMLDOM(DOCHAND,D1,"drugName")
+"RTN","KBANLWRT",165,0)
+ . . . D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("drug",.%))
+"RTN","KBANLWRT",166,0)
+ . . ;
+"RTN","KBANLWRT",167,0)
+ . . D  ; Ditto
+"RTN","KBANLWRT",168,0)
+ . . . N %
+"RTN","KBANLWRT",169,0)
+ . . . S %("orderNumber")=$$VALUE^MXMLDOM(DOCHAND,D2,"orderNumber")
+"RTN","KBANLWRT",170,0)
+ . . . S %("ien")=$$VALUE^MXMLDOM(DOCHAND,D2,"ien")
+"RTN","KBANLWRT",171,0)
+ . . . S %("vuid")=$$VALUE^MXMLDOM(DOCHAND,D2,"vuid")
+"RTN","KBANLWRT",172,0)
+ . . . S %("drugName")=$$VALUE^MXMLDOM(DOCHAND,D2,"drugName")
+"RTN","KBANLWRT",173,0)
+ . . . D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("drug",.%))
+"RTN","KBANLWRT",174,0)
+ . . ;
+"RTN","KBANLWRT",175,0)
+ . . D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("/interactedDrugList")) ; </interactedDrugList>
+"RTN","KBANLWRT",176,0)
+ . . ;
+"RTN","KBANLWRT",177,0)
+ . . N SEVTXT S SEVTXT=$S(INTERACTIONS(D1,D2)="C":"Contraindicated Drug Combination",1:"Severe Interaction")
+"RTN","KBANLWRT",178,0)
+ . . D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("severity",,SEVTXT))
+"RTN","KBANLWRT",179,0)
+ . . ;
+"RTN","KBANLWRT",180,0)
+ . . D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("interaction",,$$ESC(INTERACTIONS(D1,D2,"TITLE"))))
+"RTN","KBANLWRT",181,0)
+ . . ;
+"RTN","KBANLWRT",182,0)
+ . . I $D(INTERACTIONS(D1,D2,"shortText")) D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("shortText",,$$ESC(INTERACTIONS(D1,D2,"shortText"))))
+"RTN","KBANLWRT",183,0)
+ . . E  D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("shortText",,"More information not available in this interface"))
+"RTN","KBANLWRT",184,0)
+ . . ;
+"RTN","KBANLWRT",185,0)
+ . . D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("professionalMonograph",,,0))
+"RTN","KBANLWRT",186,0)
+ . . ;
+"RTN","KBANLWRT",187,0)
+ . . I $D(INTERACTIONS(D1,D2,"disclaimer")) D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("disclaimer",,$$ESC(INTERACTIONS(D1,D2,"disclaimer"))))
+"RTN","KBANLWRT",188,0)
+ . . E  D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("disclaimer",,"Disclaimer not available in this interface"))
+"RTN","KBANLWRT",189,0)
+ . . ;
+"RTN","KBANLWRT",190,0)
+ . . D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("monographTitle",,"MONOGRAPH TITLE:  "_$$ESC(INTERACTIONS(D1,D2,"TITLE"))))
+"RTN","KBANLWRT",191,0)
+ . . ;
+"RTN","KBANLWRT",192,0)
+ . . N SEVTXT2
+"RTN","KBANLWRT",193,0)
+ . . I $D(INTERACTIONS(D1,D2,"severityLevel")) S SEVTXT2="SEVERITY LEVEL:  "_$$ESC(INTERACTIONS(D1,D2,"severityLevel"))
+"RTN","KBANLWRT",194,0)
+ . . E  D
+"RTN","KBANLWRT",195,0)
+ . . . I INTERACTIONS(D1,D2)="C" S SEVTXT2="SEVERITY LEVEL:  1-Contraindicated Drug Combination: This drug combination is contraindicated and generally should not be dispensed or administered to the same patient."
+"RTN","KBANLWRT",196,0)
+ . . . E  S SEVTXT2="SEVERITY LEVEL:  2-Severe Interaction: Action is required to reduce the risk of severe adverse interaction."
+"RTN","KBANLWRT",197,0)
+ . . D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("severityLevel",,SEVTXT2)) ; Per PSODDPR3; Must have SEVERITY LEVEL
+"RTN","KBANLWRT",198,0)
+ . . ;
+"RTN","KBANLWRT",199,0)
+ . . I $D(INTERACTIONS(D1,D2,"mechanismOfAction")) D
+"RTN","KBANLWRT",200,0)
+ . . . D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("mechanismOfAction",,,0))
+"RTN","KBANLWRT",201,0)
+ . . . D PUT^MXMLBLD(.RESULT,"MECHANSIM OF ACTION:  ")
+"RTN","KBANLWRT",202,0)
+ . . . D:($D(INTERACTIONS(D1,D2,"mechanismOfAction"))#2) PUT^MXMLBLD(.RESULT,$$ESC(INTERACTIONS(D1,D2,"mechanismOfAction")))
+"RTN","KBANLWRT",203,0)
+ . . . N % S %="" F  S %=$O(INTERACTIONS(D1,D2,"mechanismOfAction",%)) Q:'%  D PUT^MXMLBLD(.RESULT,$$ESC(INTERACTIONS(D1,D2,"mechanismOfAction",%)))
+"RTN","KBANLWRT",204,0)
+ . . . D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("/mechanismOfAction"))
+"RTN","KBANLWRT",205,0)
+ . . E  D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("mechanismOfAction",,"MECHANISM OF ACTION:  Mechanism of Action not available in this interface"))
+"RTN","KBANLWRT",206,0)
+ . . ;
+"RTN","KBANLWRT",207,0)
+ . . I $D(INTERACTIONS(D1,D2,"clinicalEffects")) D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("clinicalEffects",,"CLINICAL EFFECTS:  "_$$ESC(INTERACTIONS(D1,D2,"clinicalEffects"))))
+"RTN","KBANLWRT",208,0)
+ . . E  D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("clinicalEffects",,"CLINICAL EFFECTS:  Clinical Effects not available in this interface"))
+"RTN","KBANLWRT",209,0)
+ . . ;
+"RTN","KBANLWRT",210,0)
+ . . I $D(INTERACTIONS(D1,D2,"preDisposingFactors")) D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("preDisposingFactors",,"PREDISPOSING FACTORS:  "_$$ESC(INTERACTIONS(D1,D2,"preDisposingFactors"))))
+"RTN","KBANLWRT",211,0)
+ . . E  D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("preDisposingFactors",,"PREDISPOSING FACTORS:  Pre-Disposing Factors not available in this interface"))
+"RTN","KBANLWRT",212,0)
+ . . ;
+"RTN","KBANLWRT",213,0)
+ . . I $D(INTERACTIONS(D1,D2,"patientManagement")) D
+"RTN","KBANLWRT",214,0)
+ . . . D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("patientManagement",,,0))
+"RTN","KBANLWRT",215,0)
+ . . . D PUT^MXMLBLD(.RESULT,"PATIENT MANAGEMENT:  ")
+"RTN","KBANLWRT",216,0)
+ . . . D:($D(INTERACTIONS(D1,D2,"patientManagement"))#2) PUT^MXMLBLD(.RESULT,$$ESC(INTERACTIONS(D1,D2,"patientManagement")))
+"RTN","KBANLWRT",217,0)
+ . . . N % S %="" F  S %=$O(INTERACTIONS(D1,D2,"patientManagement",%)) Q:'%  D PUT^MXMLBLD(.RESULT,$$ESC(INTERACTIONS(D1,D2,"patientManagement",%)))
+"RTN","KBANLWRT",218,0)
+ . . . D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("/patientManagement"))
+"RTN","KBANLWRT",219,0)
+ . . E  D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("patientManagement",,"PATIENT MANAGEMENT:  Patient Management recommendations not available in this interface"))
+"RTN","KBANLWRT",220,0)
+ . . ;
+"RTN","KBANLWRT",221,0)
+ . . I $D(INTERACTIONS(D1,D2,"discussion")) D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("discussion",,"DISCUSSION:  "_$$ESC(INTERACTIONS(D1,D2,"discussion"))))
+"RTN","KBANLWRT",222,0)
+ . . E  D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("discussion",,"DISCUSSION:  Further discussion not available in this interface"))
+"RTN","KBANLWRT",223,0)
+ . . ;
+"RTN","KBANLWRT",224,0)
+ . . D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("/professionalMonograph"))
+"RTN","KBANLWRT",225,0)
+ . . ;
+"RTN","KBANLWRT",226,0)
+ . . D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("/drugDrugCheck"))
+"RTN","KBANLWRT",227,0)
+ ;
+"RTN","KBANLWRT",228,0)
+ D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("/drugDrugChecks"))
+"RTN","KBANLWRT",229,0)
+ QUIT
+"RTN","KBANLWRT",230,0)
+ ;
+"RTN","KBANLWRT",231,0)
+RITEDUP(RESULT,DUPCLASS,DOCHAND) ; Private Proc; Write Duplicate Therapy
+"RTN","KBANLWRT",232,0)
+ ; Output (appending):
+"RTN","KBANLWRT",233,0)
+ ; - .RESULT
+"RTN","KBANLWRT",234,0)
+ ;
+"RTN","KBANLWRT",235,0)
+ ; Input:
+"RTN","KBANLWRT",236,0)
+ ; - DUPCLASS
+"RTN","KBANLWRT",237,0)
+ ; - DOCHAND
+"RTN","KBANLWRT",238,0)
+ ;
+"RTN","KBANLWRT",239,0)
+ ; See above for descriptions
+"RTN","KBANLWRT",240,0)
+ ;
+"RTN","KBANLWRT",241,0)
+ D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("drugTherapyChecks",,,0)) ; <drugTherapyChecks>
+"RTN","KBANLWRT",242,0)
+ ;
+"RTN","KBANLWRT",243,0)
+ ; D1=Drug 1 and D2=Drug 2
+"RTN","KBANLWRT",244,0)
+ N D1 S D1=0 F  S D1=$O(DUPCLASS(D1)) Q:'D1  D
+"RTN","KBANLWRT",245,0)
+ . N D2 S D2=0 F  S D2=$O(DUPCLASS(D1,D2)) Q:'D2  D
+"RTN","KBANLWRT",246,0)
+ . . D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("drugTherapyCheck",,,0)) ; <drugTherapyCheck>
+"RTN","KBANLWRT",247,0)
+ . . ;
+"RTN","KBANLWRT",248,0)
+ . . ; Id tag not needed.
+"RTN","KBANLWRT",249,0)
+ . . ; Source
+"RTN","KBANLWRT",250,0)
+ . . I $D(DUPCLASS(D1,D2,"source")) D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("source",,$$ESC(DUPCLASS(D1,D2,"source"))))
+"RTN","KBANLWRT",251,0)
+ . . E  D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("source",,"VISTA")) ; <source>VISTA</source>; also not needed but I want it.
+"RTN","KBANLWRT",252,0)
+ . . ;
+"RTN","KBANLWRT",253,0)
+ . . D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("interactedDrugList",,,0)) ; <interactedDrugList>
+"RTN","KBANLWRT",254,0)
+ . . ;
+"RTN","KBANLWRT",255,0)
+ . . D  ; <drug orderNumber="Z;2;Prospect" ien="455" gcnSeqNo="25485"/>
+"RTN","KBANLWRT",256,0)
+ . . . N %
+"RTN","KBANLWRT",257,0)
+ . . . S %("orderNumber")=$$VALUE^MXMLDOM(DOCHAND,D1,"orderNumber")
+"RTN","KBANLWRT",258,0)
+ . . . S %("ien")=$$VALUE^MXMLDOM(DOCHAND,D1,"ien")
+"RTN","KBANLWRT",259,0)
+ . . . S %("vuid")=$$VALUE^MXMLDOM(DOCHAND,D1,"vuid")
+"RTN","KBANLWRT",260,0)
+ . . . S %("drugName")=$$VALUE^MXMLDOM(DOCHAND,D1,"drugName")
+"RTN","KBANLWRT",261,0)
+ . . . D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("drug",.%))
+"RTN","KBANLWRT",262,0)
+ . . ;
+"RTN","KBANLWRT",263,0)
+ . . D  ; Ditto
+"RTN","KBANLWRT",264,0)
+ . . . N %
+"RTN","KBANLWRT",265,0)
+ . . . S %("orderNumber")=$$VALUE^MXMLDOM(DOCHAND,D2,"orderNumber")
+"RTN","KBANLWRT",266,0)
+ . . . S %("ien")=$$VALUE^MXMLDOM(DOCHAND,D2,"ien")
+"RTN","KBANLWRT",267,0)
+ . . . S %("vuid")=$$VALUE^MXMLDOM(DOCHAND,D2,"vuid")
+"RTN","KBANLWRT",268,0)
+ . . . S %("drugName")=$$VALUE^MXMLDOM(DOCHAND,D2,"drugName")
+"RTN","KBANLWRT",269,0)
+ . . . D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("drug",.%))
+"RTN","KBANLWRT",270,0)
+ . . ;
+"RTN","KBANLWRT",271,0)
+ . . D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("/interactedDrugList")) ; </interactedDrugList>
+"RTN","KBANLWRT",272,0)
+ . . ;
+"RTN","KBANLWRT",273,0)
+ . . ; Fill classification, duplicateAllowance, shortText
+"RTN","KBANLWRT",274,0)
+ . . D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("classification",,$$ESC(DUPCLASS(D1,D2))))
+"RTN","KBANLWRT",275,0)
+ . . ;
+"RTN","KBANLWRT",276,0)
+ . . I $D(DUPCLASS(D1,D2,"duplicateAllowance")) D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("duplicateAllowance",,$$ESC(DUPCLASS(D1,D2,"duplicateAllowance"))))
+"RTN","KBANLWRT",277,0)
+ . . E  D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("duplicateAllowance",,0))
+"RTN","KBANLWRT",278,0)
+ . . ;
+"RTN","KBANLWRT",279,0)
+ . . I $D(DUPCLASS(D1,D2,"shortText")) D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("shortText",,$$ESC(DUPCLASS(D1,D2,"shortText"))))
+"RTN","KBANLWRT",280,0)
+ . . E  D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("shortText",,"More information not available in this interface"))
+"RTN","KBANLWRT",281,0)
+ . . ;
+"RTN","KBANLWRT",282,0)
+ . . D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("/drugTherapyCheck")) ; Close this check
+"RTN","KBANLWRT",283,0)
+ ;
+"RTN","KBANLWRT",284,0)
+ D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("/drugTherapyChecks"))
+"RTN","KBANLWRT",285,0)
+ QUIT
+"RTN","KBANLWRT",286,0)
+ ;
+"RTN","KBANLWRT",287,0)
+RITEDOSE(RESULT) ; Private Proc; Write dose - not implmemented in this interface
+"RTN","KBANLWRT",288,0)
+ ; Send back a correct but empty response.
+"RTN","KBANLWRT",289,0)
+ D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("drugDoseChecks"))
+"RTN","KBANLWRT",290,0)
+ QUIT
+"RTN","KBANLWRT",291,0)
+ ;
+"RTN","KBANLWRT",292,0)
+RITEDNCK(RESULT,DRUGSNOTCHECKED,DOCHAND) ; Private Proc; Write drugs not checked...
+"RTN","KBANLWRT",293,0)
+ ; Input:
+"RTN","KBANLWRT",294,0)
+ ; .RESULT - RPC style return array
+"RTN","KBANLWRT",295,0)
+ ; .DRUGSNOTCHECKED - List of drugs where checks couldn't be performed
+"RTN","KBANLWRT",296,0)
+ ; DOCHAND - Original PEPS message MXML Document handle
+"RTN","KBANLWRT",297,0)
+ ;
+"RTN","KBANLWRT",298,0)
+ D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("drugsNotChecked",,,0)) ; Open tag
+"RTN","KBANLWRT",299,0)
+ N D F D=0:0 S D=$O(DRUGSNOTCHECKED(D)) Q:'D  D
+"RTN","KBANLWRT",300,0)
+ . N % S %("status")="vuidMissingOrInvalid"
+"RTN","KBANLWRT",301,0)
+ . D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("drugNotChecked",.%,,0)) ; Open tag
+"RTN","KBANLWRT",302,0)
+ . ; Punch in the drug:
+"RTN","KBANLWRT",303,0)
+ . D  ; <drug orderNumber="Z;2;Prospect" ien="455" gcnSeqNo="25485"/>
+"RTN","KBANLWRT",304,0)
+ . . N %
+"RTN","KBANLWRT",305,0)
+ . . S %("orderNumber")=$$VALUE^MXMLDOM(DOCHAND,D,"orderNumber")
+"RTN","KBANLWRT",306,0)
+ . . S %("ien")=$$VALUE^MXMLDOM(DOCHAND,D,"ien")
+"RTN","KBANLWRT",307,0)
+ . . S %("vuid")=$$VALUE^MXMLDOM(DOCHAND,D,"vuid")
+"RTN","KBANLWRT",308,0)
+ . . S %("drugName")=$$VALUE^MXMLDOM(DOCHAND,D,"drugName")
+"RTN","KBANLWRT",309,0)
+ . . D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("drug",.%))
+"RTN","KBANLWRT",310,0)
+ . D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("/drugNotChecked")) ; Close tag
+"RTN","KBANLWRT",311,0)
+ D PUT^MXMLBLD(.RESULT,$$MKTAG^MXMLBLD("/drugsNotChecked")) ; Close tag
+"RTN","KBANLWRT",312,0)
+ QUIT
+"RTN","KBANLWRT",313,0)
+ESC(STR) ; Escape string for XML
+"RTN","KBANLWRT",314,0)
+ Q $$SYMENC^MXMLUTL(STR)
+"RTN","PSODDPRE")
+0^4^B135966725
+"RTN","PSODDPRE",1,0)
+PSODDPRE ;BIR/SAB - Enhanced OP order checks ;2014-02-03  9:11 AM
+"RTN","PSODDPRE",2,0)
+ ;;7.0;OUTPATIENT PHARMACY;**251,375,387,379,390,11310000,LOCAL**;DEC 1997;Build 9
+"RTN","PSODDPRE",3,0)
+ ;External references PSOL and PSOUL^PSSLOCK supported by DBIA 2789
+"RTN","PSODDPRE",4,0)
+ ;External references to ^PSSDSAPM supported by DBIA 5570
+"RTN","PSODDPRE",5,0)
+ ;External references to ^PSSHRQ2 supported by DBIA 5369
+"RTN","PSODDPRE",6,0)
+ ;External reference to ^PS(50.7 supported by DBIA 2223
+"RTN","PSODDPRE",7,0)
+ ;External reference to ^PS(55 supported by DBIA 2228
+"RTN","PSODDPRE",8,0)
+ ;External reference to ^PSDRUG( supported by DBIA 221
+"RTN","PSODDPRE",9,0)
+ ;External reference to ^PS(50.606 supported by DBIA 2174
+"RTN","PSODDPRE",10,0)
+ ;External reference to $$SUP^PSSDSAPI supported by DBIA 5425
+"RTN","PSODDPRE",11,0)
+ ;
+"RTN","PSODDPRE",12,0)
+ ; VEN/SMH - *11310000 - Keep drugs even if no GCN (as variable SEQN) is available.
+"RTN","PSODDPRE",13,0)
+ ;
+"RTN","PSODDPRE",14,0)
+ K IT,^TMP("PSORXDC",$J),^TMP("PSORXDD",$J),CLS,^TMP($J,"PSONVADD"),^TMP($J,"PSONRVADD"),^TMP($J,"PSORDI"),^TMP($J,"PSORMDD")
+"RTN","PSODDPRE",15,0)
+ N PSONULN,PSODLQT,ZZPSODRG S LIST="PSOPEPS",$P(PSONULN,"-",79)="-",(STA,DNM)=""
+"RTN","PSODDPRE",16,0)
+ D HD^PSODDPR2():(($Y+5)'>IOSL) Q:$G(PSODLQT)
+"RTN","PSODDPRE",17,0)
+ F  S STA=$O(PSOSD(STA)) Q:STA=""  F  S DNM=$O(PSOSD(STA,DNM)) Q:DNM=""!$G(PSORX("DFLG"))  I $P(PSOSD(STA,DNM),"^")'=$G(PSORENW("OIRXN")) D  Q:$G(PSORX("DFLG"))
+"RTN","PSODDPRE",18,0)
+ .I STA="PENDING" D ^PSODDPR1 Q
+"RTN","PSODDPRE",19,0)
+ .I STA="ZNONVA" D NVA^PSODDPR1 Q
+"RTN","PSODDPRE",20,0)
+ .D:PSODRUG("NAME")=$P(DNM,"^")&('$D(^XUSEC("PSORPH",DUZ)))  Q:$G(PSORX("DFLG"))
+"RTN","PSODDPRE",21,0)
+ ..I '$P(PSOPAR,"^",2),'$P(PSOPAR,"^",16) D DUP I $G(PSOTECCK) S PSORX("DFLG")=1 Q
+"RTN","PSODDPRE",22,0)
+ ..I '$P(PSOPAR,"^",2),$P(PSOPAR,"^",16),$G(PSOTECCK) D DUP Q
+"RTN","PSODDPRE",23,0)
+ ..I $P(PSOPAR,"^",2),$G(PSOTECCK) D  Q
+"RTN","PSODDPRE",24,0)
+ ...S DA=+PSOSD(STA,DNM),PSOCLC=DUZ
+"RTN","PSODDPRE",25,0)
+ ...S MSG="Discontinued During Reinstating Prescription Entry",ACT="Discontinued during Rx Reinstate."
+"RTN","PSODDPRE",26,0)
+ ...S ^TMP("PSORXDC",$J,DA,0)="52^"_DA_"^"_MSG_"^C^"_ACT_"^"_STA_"^"_DNM,PSONOOR="D",^TMP("PSORXDD",$J)=DNM
+"RTN","PSODDPRE",27,0)
+ ..I $P($G(PSOPAR),"^",16) D DUP Q
+"RTN","PSODDPRE",28,0)
+ ..I $P(PSOPAR,"^",2),'$P(PSOPAR,"^",16) D DUP S PSORX("DFLG")=1 Q
+"RTN","PSODDPRE",29,0)
+ .D:PSODRUG("NAME")=$P(DNM,"^")&($D(^XUSEC("PSORPH",DUZ))) DUP
+"RTN","PSODDPRE",30,0)
+ K ^TMP($J,"DD"),^TMP($J,"DC"),^TMP($J,"DI"),^TMP($J,"PSODRDI")
+"RTN","PSODDPRE",31,0)
+ Q:$G(PSORX("DFLG"))
+"RTN","PSODDPRE",32,0)
+ M ZZPSODRG=PSODRUG
+"RTN","PSODDPRE",33,0)
+ S LIST="PSOPEPS" D REMOTE^PSOCPPRE
+"RTN","PSODDPRE",34,0)
+ M PSODRUG=ZZPSODRG
+"RTN","PSODDPRE",35,0)
+ Q
+"RTN","PSODDPRE",36,0)
+OBX  ;process enhanced order checks
+"RTN","PSODDPRE",37,0)
+ K ZDGDG,ZTHER,IT
+"RTN","PSODDPRE",38,0)
+ S LIST="PSOPEPS" K PSODLQT,DTOUT,DUOUT,DIRUT,PSODOSD
+"RTN","PSODDPRE",39,0)
+ I $P(^TMP($J,LIST,"OUT",0),"^")=-1 G EXIT
+"RTN","PSODDPRE",40,0)
+ W !,"Now Processing Enhanced Order Checks!  Please wait...",! H 1
+"RTN","PSODDPRE",41,0)
+ D FDB S PDRG=PSODRUG("IEN"),DO=0 D IN^PSSHRQ2(LIST)    ;call 2 fdb
+"RTN","PSODDPRE",42,0)
+ ;
+"RTN","PSODDPRE",43,0)
+ K DIR
+"RTN","PSODDPRE",44,0)
+ I $P(^TMP($J,LIST,"OUT",0),"^")=-1 D DATACK G EXIT
+"RTN","PSODDPRE",45,0)
+ I '$D(PSODGCK) D ^PSODDPR2 ;if order checks returned
+"RTN","PSODDPRE",46,0)
+ I $D(PSODGCK) D PROC^PSSDIUTL Q  ;if running DX option
+"RTN","PSODDPRE",47,0)
+ I '$G(PSOCOPY)&('$G(PSORENW)),$G(PSOQUIT) D
+"RTN","PSODDPRE",48,0)
+ .I $G(PSOREINS) Q:$G(PSODLQT)  S PSORX("DFLG")=1
+"RTN","PSODDPRE",49,0)
+ ;
+"RTN","PSODDPRE",50,0)
+EXIT ;
+"RTN","PSODDPRE",51,0)
+ D ^PSOBUILD
+"RTN","PSODDPRE",52,0)
+ K CAN,DA,DIR,DNM,DUPRX0,ISSD,J,LSTFL,MSG,PHYS,PSOCLC,PSONULN,REA,RFLS,RX0,RX2,RXN,RXREC,ST,Y,ZZ,ACT,PSOCLOZ,PSOLR,PSOLDT,PSOCD,SIG
+"RTN","PSODDPRE",53,0)
+ K DO,PDRG,IT,PSODLQT
+"RTN","PSODDPRE",54,0)
+ K ^TMP($J,LIST,"IN","PING"),^TMP($J,LIST,"OUT","EXCEPTIONS"),^TMP($J,"PSOPEPS"),^TMP($J,"PSORDI")
+"RTN","PSODDPRE",55,0)
+ Q
+"RTN","PSODDPRE",56,0)
+DUP S:$P(PSOSD(STA,DNM),"^",2)<10!($P(PSOSD(STA,DNM),"^",2)=16) DUP=1 W !,PSONULN,!,$C(7),"Duplicate Drug in Local Rx:",!
+"RTN","PSODDPRE",57,0)
+ S RXREC=+PSOSD(STA,DNM),MSG="Discontinued During "_$S('$G(PSONV):"New Prescription Entry",1:"Verification")_" - Duplicate Drug"
+"RTN","PSODDPRE",58,0)
+DATA S DUPRX0=^PSRX(RXREC,0),RFLS=$P(DUPRX0,"^",9),ISSD=$P(^PSRX(RXREC,0),"^",13),RX0=DUPRX0,RX2=^PSRX(RXREC,2),$P(RX0,"^",15)=+$G(^PSRX(RXREC,"STA"))
+"RTN","PSODDPRE",59,0)
+ S RXRECLOC=$G(RXREC)
+"RTN","PSODDPRE",60,0)
+ S DA=RXREC
+"RTN","PSODDPRE",61,0)
+ D HD^PSODDPR2():(($Y+5)'>IOSL) Q:$G(PSODLQT)
+"RTN","PSODDPRE",62,0)
+ W !,$J("Rx: ",24)_$P(^PSRX(+PSOSD(STA,DNM),0),"^")
+"RTN","PSODDPRE",63,0)
+ W !,$J("Drug: ",24)_$P(DNM,"^")
+"RTN","PSODDPRE",64,0)
+ K FSIG,BSIG I $P($G(^PSRX(RXREC,"SIG")),"^",2) D FSIG^PSOUTLA("R",RXREC,54) F PSREV=1:1 Q:'$D(FSIG(PSREV))  S BSIG(PSREV)=FSIG(PSREV)
+"RTN","PSODDPRE",65,0)
+ K FSIG,PSREV I '$P($G(^PSRX(RXREC,"SIG")),"^",2) D EN2^PSOUTLA1(RXREC,54)
+"RTN","PSODDPRE",66,0)
+ W !,$J("SIG: ",24) W $G(BSIG(1))
+"RTN","PSODDPRE",67,0)
+ I $O(BSIG(1)) F PSREV=1:0 S PSREV=$O(BSIG(PSREV)) Q:'PSREV  W !?24,$G(BSIG(PSREV))
+"RTN","PSODDPRE",68,0)
+ K BSIG,PSREV
+"RTN","PSODDPRE",69,0)
+ D HD^PSODDPR2():(($Y+5)'>IOSL) Q:$G(PSODLQT)
+"RTN","PSODDPRE",70,0)
+ W !,$J("QTY: ",24)_$P(DUPRX0,"^",7),?42,$J("Refills remaining: ",24),RFLS-$S($D(^PSRX(RXREC,1,0)):$P(^(0),"^",4),1:0)
+"RTN","PSODDPRE",71,0)
+ S PHYS=$S($D(^VA(200,+$P(DUPRX0,"^",4),0)):$P(^(0),"^"),1:"UNKNOWN")
+"RTN","PSODDPRE",72,0)
+ W !,$J("Provider: ",24)_PHYS,?42,$J("Issued: ",24),$E(ISSD,4,5)_"/"_$E(ISSD,6,7)_"/"_$E(ISSD,2,3)
+"RTN","PSODDPRE",73,0)
+ W !,$J("Status: ",24) S J=RXREC D STAT^PSOFUNC W ST K RX0,RX2
+"RTN","PSODDPRE",74,0)
+ S LSTFL=+^PSRX(RXREC,3) W ?42,$J("Last filled: ",24)_$E(LSTFL,4,5)_"/"_$E(LSTFL,6,7)_"/"_$E(LSTFL,2,3)
+"RTN","PSODDPRE",75,0)
+ D PRSTAT(RXREC)
+"RTN","PSODDPRE",76,0)
+ W !?42,$J("Days Supply: ",24)_$P(DUPRX0,"^",8)
+"RTN","PSODDPRE",77,0)
+ W !,PSONULN,! I $P($G(^PS(53,+$P($G(PSORX("PATIENT STATUS")),"^"),0)),"^")["AUTH ABS"!($G(PSORX("PATIENT STATUS"))["AUTH ABS")&'$P(PSOPAR,"^",5) W !,"PATIENT ON AUTHORIZED ABSENCE!" K RXRECLOC Q
+"RTN","PSODDPRE",78,0)
+ASKCAN I $P(PSOSD(STA,DNM),"^",2)>10,$P(PSOSD(STA,DNM),"^",2)'=16 D  Q
+"RTN","PSODDPRE",79,0)
+ .K DIR S DIR(0)="E",DIR("?")="Press Return to continue",DIR("A")="Press Return to continue" D ^DIR S:($D(DTOUT))!($D(DUOUT)) PSODLQT=1,PSORX("DFLG")=1 K DIR,DTOUT,DUOUT,DIRUT,RXRECLOC
+"RTN","PSODDPRE",80,0)
+ .S ^TMP("PSORXDD",$J,RXREC,0)=1
+"RTN","PSODDPRE",81,0)
+ I '$P(PSOPAR,"^",16),'$D(^XUSEC("PSORPH",DUZ)) D  Q
+"RTN","PSODDPRE",82,0)
+ .S PSORX("DFLG")=1 K RXRECLOC,DIR S DIR(0)="E",DIR("?")="Press Return to continue",DIR("A")="Press Return to continue"
+"RTN","PSODDPRE",83,0)
+ .D ^DIR K DIR
+"RTN","PSODDPRE",84,0)
+ I $P(PSOSD(STA,DNM),"^",2)=16,$G(DUP) D  Q
+"RTN","PSODDPRE",85,0)
+ .W !!,"Prescription "_$P($G(^PSRX(+$G(RXRECLOC),0)),"^")_" is on Provider Hold, it cannot be discontinued.",!
+"RTN","PSODDPRE",86,0)
+ .K DUP,DIR,RXRECLOC S PSORX("DFLG")=1 S DIR(0)="E",DIR("?")="Press Return to continue",DIR("A")="Press Return to continue" D ^DIR K DIR
+"RTN","PSODDPRE",87,0)
+ D PSOL^PSSLOCK(RXRECLOC) I '$G(PSOMSG) D  K PSOMSG,DIR,DUP,RXRECLOC S DIR("A")="Press Return to continue",DIR(0)="E",DIR("?")="Press Return to continue" D ^DIR K DIR S PSORX("DFLG")=1 Q
+"RTN","PSODDPRE",88,0)
+ .I $P($G(PSOMSG),"^",2)'="" W !!,$P(PSOMSG,"^",2),! Q
+"RTN","PSODDPRE",89,0)
+ .W !!,"Another person is editing Rx "_$P($G(^PSRX(RXRECLOC,0)),"^"),!
+"RTN","PSODDPRE",90,0)
+ I $D(PSODGCK) K RXRECLOC,DUP,CLS,PSONOOR Q
+"RTN","PSODDPRE",91,0)
+ K PSOMSG S DIR("A")=$S($P(PSOSD(STA,DNM),"^",2)=12:"Reinstate",1:"Discontinue")_" RX # "_$P(^PSRX(+PSOSD(STA,DNM),0),"^")_" "_$P(DNM,"^")_" Y/N",DIR(0)="Y"
+"RTN","PSODDPRE",92,0)
+ S DIR("?")="Enter Y to "_$S($P(PSOSD(STA,DNM),"^",2)=12:"reinstate",1:"discontinue")_" this RX."
+"RTN","PSODDPRE",93,0)
+ D ^DIR K DIR S DA=RXREC S ACT=$S($D(SPCANC):"Reinstated during Rx cancel.",1:$S($P(PSOSD(STA,DNM),"^",2)=12:"Reinstated",1:"Discontinued")_" while "_$S('$G(PSONV):"entering",1:"verifying")_" new RX")
+"RTN","PSODDPRE",94,0)
+ D CMOP^PSOUTL I $G(CMOP("S"))="L" W !,"A CMOP Rx cannot be discontinued during transmission!",! S Y=0 K CMOP
+"RTN","PSODDPRE",95,0)
+ I 'Y W !,$C(7)," -Prescription was not "_$S($P(PSOSD(STA,DNM),"^",2)=12:"reinstated",1:"discontinued")_"..." D  Q
+"RTN","PSODDPRE",96,0)
+ .S:'$D(PSOCLC) PSOCLC=DUZ S MSG=ACT,REA=$S($P(PSOSD(STA,DNM),"^",2)=12:"R",1:"C") S:$G(DUP) PSORX("DFLG")=1 K DUP D ULRX K RXRECLOC
+"RTN","PSODDPRE",97,0)
+ .K ^TMP("PSORXDC",$J,RXREC,0)
+"RTN","PSODDPRE",98,0)
+ I $P(PSOSD(STA,DNM),"^",2)=16,$G(CLS) W !!,"Prescription "_$P($G(^PSRX(+$G(RXRECLOC),0)),"^")_" is on Provider Hold, it cannot be discontinued.",! D ULRX K CLS,DUP,RXRECLOC S PSORX("DFLG")=1 H 2 Q
+"RTN","PSODDPRE",99,0)
+ S PSOCLC=DUZ,MSG=$S($G(MSG)]"":MSG,1:ACT_" During New RX "_$S('$G(PSONV):"Entry",1:"Verification")_" - Duplicate Rx"),REA=$S($P(PSOSD(STA,DNM),"^",2)=12:"R",1:"C")
+"RTN","PSODDPRE",100,0)
+ W !! K ^UTILITY($J,"W") S DIWL=1,DIWR=75,DIWF=""
+"RTN","PSODDPRE",101,0)
+ S X="Rx #"_$P(^PSRX(+PSOSD(STA,DNM),0),"^")_" "_DNM_" will be discontinued after"_$S('$G(PSOTECCK):" the acceptance of the new order.",1:" reinstating the order.") D ^DIWP
+"RTN","PSODDPRE",102,0)
+ F ZX=0:0 S ZX=$O(^UTILITY($J,"W",1,ZX)) Q:'ZX  W !,^UTILITY($J,"W",1,ZX,0)
+"RTN","PSODDPRE",103,0)
+ K ^UTILITY($J,"W"),X,DIWL,DIWR,DIWF W !
+"RTN","PSODDPRE",104,0)
+ S ^TMP("PSORXDC",$J,RXREC,0)="52^"_DA_"^"_MSG_"^"_REA_"^"_ACT_"^"_STA_"^"_DNM,PSONOOR="D",^TMP("PSORXDD",$J)=DNM H 2
+"RTN","PSODDPRE",105,0)
+ K RXRECLOC,DUP,CLS,PSONOOR
+"RTN","PSODDPRE",106,0)
+ Q
+"RTN","PSODDPRE",107,0)
+FDB ;build drug check input
+"RTN","PSODDPRE",108,0)
+ N ID,ORTYP,PSOI,ORN S DFN=PSODFN,CT=0
+"RTN","PSODDPRE",109,0)
+ S ID=+$$GETVUID^XTID(50.68,,+$P(PSODRUG("NDF"),"A",2)_",")
+"RTN","PSODDPRE",110,0)
+ S P1=$P(PSODRUG("NDF"),"A"),P2=$P(PSODRUG("NDF"),"A",2),X=$$PROD0^PSNAPIS(P1,P2),SEQN=+$P(X,"^",7)
+"RTN","PSODDPRE",111,0)
+ I 'SEQN K ^TMP($J,LIST,"OUT","EXCEPTIONS"),^TMP($J,LIST,"IN") ; VEN/SMH - I think this line is useless. Won't worry about it.
+"RTN","PSODDPRE",112,0)
+ S ^TMP($J,LIST,"IN","PROSPECTIVE","Z;1;PROSPECTIVE;1")=SEQN_"^"_ID_"^"_PSODRUG("IEN")_"^"_$P(^PSDRUG(PSODRUG("IEN"),0),"^")
+"RTN","PSODDPRE",113,0)
+ K:$D(PSODGCK)&$D(PSODGCKX) ^TMP($J,LIST,"IN","PROSPECTIVE","Z;1;PROSPECTIVE;1"),PSODGCKX
+"RTN","PSODDPRE",114,0)
+ S ^TMP($J,LIST,"IN","IEN")=PSODFN,^TMP($J,LIST,"IN","DRUGDRUG")="",^TMP($J,LIST,"IN","THERAPY")=""
+"RTN","PSODDPRE",115,0)
+ ;K ID,P1,P2 N ODRG,TU S (STA,DNM)="" I '$G(PSOCOPY),'$G(SEQN) K SEQN Q  ; *11310000 VEN/SMH - old
+"RTN","PSODDPRE",116,0)
+ K ID,P1,P2 N ODRG,TU S (STA,DNM)=""  ; *11310000 VEN/SMH - new: keep going even if no SEQN
+"RTN","PSODDPRE",117,0)
+ ;build profile drug order checks
+"RTN","PSODDPRE",118,0)
+ F  S STA=$O(PSOSD(STA)) Q:STA=""  F  S DNM=$O(PSOSD(STA,DNM)) Q:DNM=""   D  ;I $P(PSOSD(STA,DNM),"^")'=$G(PSORENW("OIRXN")) S CT=CT+1 D
+"RTN","PSODDPRE",119,0)
+ .Q:$P(PSOSD(STA,DNM),"^")=$G(PSORENW("OIRXN"))&('$G(PSOCOPY))
+"RTN","PSODDPRE",120,0)
+ .S CT=CT+1
+"RTN","PSODDPRE",121,0)
+ .I STA="PENDING" N DDRG D
+"RTN","PSODDPRE",122,0)
+ ..Q:$G(^TMP("PSORXDC",$J,$P(PSOSD(STA,DNM),"^",10),0))]""
+"RTN","PSODDPRE",123,0)
+ ..Q:$G(PSODRUG("IEN"))=$P(^PS(52.41,$P(PSOSD(STA,DNM),"^",10),0),"^",9)
+"RTN","PSODDPRE",124,0)
+ ..Q:$P(^PS(52.41,$P(PSOSD(STA,DNM),"^",10),0),"^",3)="RF"
+"RTN","PSODDPRE",125,0)
+ ..Q:$G(^TMP("PSORXPO",$J,$P(PSOSD(STA,DNM),"^",10),0))
+"RTN","PSODDPRE",126,0)
+ ..S RXREC=$P(PSOSD(STA,DNM),"^",10),ORN=$P(^PS(52.41,RXREC,0),"^"),ODRG=$P(^(0),"^",9),ORTYP="P"
+"RTN","PSODDPRE",127,0)
+ ..I ODRG D  K ODRG Q
+"RTN","PSODDPRE",128,0)
+ ...I $P($G(^PSDRUG(ODRG,0)),"^",3)["S"!($E($P($G(^PSDRUG(ODRG,0)),"^",2),1,2)="XA") Q 
+"RTN","PSODDPRE",129,0)
+ ...S PDNM=$P(^PSDRUG(ODRG,0),"^") D ID
+"RTN","PSODDPRE",130,0)
+ ..E  N PSOI,DDRG,ODRG,SEQN,DDRG S PSOI=$P(^PS(52.41,RXREC,0),"^",8) D
+"RTN","PSODDPRE",131,0)
+ ...S PDNM=$P(^PS(50.7,PSOI,0),"^")_" "_$P(^PS(50.606,$P(^(0),"^",2),0),"^")
+"RTN","PSODDPRE",132,0)
+ ...S DDRG=$$DRG^PSSDSAPM(PSOI,"O") I '$P(DDRG,";") D OIX Q
+"RTN","PSODDPRE",133,0)
+ ...I $P($G(^PSDRUG($P(DDRG,";"),0)),"^",3)["S"!($E($P($G(^PSDRUG($P(DDRG,";"),0)),"^",2),1,2)="XA") Q
+"RTN","PSODDPRE",134,0)
+ ...S ODRG=$P(DDRG,";"),SEQN=+$P(DDRG,";",3) K PSOI
+"RTN","PSODDPRE",135,0)
+ ...N ID S ID=+$$GETVUID^XTID(50.68,,+$P($G(^PSDRUG(ODRG,"ND")),"^",3)_",")
+"RTN","PSODDPRE",136,0)
+ ...D ID1
+"RTN","PSODDPRE",137,0)
+ .I STA="ZNONVA" D  Q
+"RTN","PSODDPRE",138,0)
+ ..Q:$G(^TMP($J,"PSONVADD",$P(PSOSD(STA,DNM),"^",10),0))]""
+"RTN","PSODDPRE",139,0)
+ ..S RXREC=$P(PSOSD(STA,DNM),"^",10),ODRG=$P(^PS(55,PSODFN,"NVA",RXREC,0),"^",2),ORN=$P(^(0),"^",8),ORTYP="N"
+"RTN","PSODDPRE",140,0)
+ ..I ODRG D  K ODRG Q
+"RTN","PSODDPRE",141,0)
+ ...I $P($G(^PSDRUG(ODRG,0)),"^",3)["S"!($E($P($G(^PSDRUG(ODRG,0)),"^",2),1,2)="XA") Q
+"RTN","PSODDPRE",142,0)
+ ...S PDNM=$P(^PSDRUG(ODRG,0),"^") D ID
+"RTN","PSODDPRE",143,0)
+ ..E  N PSOI,DDRG,ODRG,SEQN,DDRG S PSOI=$P(^PS(55,PSODFN,"NVA",RXREC,0),"^") D
+"RTN","PSODDPRE",144,0)
+ ...S PDNM=$P(^PS(50.7,PSOI,0),"^")_" "_$P(^PS(50.606,$P(^(0),"^",2),0),"^")
+"RTN","PSODDPRE",145,0)
+ ...S DDRG=$$DRG^PSSDSAPM(PSOI,"X") I '$P(DDRG,";") D:'$$NVATST(PSOI) OIX Q
+"RTN","PSODDPRE",146,0)
+ ...I $P($G(^PSDRUG($P(DDRG,";"),0)),"^",3)["S"!($E($P($G(^PSDRUG($P(DDRG,";"),0)),"^",2),1,2)="XA") Q
+"RTN","PSODDPRE",147,0)
+ ...S ODRG=$P(DDRG,";"),SEQN=+$P(DDRG,";",3) K PSOI
+"RTN","PSODDPRE",148,0)
+ ...N ID S ID=+$$GETVUID^XTID(50.68,,+$P($G(^PSDRUG(ODRG,"ND")),"^",3)_",")
+"RTN","PSODDPRE",149,0)
+ ...D ID1
+"RTN","PSODDPRE",150,0)
+ .I $P($G(^PSRX(+PSOSD(STA,DNM),0)),"^",6) D
+"RTN","PSODDPRE",151,0)
+ ..Q:$G(^TMP("PSORXDC",$J,$P(PSOSD(STA,DNM),"^"),0))]""
+"RTN","PSODDPRE",152,0)
+ ..Q:$G(^TMP("PSORXBO",$J,$P(PSOSD(STA,DNM),"^"),0))
+"RTN","PSODDPRE",153,0)
+ ..Q:$G(^TMP("PSORXDD",$J,$P(PSOSD(STA,DNM),"^"),0))
+"RTN","PSODDPRE",154,0)
+ ..;I $P(PSOSD(STA,DNM),"^",2)>5,$P(PSOSD(STA,DNM),"^",2)'=16 Q
+"RTN","PSODDPRE",155,0)
+ ..S RXREC=+PSOSD(STA,DNM),ODRG=$P(^PSRX(RXREC,0),"^",6),ORN=$P($G(^("OR1")),"^",2),ORTYP="O"
+"RTN","PSODDPRE",156,0)
+ ..I ODRG D
+"RTN","PSODDPRE",157,0)
+ ...I $P($G(^PSDRUG(ODRG,0)),"^",3)["S"!($E($P($G(^PSDRUG(ODRG,0)),"^",2),1,2)="XA") Q
+"RTN","PSODDPRE",158,0)
+ ...I STA="DISCONTINUED" Q:$$DUPTHER(RXREC)
+"RTN","PSODDPRE",159,0)
+ ...S PDNM=$P(^PSDRUG(ODRG,0),"^") D ID
+"RTN","PSODDPRE",160,0)
+ D IMO^PSODDPR7(PSODFN)
+"RTN","PSODDPRE",161,0)
+ K RXREC,ID,STA,DNM,PSOI,ORN,ODRG,ORTYP,CT,PDNM,TU,DDRG
+"RTN","PSODDPRE",162,0)
+ Q
+"RTN","PSODDPRE",163,0)
+ ;
+"RTN","PSODDPRE",164,0)
+ID N ID,P1,P2,PSODGCKP S ID=+$$GETVUID^XTID(50.68,,+$P($G(^PSDRUG(ODRG,"ND")),"^",3)_",")
+"RTN","PSODDPRE",165,0)
+ S P1=$P($G(^PSDRUG(ODRG,"ND")),"^"),P2=$P($G(^("ND")),"^",3),X=$$PROD0^PSNAPIS(P1,P2),SEQN=$P(X,"^",7)
+"RTN","PSODDPRE",166,0)
+ID1 S PSODGCKP=$S($G(PSODGCK):"PROSPECTIVE",1:"PROFILE")
+"RTN","PSODDPRE",167,0)
+ S ^TMP($J,LIST,"IN",PSODGCKP,$S($D(PSODGCK):"Z",1:ORTYP)_";"_RXREC_";"_PSODGCKP_";"_CT)=SEQN_"^"_ID_"^"_ODRG_"^"_PDNM_"^"_ORN_"^O" K ID
+"RTN","PSODDPRE",168,0)
+ Q
+"RTN","PSODDPRE",169,0)
+DUPTHER(RXREC) ;screen out discontinued/duplicate therapy Rx's greater than business rule calculation (cancel date + days supply +7 days)
+"RTN","PSODDPRE",170,0)
+ ;Note: If the dup allowance is 1 you have to have at least 3 eligible drug orders (or 2 matches) to produce the dupl. therapy warning
+"RTN","PSODDPRE",171,0)
+ ;Business rule for expired orders is (expiration date+120 days) which is the length of time expired order currently stay on med profile.  No changes for this.
+"RTN","PSODDPRE",172,0)
+ N X,Y,X1,X2 S X1=$P($G(^PSRX(RXREC,3)),"^",5),X2=(+$P(^PSRX(RXREC,0),"^",8)+7) D C^%DTC I DT>X Q 1
+"RTN","PSODDPRE",173,0)
+ Q 0
+"RTN","PSODDPRE",174,0)
+OIX S ^TMP($J,LIST,"IN","EXCEPTIONS","OI",PDNM)=1_"^"_ORTYP_";"_RXREC_";PROFILE;"_CT
+"RTN","PSODDPRE",175,0)
+ Q
+"RTN","PSODDPRE",176,0)
+ULRX ;
+"RTN","PSODDPRE",177,0)
+ I '$G(RXRECLOC) Q
+"RTN","PSODDPRE",178,0)
+ D PSOUL^PSSLOCK(RXRECLOC)
+"RTN","PSODDPRE",179,0)
+ Q
+"RTN","PSODDPRE",180,0)
+ ;
+"RTN","PSODDPRE",181,0)
+PRSTAT(DA) ;Displays the prescription's status
+"RTN","PSODDPRE",182,0)
+ N PSOTRANS,PSOREL,PSOCMOP,RXPSTA,PSOX,RFLZRO,PSOLRD,PSORTS,CMOP
+"RTN","PSODDPRE",183,0)
+ D HD^PSODDPR2():(($Y+5)'>IOSL) Q:$G(PSODLQT)  S RXPSTA="Processing Status: ",PSOLRD=$P($G(^PSRX(RXREC,2)),"^",13)
+"RTN","PSODDPRE",184,0)
+ D ^PSOCMOPA I $G(PSOCMOP)]"" D  K CMOP,PSOTRANS,PSOREL
+"RTN","PSODDPRE",185,0)
+ .S PSOTRANS=$E($P(PSOCMOP,"^",2),4,5)_"/"_$E($P(PSOCMOP,"^",2),6,7)_"/"_$E($P(PSOCMOP,"^",2),2,3)
+"RTN","PSODDPRE",186,0)
+ .S PSOREL=$S(CMOP("L")=0:$P($G(^PSRX(DA,2)),"^",13),1:$P(^PSRX(DA,1,CMOP("L"),0),"^",18))
+"RTN","PSODDPRE",187,0)
+ .S PSOREL=$E(PSOREL,4,5)_"/"_$E(PSOREL,6,7)_"/"_$E(PSOREL,2,3)_"@"_$E($P(PSOREL,".",2),1,4)
+"RTN","PSODDPRE",188,0)
+ .I '$D(IOINORM)!('$D(IOINHI)) S X="IORVOFF;IORVON;IOINHI;IOINORM" D ENDR^%ZISS
+"RTN","PSODDPRE",189,0)
+ .I $P($G(^PSRX(RXREC,"STA")),"^")=0 W:$$TRANCMOP^PSOUTL(RXREC) ?5,IORVON_IOINHI
+"RTN","PSODDPRE",190,0)
+ .S:$G(PSODUPF) PSODUPC(ZCT)=PSODUPC(ZCT)+1 W:'$G(PSODUPF) !,$J(RXPSTA,24)_$S($P(PSOCMOP,"^")=0!($P(PSOCMOP,"^")=2):"Transmitted to CMOP on "_PSOTRANS,$P(PSOCMOP,"^")=1:"Released by CMOP on "_PSOREL,1:"Not Dispensed"),IOINORM_IORVOFF
+"RTN","PSODDPRE",191,0)
+ D HD^PSODDPR2():(($Y+5)'>IOSL) Q:$G(PSODLQT)
+"RTN","PSODDPRE",192,0)
+ I $G(PSOCMOP)']"" D
+"RTN","PSODDPRE",193,0)
+ .F PSOX=0:0 S PSOX=$O(^PSRX(RXREC,1,PSOX)) Q:'PSOX  D
+"RTN","PSODDPRE",194,0)
+ ..S RFLZRO=$G(^PSRX(RXREC,1,PSOX,0))
+"RTN","PSODDPRE",195,0)
+ ..S:$P(RFLZRO,"^",18)'="" PSOLRD=$P(RFLZRO,"^",18) I $P(RFLZRO,"^",16) S PSOLRD=PSOLRD_"^R",PSORTS=$P(RFLZRO,"^",16)
+"RTN","PSODDPRE",196,0)
+ .I '$O(^PSRX(RXREC,1,0)),$P(^PSRX(RXREC,2),"^",15) S PSOLRD=PSOLRD_"^R",PSORTS=$P(^PSRX(RXREC,2),"^",15)
+"RTN","PSODDPRE",197,0)
+ .S:$G(PSODUPF) PSODUPC(ZCT)=PSODUPC(ZCT)+1 W:'$G(PSODUPF) !,$J(RXPSTA,24)
+"RTN","PSODDPRE",198,0)
+ .I +$G(PSORTS) S:$G(PSODUPF) PSODUPC(ZCT)=PSODUPC(ZCT)+1 W:'$G(PSODUPF) "Returned to stock on "_$$FMTE^XLFDT(PSORTS,2) Q
+"RTN","PSODDPRE",199,0)
+ .S:$G(PSODUPF) PSODUPC(ZCT)=PSODUPC(ZCT)+1 W:'$G(PSODUPF) $S(PSOLRD="":"Not released locally",1:"Released locally on "_$$FMTE^XLFDT($P(PSOLRD,"^"),2)_" "_$P(PSOLRD,"^",2))_$S($P(^PSRX(RXREC,0),"^",11)="W":" (Window)",1:" (Mail)")
+"RTN","PSODDPRE",200,0)
+ Q
+"RTN","PSODDPRE",201,0)
+ ;
+"RTN","PSODDPRE",202,0)
+DATACK ;check FDB returned data to determine whether to continue processing.
+"RTN","PSODDPRE",203,0)
+ S DIR(0)="E",DIR("A",1)="No Enhanced Order Checks can be performed."
+"RTN","PSODDPRE",204,0)
+ S DIR("A",2)="   Reason(s): "_$P($G(^TMP($J,LIST,"OUT",0)),"^",2)
+"RTN","PSODDPRE",205,0)
+ S DIR("A")="Press Return to continue...",DIR("?")="Press Return to continue"
+"RTN","PSODDPRE",206,0)
+ W ! D ^DIR K DIRUT,DUOUT,DIR,X,Y  W @IOF ;I $P(^TMP($J,LIST,"OUT",0),"^")=1
+"RTN","PSODDPRE",207,0)
+ Q
+"RTN","PSODDPRE",208,0)
+ ;
+"RTN","PSODDPRE",209,0)
+NVATST(PSONVTOI) ; Look for any active Non-VA Dispense Drugs not marked as a supply item
+"RTN","PSODDPRE",210,0)
+ N PSONVT1,PSONVTFL,PSONVTIN
+"RTN","PSODDPRE",211,0)
+ S PSONVTFL=1
+"RTN","PSODDPRE",212,0)
+ F PSONVT1=0:0 S PSONVT1=$O(^PSDRUG("ASP",PSONVTOI,PSONVT1)) Q:'PSONVT1!('PSONVTFL)  D
+"RTN","PSODDPRE",213,0)
+ .I $P($G(^PSDRUG(PSONVT1,2)),"^",3)'["X" Q
+"RTN","PSODDPRE",214,0)
+ .S PSONVTIN=$P($G(^PSDRUG(PSONVT1,"I")),"^") I PSONVTIN,PSONVTIN<DT Q
+"RTN","PSODDPRE",215,0)
+ .S PSONVTFL=$$SUP^PSSDSAPI(PSONVT1)
+"RTN","PSODDPRE",216,0)
+ Q PSONVTFL
+"RTN","PSSHRIT")
+0^6^B219536105
+"RTN","PSSHRIT",1,0)
+PSSHRIT ;WOIFO/SG,PO - Transmits a "ping" to determine if FDB server is down and record the down time ;2014-02-03  9:12 AM
+"RTN","PSSHRIT",2,0)
+ ;;1.0;PHARMACY DATA MANAGEMENT;**136,168,164,11310000,LOCAL**;9/30/97;Build 9
+"RTN","PSSHRIT",3,0)
+ ;
+"RTN","PSSHRIT",4,0)
+ ;External reference to IN^PSSHRQ2 supported by DBIA 5369
+"RTN","PSSHRIT",5,0)
+ ; VEN/SMH - *11310000 - Fixes to incorrect VUID from FOIA in CUSTOM
+"RTN","PSSHRIT",6,0)
+ ; VEN/SMH - *11310000 - In INTERACT, check for both Significant and Critical
+"RTN","PSSHRIT",7,0)
+ ;           returns since DIT returns a different criticality.
+"RTN","PSSHRIT",8,0)
+ ; 
+"RTN","PSSHRIT",9,0)
+ ;
+"RTN","PSSHRIT",10,0)
+ Q
+"RTN","PSSHRIT",11,0)
+PINGCHK ; do ping test, if not passed record it and send a message.
+"RTN","PSSHRIT",12,0)
+ ; Called from PSS INTERFACE SCHEDULER option
+"RTN","PSSHRIT",13,0)
+ N STATUS
+"RTN","PSSHRIT",14,0)
+ F  L +^PS(59.74,"PINGCHK^PSSHRIT"):1 Q:$T
+"RTN","PSSHRIT",15,0)
+ S STATUS=$$PINGTST()
+"RTN","PSSHRIT",16,0)
+ S STATUS=$$PINGFILE(STATUS)
+"RTN","PSSHRIT",17,0)
+ I STATUS=-1 D SMSGDWN   ; if failed for the first time (a new entry created) send a message that interface is down.
+"RTN","PSSHRIT",18,0)
+ L -^PS(59.74,"PINGCHK^PSSHRIT")
+"RTN","PSSHRIT",19,0)
+ Q
+"RTN","PSSHRIT",20,0)
+ ;
+"RTN","PSSHRIT",21,0)
+PINGTST() ; test the ping by sending a ping request.
+"RTN","PSSHRIT",22,0)
+ ;return 0 - ping successful,  -1^reason  ping failed
+"RTN","PSSHRIT",23,0)
+ N BASE,STATUS
+"RTN","PSSHRIT",24,0)
+ S BASE="PINGTST^"_$T(+0)
+"RTN","PSSHRIT",25,0)
+ K ^TMP($J,BASE)
+"RTN","PSSHRIT",26,0)
+ S ^TMP($J,BASE,"IN","PING")=""
+"RTN","PSSHRIT",27,0)
+ D IN^PSSHRQ2(BASE)
+"RTN","PSSHRIT",28,0)
+ S STATUS=$G(^TMP($J,BASE,"OUT",0))
+"RTN","PSSHRIT",29,0)
+ K ^TMP($J,BASE)
+"RTN","PSSHRIT",30,0)
+ Q STATUS
+"RTN","PSSHRIT",31,0)
+ ;
+"RTN","PSSHRIT",32,0)
+PINGFILE(STATUS) ;  file the ping results
+"RTN","PSSHRIT",33,0)
+ ; Input
+"RTN","PSSHRIT",34,0)
+ ;   Status - Ping results
+"RTN","PSSHRIT",35,0)
+ ; Return 
+"RTN","PSSHRIT",36,0)
+ ;     -1 - if creates an entry - means the first it noticed PEPS is unavailable
+"RTN","PSSHRIT",37,0)
+ ;      0 - if does not create/update a record, 
+"RTN","PSSHRIT",38,0)
+ ;      1 - if updates the last entry
+"RTN","PSSHRIT",39,0)
+ N LIEN,LASTAVL
+"RTN","PSSHRIT",40,0)
+ S STATUS=+$G(STATUS)
+"RTN","PSSHRIT",41,0)
+ S LIEN=+$O(^PS(59.74,":"),-1)           ; get last entry
+"RTN","PSSHRIT",42,0)
+ S LASTAVL=$P($G(^PS(59.74,LIEN,0)),U,2) ; get last available date/time
+"RTN","PSSHRIT",43,0)
+ I STATUS=0,'LIEN Q 0                          ; do nothing
+"RTN","PSSHRIT",44,0)
+ I STATUS=0,LIEN,LASTAVL Q 0                   ; do nothing
+"RTN","PSSHRIT",45,0)
+ I STATUS=0,LIEN,'LASTAVL D UPDATENT(LIEN) Q 1 ; update file
+"RTN","PSSHRIT",46,0)
+ I STATUS=-1,LIEN,LASTAVL D NEWENT Q -1        ; create new entry
+"RTN","PSSHRIT",47,0)
+ I STATUS=-1,'LIEN D NEWENT Q -1               ; create new entry
+"RTN","PSSHRIT",48,0)
+ Q 0
+"RTN","PSSHRIT",49,0)
+NEWENT ; create a new entry in FDB INTERFACE DATA (#59.74) file.
+"RTN","PSSHRIT",50,0)
+ N DIC,DO
+"RTN","PSSHRIT",51,0)
+ S X=$$NOW^XLFDT(),DIC="^PS(59.74,",DIC(0)="Z" D FILE^DICN
+"RTN","PSSHRIT",52,0)
+ K X,Y
+"RTN","PSSHRIT",53,0)
+ Q
+"RTN","PSSHRIT",54,0)
+ ;
+"RTN","PSSHRIT",55,0)
+UPDATENT(LAST) ; update the last entry in FDB INTERFACE DATA (#59.74) file.
+"RTN","PSSHRIT",56,0)
+ ;edit flag once it is created.
+"RTN","PSSHRIT",57,0)
+ N DIE,NEWVAL,DWNTIME,DA,DR,DIFF
+"RTN","PSSHRIT",58,0)
+ S DA=LAST
+"RTN","PSSHRIT",59,0)
+ S NEWVAL=$$NOW^XLFDT()   ;$$NOW()
+"RTN","PSSHRIT",60,0)
+ S DWNTIME=+$G(^PS(59.74,DA,0))
+"RTN","PSSHRIT",61,0)
+ Q:'DWNTIME
+"RTN","PSSHRIT",62,0)
+ S DIFF=$$FMDIFF^XLFDT(NEWVAL,DWNTIME,2)
+"RTN","PSSHRIT",63,0)
+ S DIFF=DIFF\60  ;IN MINUTES
+"RTN","PSSHRIT",64,0)
+ S DIE="^PS(59.74,",DR="1///^S X=NEWVAL;2///^S X=DIFF"
+"RTN","PSSHRIT",65,0)
+ D ^DIE
+"RTN","PSSHRIT",66,0)
+ D SMSGRST  ; send a message that interface connection is restored
+"RTN","PSSHRIT",67,0)
+ Q
+"RTN","PSSHRIT",68,0)
+ ;
+"RTN","PSSHRIT",69,0)
+SMSGDWN ; send a bulletin that Interface connection is down.
+"RTN","PSSHRIT",70,0)
+ N XMB,XMTEXT,XMY,PSFDB,XMV,XMDUN,XMDUZ
+"RTN","PSSHRIT",71,0)
+ S XMDUZ="PSS INTERFACE SCHEDULER"
+"RTN","PSSHRIT",72,0)
+ S XMB="PSS FDB INTERFACE"
+"RTN","PSSHRIT",73,0)
+ S XMTEXT="PSFDB"
+"RTN","PSSHRIT",74,0)
+ ; check to if dosing check is on.
+"RTN","PSSHRIT",75,0)
+ I $T(DS^PSSDSAPI)]"",$$DS^PSSDSAPI() D
+"RTN","PSSHRIT",76,0)
+ .S PSFDB(1)="Connection to Vendor Database is down!  No Drug-Drug Interaction, Duplicate"
+"RTN","PSSHRIT",77,0)
+ .S PSFDB(2)="Therapy or Dosing Order Checks will be performed until the connection is"
+"RTN","PSSHRIT",78,0)
+ .S PSFDB(3)="reestablished!!!"
+"RTN","PSSHRIT",79,0)
+ E  D
+"RTN","PSSHRIT",80,0)
+ .S PSFDB(1)="Connection to Vendor Database is down!  No Drug-Drug Interaction or Duplicate"
+"RTN","PSSHRIT",81,0)
+ .S PSFDB(2)="Therapy Order Checks will be performed until the connection is reestablished!!!"
+"RTN","PSSHRIT",82,0)
+ S XMY("G.PSS ORDER CHECKS")=""
+"RTN","PSSHRIT",83,0)
+ D ^XMB
+"RTN","PSSHRIT",84,0)
+ Q
+"RTN","PSSHRIT",85,0)
+ ;
+"RTN","PSSHRIT",86,0)
+SMSGRST ; send a bulletin that Interface connection is restored
+"RTN","PSSHRIT",87,0)
+ N XMB,XMTEXT,XMY,PSFDB,XMV,XMDUN,XMDUZ
+"RTN","PSSHRIT",88,0)
+ S XMDUZ="PSS INTERFACE SCHEDULER"
+"RTN","PSSHRIT",89,0)
+ S XMB="PSS FDB INTERFACE RESTORED"
+"RTN","PSSHRIT",90,0)
+ S XMTEXT="PSFDB"
+"RTN","PSSHRIT",91,0)
+ ; check to if dosing check is on.
+"RTN","PSSHRIT",92,0)
+ I $T(DS^PSSDSAPI)]"",$$DS^PSSDSAPI() D
+"RTN","PSSHRIT",93,0)
+ .S PSFDB(1)="Connection to Vendor Database has been restored! Drug-Drug Interactions,"
+"RTN","PSSHRIT",94,0)
+ .S PSFDB(2)="Duplicate Therapy and Dosing Order Checks can now be performed."
+"RTN","PSSHRIT",95,0)
+ E  D
+"RTN","PSSHRIT",96,0)
+ .S PSFDB(1)="Connection to Vendor Database has been restored! Drug-Drug Interactions or"
+"RTN","PSSHRIT",97,0)
+ .S PSFDB(2)="Duplicate Therapy Order Checks can now be performed."
+"RTN","PSSHRIT",98,0)
+ S XMY("G.PSS ORDER CHECKS")=""
+"RTN","PSSHRIT",99,0)
+ D ^XMB
+"RTN","PSSHRIT",100,0)
+ Q
+"RTN","PSSHRIT",101,0)
+ ;
+"RTN","PSSHRIT",102,0)
+TASKIT(FREQ,START) ; create/update scheduling option start time and frequency
+"RTN","PSSHRIT",103,0)
+ ; Input:
+"RTN","PSSHRIT",104,0)
+ ;   FREQ  - Optional - rescheduling frequency in minutes (default 15 minutes)
+"RTN","PSSHRIT",105,0)
+ ;  START  - Optional - start time (default is current time + 4 minutes)
+"RTN","PSSHRIT",106,0)
+ ; Note: if START is less than 4 minutes in future,  it will be defaulted to 
+"RTN","PSSHRIT",107,0)
+ ;       current time + 4 minutes.
+"RTN","PSSHRIT",108,0)
+ ;
+"RTN","PSSHRIT",109,0)
+ K PSERROR
+"RTN","PSSHRIT",110,0)
+ S FREQ=$G(FREQ,15)
+"RTN","PSSHRIT",111,0)
+ S FREQ=FREQ*60_"S"
+"RTN","PSSHRIT",112,0)
+ S START=$G(START,$$NOW^XLFDT())
+"RTN","PSSHRIT",113,0)
+ ;
+"RTN","PSSHRIT",114,0)
+ ; if start date/time is less than 4 minutes in future make it 4 minutes from now
+"RTN","PSSHRIT",115,0)
+ S:$$FMDIFF^XLFDT(START,$$NOW^XLFDT(),2)<240 START=$$FMADD^XLFDT($$NOW^XLFDT(),0,0,4)
+"RTN","PSSHRIT",116,0)
+ ;
+"RTN","PSSHRIT",117,0)
+ ; create the option schedule if it does not exist. return PSERROR=-1 if fails.
+"RTN","PSSHRIT",118,0)
+ ; in some situation when it fails, does not create the PSERROR variable
+"RTN","PSSHRIT",119,0)
+ D RESCH^XUTMOPT("PSS INTERFACE SCHEDULER",START,"",FREQ,"L",.PSERROR)
+"RTN","PSSHRIT",120,0)
+ Q
+"RTN","PSSHRIT",121,0)
+ ;
+"RTN","PSSHRIT",122,0)
+SCHDOPT ; edit option scheduling
+"RTN","PSSHRIT",123,0)
+ ; Called from "PSS SCHEDULE PEPS INTERFACE CK" option to create and/or edit the scheduling
+"RTN","PSSHRIT",124,0)
+ ; parameters for "PSS INTERFACE SCHEDULER" option in OPTION SCHEDULING file. 
+"RTN","PSSHRIT",125,0)
+ ; The "PSS SCHEDULE PEPS INTERFACE CK" option is installed by PAS*1.0*117 package.
+"RTN","PSSHRIT",126,0)
+ N PSSROOT
+"RTN","PSSHRIT",127,0)
+ ; check to see if the option is defined in option scheduler file and it is tasked.
+"RTN","PSSHRIT",128,0)
+ ; if not create and task the option.
+"RTN","PSSHRIT",129,0)
+ D OPTSTAT^XUTMOPT("PSS INTERFACE SCHEDULER",.PSSROOT)
+"RTN","PSSHRIT",130,0)
+ I '+$G(PSSROOT(1)) D TASKIT(15)
+"RTN","PSSHRIT",131,0)
+ ;
+"RTN","PSSHRIT",132,0)
+ D EDIT^XUTMOPT("PSS INTERFACE SCHEDULER")
+"RTN","PSSHRIT",133,0)
+ Q
+"RTN","PSSHRIT",134,0)
+ ;
+"RTN","PSSHRIT",135,0)
+SLASTRUN(LASTRUN) ; set last run time
+"RTN","PSSHRIT",136,0)
+ N SUB,PURGE,NOW,DESC
+"RTN","PSSHRIT",137,0)
+ S DESC="This stores the latest data on FDB interface"
+"RTN","PSSHRIT",138,0)
+ S NOW=$$NOW^XLFDT()\1
+"RTN","PSSHRIT",139,0)
+ S PURGE=$$FMADD^XLFDT(NOW,30)
+"RTN","PSSHRIT",140,0)
+ S ^XTMP("PSSRUN",0)=PURGE_U_NOW_U_DESC
+"RTN","PSSHRIT",141,0)
+ S ^XTMP("PSSRUN","LASTRUN")=LASTRUN
+"RTN","PSSHRIT",142,0)
+ Q
+"RTN","PSSHRIT",143,0)
+ ;
+"RTN","PSSHRIT",144,0)
+GLASTRUN() ; get last run time
+"RTN","PSSHRIT",145,0)
+ Q $G(^XTMP("PSSRUN","LASTRUN"))
+"RTN","PSSHRIT",146,0)
+ ;
+"RTN","PSSHRIT",147,0)
+RUNTEST ; run interaction test to PEPS server
+"RTN","PSSHRIT",148,0)
+ ; called from PSS CHECK PEPS SERVICES SETUP option
+"RTN","PSSHRIT",149,0)
+ D KILL^XUSCLEAN
+"RTN","PSSHRIT",150,0)
+ N STATUS,X,PSSFLAG,%ZIS,POP,ZTDESC,ZTQUEUED,ZTREQ,ZTRTN
+"RTN","PSSHRIT",151,0)
+ S PSSFLAG=ION
+"RTN","PSSHRIT",152,0)
+ ;
+"RTN","PSSHRIT",153,0)
+ W !!,"This option performs several checks. You may queue this report if you wish."
+"RTN","PSSHRIT",154,0)
+ W !!,"Among these checks are:"
+"RTN","PSSHRIT",155,0)
+ W !,"-----------------------"
+"RTN","PSSHRIT",156,0)
+ W !,"A connection check to the Vendor Database"
+"RTN","PSSHRIT",157,0)
+ W !,"Drug-Drug Interaction Check"
+"RTN","PSSHRIT",158,0)
+ W !,"Duplicate Therapy Order Check"
+"RTN","PSSHRIT",159,0)
+ W !,"Dosing Order Check"
+"RTN","PSSHRIT",160,0)
+ W !,"Custom Drug-Drug Interaction Check"
+"RTN","PSSHRIT",161,0)
+ ;
+"RTN","PSSHRIT",162,0)
+ W ! S %ZIS="MQ",%ZIS("A")="Select Device: " D ^%ZIS G EXIT:POP
+"RTN","PSSHRIT",163,0)
+ ;
+"RTN","PSSHRIT",164,0)
+ IF '$D(IO("Q"))&(PSSFLAG=ION) D TESTS^PSSHRIT  Q
+"RTN","PSSHRIT",165,0)
+ ELSE  IF $D(IO("Q"))!(PSSFLAG'=ION)  D  Q
+"RTN","PSSHRIT",166,0)
+ .S ZTRTN="QTESTS^PSSHRIT",ZTDESC="Interaction test to PEPS server"
+"RTN","PSSHRIT",167,0)
+ .D ^%ZTLOAD D HOME^%ZIS,^%ZISC K IO("Q") Q
+"RTN","PSSHRIT",168,0)
+ ;
+"RTN","PSSHRIT",169,0)
+EXIT S:$D(ZTQUEUED) ZTREQ="@" Q
+"RTN","PSSHRIT",170,0)
+ ;
+"RTN","PSSHRIT",171,0)
+TESTS ; interaction tests to PEPS server
+"RTN","PSSHRIT",172,0)
+ ;
+"RTN","PSSHRIT",173,0)
+ S STATUS=$$CONCHK()
+"RTN","PSSHRIT",174,0)
+ D PRSRTN Q:(STATUS=0)!(X="^") 
+"RTN","PSSHRIT",175,0)
+ ;
+"RTN","PSSHRIT",176,0)
+ S STATUS=$$INTERACT()
+"RTN","PSSHRIT",177,0)
+ D PRSRTN Q:X="^" 
+"RTN","PSSHRIT",178,0)
+ ;
+"RTN","PSSHRIT",179,0)
+ S STATUS=$$DUPTHRPY()
+"RTN","PSSHRIT",180,0)
+ D PRSRTN Q:X="^" 
+"RTN","PSSHRIT",181,0)
+ ;
+"RTN","PSSHRIT",182,0)
+ S STATUS=$$DOSECHK() ;
+"RTN","PSSHRIT",183,0)
+ D PRSRTN Q:X="^" 
+"RTN","PSSHRIT",184,0)
+ ;
+"RTN","PSSHRIT",185,0)
+ S STATUS=$$CUSTOM()
+"RTN","PSSHRIT",186,0)
+ D PRSRTN Q:X="^"
+"RTN","PSSHRIT",187,0)
+ ;
+"RTN","PSSHRIT",188,0)
+ Q
+"RTN","PSSHRIT",189,0)
+ ;
+"RTN","PSSHRIT",190,0)
+QTESTS ; queued interaction tests to PEPS server
+"RTN","PSSHRIT",191,0)
+ ;
+"RTN","PSSHRIT",192,0)
+ N %,PSSTIME,PSSCOUNT S PSSTIME="",PSSCOUNT=0
+"RTN","PSSHRIT",193,0)
+ D NOW^%DTC S PSSTIME=$$FMTE^XLFDT(%,"1P")
+"RTN","PSSHRIT",194,0)
+ W ! F PSSCOUNT=1:1:79 W "-"
+"RTN","PSSHRIT",195,0)
+ W !!,?15,"Check PEPS Services Setup",?55,PSSTIME,!!
+"RTN","PSSHRIT",196,0)
+ F PSSCOUNT=1:1:79 W "-"
+"RTN","PSSHRIT",197,0)
+ W !!
+"RTN","PSSHRIT",198,0)
+ ;
+"RTN","PSSHRIT",199,0)
+ S STATUS=$$CONCHK()
+"RTN","PSSHRIT",200,0)
+ S STATUS=$$INTERACT()
+"RTN","PSSHRIT",201,0)
+ S STATUS=$$DUPTHRPY()
+"RTN","PSSHRIT",202,0)
+ S STATUS=$$DOSECHK()
+"RTN","PSSHRIT",203,0)
+ S STATUS=$$CUSTOM()
+"RTN","PSSHRIT",204,0)
+ ;
+"RTN","PSSHRIT",205,0)
+ Q
+"RTN","PSSHRIT",206,0)
+ ;
+"RTN","PSSHRIT",207,0)
+CONCHK() ; check connection
+"RTN","PSSHRIT",208,0)
+ ; Return 1 if OK, 0 if not OK.
+"RTN","PSSHRIT",209,0)
+ ; 
+"RTN","PSSHRIT",210,0)
+ N MESSAGE,Y,STATUS,RESULT
+"RTN","PSSHRIT",211,0)
+ W !,"Checking Vendor Database Connection"
+"RTN","PSSHRIT",212,0)
+ S RESULT=$$PINGTST()
+"RTN","PSSHRIT",213,0)
+ I RESULT=0 D
+"RTN","PSSHRIT",214,0)
+ .W "...OK"
+"RTN","PSSHRIT",215,0)
+ E  D
+"RTN","PSSHRIT",216,0)
+ .W "...",!!,"    Connection could not be made to Vendor database."
+"RTN","PSSHRIT",217,0)
+ .S Y=$$GLASTRUN()
+"RTN","PSSHRIT",218,0)
+ .I Y D
+"RTN","PSSHRIT",219,0)
+ ..D DD^%DT                      ; convert last reached time in Y to external format
+"RTN","PSSHRIT",220,0)
+ ..W !,"       Last reached @"_$E(Y,1,18)
+"RTN","PSSHRIT",221,0)
+ W !
+"RTN","PSSHRIT",222,0)
+ Q $S(RESULT=0:1,1:0)
+"RTN","PSSHRIT",223,0)
+ ; 
+"RTN","PSSHRIT",224,0)
+INTERACT() ; check drug-drug interaction.
+"RTN","PSSHRIT",225,0)
+ ; Return 1 if OK, 0 if not OK.
+"RTN","PSSHRIT",226,0)
+ ;
+"RTN","PSSHRIT",227,0)
+ N PSORDER,PSDRUG1,PSDRUG2,BASE,INFO,INTRO,PSSPEC
+"RTN","PSSHRIT",228,0)
+ N PSSLEFT S PSSLEFT=4     ; left margin for results
+"RTN","PSSHRIT",229,0)
+ S BASE=$T(+0)_" INTERACT"
+"RTN","PSSHRIT",230,0)
+ K ^TMP($J,BASE)
+"RTN","PSSHRIT",231,0)
+ S ^TMP($J,BASE,"IN","DRUGDRUG")=""
+"RTN","PSSHRIT",232,0)
+ S PSORDER="I;1464P;PROSPECTIVE;2",PSDRUG1="WARFARIN 10MG TAB",PSDRUG2="ASPIRIN 325MG TAB"
+"RTN","PSSHRIT",233,0)
+ SET ^TMP($JOB,BASE,"IN","PROSPECTIVE","I;1464P;PROSPECTIVE;2")="6559^4005201^^WARFARIN 10MG TAB"
+"RTN","PSSHRIT",234,0)
+ SET ^TMP($JOB,BASE,"IN","PROSPECTIVE","I;91464P;PROSPECTIVE;2")="4376^4005735^^ASPIRIN 325MG TAB"
+"RTN","PSSHRIT",235,0)
+ D IN^PSSHRQ2(BASE)
+"RTN","PSSHRIT",236,0)
+ ;
+"RTN","PSSHRIT",237,0)
+ S INTRO="Performing Drug-Drug Interaction Order Check for "_PSDRUG2_" and "_PSDRUG1
+"RTN","PSSHRIT",238,0)
+ S INFO=$G(^TMP($J,BASE,"OUT","DRUGDRUG","S",PSDRUG1,PSORDER,1,"PMON",9,0)) ;
+"RTN","PSSHRIT",239,0)
+ I INFO="" S INFO=$G(^TMP($J,BASE,"OUT","DRUGDRUG","C",PSDRUG1,PSORDER,1,"PMON",9,0)) ; *13100000 VEN/SMH for DIT -- different severity.
+"RTN","PSSHRIT",240,0)
+ S INTRO=INTRO_$S($L(INFO):"...OK",1:"...Not OK")
+"RTN","PSSHRIT",241,0)
+ W !
+"RTN","PSSHRIT",242,0)
+ I '$L(INFO) D
+"RTN","PSSHRIT",243,0)
+ .D OUTPUT(INTRO)
+"RTN","PSSHRIT",244,0)
+ .W ! D OUTPUT("Drug-Drug Interaction Order Check could not be performed.",PSSLEFT)
+"RTN","PSSHRIT",245,0)
+ E  D
+"RTN","PSSHRIT",246,0)
+ . D OUTPUT(INTRO)
+"RTN","PSSHRIT",247,0)
+ . W !
+"RTN","PSSHRIT",248,0)
+ . S PSSPEC("CLINICAL EFFECTS:  ")=""
+"RTN","PSSHRIT",249,0)
+ . S INFO=$$REPLACE^XLFSTR(INFO,.PSSPEC)
+"RTN","PSSHRIT",250,0)
+ . S INFO="Significant Drug Interaction: "_INFO
+"RTN","PSSHRIT",251,0)
+ . D OUTPUT(INFO,PSSLEFT)
+"RTN","PSSHRIT",252,0)
+ ;
+"RTN","PSSHRIT",253,0)
+ K ^TMP($J,BASE)
+"RTN","PSSHRIT",254,0)
+ Q $S($L(INFO)=0:0,1:1)
+"RTN","PSSHRIT",255,0)
+ ;
+"RTN","PSSHRIT",256,0)
+DUPTHRPY() ; check duplicate therapy
+"RTN","PSSHRIT",257,0)
+ ; Return 1 if OK, 0 if not OK.
+"RTN","PSSHRIT",258,0)
+ ; 
+"RTN","PSSHRIT",259,0)
+ N PSORDER,PSDRUG1,PSDRUG2,BASE,CLAS1,CLAS2,LINE1,LINE2,INTRO
+"RTN","PSSHRIT",260,0)
+ N PSSLEFT S PSSLEFT=4     ; left margin for results
+"RTN","PSSHRIT",261,0)
+ S BASE=$T(+0)_" DUPTHRPY"
+"RTN","PSSHRIT",262,0)
+ K ^TMP($J,BASE)
+"RTN","PSSHRIT",263,0)
+ S ^TMP($J,BASE,"IN","THERAPY")=""
+"RTN","PSSHRIT",264,0)
+ S PSORDER="O;403931;PROFILE;3"
+"RTN","PSSHRIT",265,0)
+ S PSDRUG1="CIMETIDINE 300MG TAB"
+"RTN","PSSHRIT",266,0)
+ S PSDRUG2="RANITIDINE 150MG TAB"
+"RTN","PSSHRIT",267,0)
+ S ^TMP($J,BASE,"IN","PROFILE","O;403931;PROFILE;3")="11666^4006826^^CIMETIDINE 300MG TAB^O"
+"RTN","PSSHRIT",268,0)
+ S ^TMP($J,BASE,"IN","PROSPECTIVE","Z;1;PROSPECTIVE;1")="11673^4007038^^RANITIDINE 150MG TAB"
+"RTN","PSSHRIT",269,0)
+ D IN^PSSHRQ2(BASE)
+"RTN","PSSHRIT",270,0)
+ ; 
+"RTN","PSSHRIT",271,0)
+ S CLAS1=$G(^TMP($J,BASE,"OUT","THERAPY",1,1,"CLASS"))
+"RTN","PSSHRIT",272,0)
+ S CLAS2=$G(^TMP($J,BASE,"OUT","THERAPY",1,2,"CLASS"))
+"RTN","PSSHRIT",273,0)
+ S INTRO="Performing Duplicate Therapy Order Check for "_PSDRUG1_" and "_PSDRUG2
+"RTN","PSSHRIT",274,0)
+ S INTRO=INTRO_$S($L(CLAS1):"...OK",1:"...Not OK")
+"RTN","PSSHRIT",275,0)
+ W !
+"RTN","PSSHRIT",276,0)
+ D OUTPUT(INTRO)
+"RTN","PSSHRIT",277,0)
+ I '$L(CLAS1) D
+"RTN","PSSHRIT",278,0)
+ .W !
+"RTN","PSSHRIT",279,0)
+ .D OUTPUT("Duplicate Therapy Order Check could not be performed.",PSSLEFT)
+"RTN","PSSHRIT",280,0)
+ E  D
+"RTN","PSSHRIT",281,0)
+ .S LINE1="Therapeutic Duplication with "_PSDRUG1_" and "_PSDRUG2
+"RTN","PSSHRIT",282,0)
+ .S LINE2="Duplicate Therapy Class(es): "_CLAS1_","_CLAS2
+"RTN","PSSHRIT",283,0)
+ .W !
+"RTN","PSSHRIT",284,0)
+ .D OUTPUT(LINE1,PSSLEFT)
+"RTN","PSSHRIT",285,0)
+ .D OUTPUT(LINE2,PSSLEFT)
+"RTN","PSSHRIT",286,0)
+ ;
+"RTN","PSSHRIT",287,0)
+ Q $S($L(CLAS1)=0:0,1:1)
+"RTN","PSSHRIT",288,0)
+ ;
+"RTN","PSSHRIT",289,0)
+DOSECHK() ; check dosing
+"RTN","PSSHRIT",290,0)
+ ; Return 1 if OK, 0 if not OK.
+"RTN","PSSHRIT",291,0)
+ N TOTAL,SINGLE,INTRO,ORDER,PSDRUG1,PSDRUG2,BASE
+"RTN","PSSHRIT",292,0)
+ N PSSLEFT S PSSLEFT=4     ; left margin for results
+"RTN","PSSHRIT",293,0)
+ S BASE=$T(+0)_" DOSECHK"
+"RTN","PSSHRIT",294,0)
+ S ORDER="O;1464P;PROSPECTIVE;2"
+"RTN","PSSHRIT",295,0)
+ S PSDRUG1="ACETAMINOPHEN 500MG TAB"
+"RTN","PSSHRIT",296,0)
+ K ^TMP($J,BASE)
+"RTN","PSSHRIT",297,0)
+ S ^TMP($J,BASE,"IN","DOSE")=""
+"RTN","PSSHRIT",298,0)
+ SET ^TMP($J,BASE,"IN","DOSE","AGE")=5000
+"RTN","PSSHRIT",299,0)
+ SET ^TMP($J,BASE,"IN","DOSE","WT")=83.01
+"RTN","PSSHRIT",300,0)
+ SET ^TMP($J,BASE,"IN","DOSE","BSA")=1.532
+"RTN","PSSHRIT",301,0)
+ ;VALUES: GCN^VUID^IEN^NAME^DOSE AMOUNT^DOSE UNIT^DOSE RATE^FREQ^DURATION^DURATION RATE^ROUTE^DOSE TYPE^SPECIFIC
+"RTN","PSSHRIT",302,0)
+ S ^TMP($J,BASE,"IN","DOSE","O;1464P;PROSPECTIVE;2")="4490^4007154^^ACETAMINOPHEN 500MG TAB^3000^MILLIGRAMS^DAY^Q4H^10^DAY^ORAL^MAINTENANCE^1"
+"RTN","PSSHRIT",303,0)
+ S ^TMP($J,BASE,"IN","PROSPECTIVE","O;1464P;PROSPECTIVE;2")="4490^4007154^^ACETAMINOPHEN 500MG TAB^O"
+"RTN","PSSHRIT",304,0)
+ D IN^PSSHRQ2(BASE)
+"RTN","PSSHRIT",305,0)
+ ;
+"RTN","PSSHRIT",306,0)
+ S TOTAL=$G(^TMP($J,BASE,"OUT","DOSE",ORDER,PSDRUG1,"RANGE","MESSAGE",0))
+"RTN","PSSHRIT",307,0)
+ S SINGLE=$G(^TMP($J,BASE,"OUT","DOSE",ORDER,PSDRUG1,"SINGLE","MESSAGE",0))
+"RTN","PSSHRIT",308,0)
+ S INTRO="Performing Dosing Order Check for "_PSDRUG1_" - 3000MG Q4H"_$S($L(TOTAL):"...OK",1:"...Not OK")
+"RTN","PSSHRIT",309,0)
+ I '$L(TOTAL) D
+"RTN","PSSHRIT",310,0)
+ .D OUTPUT(INTRO)
+"RTN","PSSHRIT",311,0)
+ .W !
+"RTN","PSSHRIT",312,0)
+ .D OUTPUT("Dosing Order Check could not be performed.",PSSLEFT)
+"RTN","PSSHRIT",313,0)
+ E  D
+"RTN","PSSHRIT",314,0)
+ .W !
+"RTN","PSSHRIT",315,0)
+ .D OUTPUT(INTRO)
+"RTN","PSSHRIT",316,0)
+ .W !
+"RTN","PSSHRIT",317,0)
+ .D OUTPUT(SINGLE,PSSLEFT)
+"RTN","PSSHRIT",318,0)
+ .W !
+"RTN","PSSHRIT",319,0)
+ .D OUTPUT(TOTAL,PSSLEFT)
+"RTN","PSSHRIT",320,0)
+ Q $S($L(TOTAL)=0:0,1:1)
+"RTN","PSSHRIT",321,0)
+ ;
+"RTN","PSSHRIT",322,0)
+CUSTOM() ; check custom drug-drug interaction
+"RTN","PSSHRIT",323,0)
+ ; Return 1 if OK, 0 if not OK.
+"RTN","PSSHRIT",324,0)
+ ;
+"RTN","PSSHRIT",325,0)
+ N INFO,INTRO,ORDER,DRUG1,DRUG2,BASE,STATUS,PSSPEC
+"RTN","PSSHRIT",326,0)
+ N PSSLEFT S PSSLEFT=4     ; left margin for results
+"RTN","PSSHRIT",327,0)
+ S BASE=$T(+0)_" CUSTOM"
+"RTN","PSSHRIT",328,0)
+ S ORDER="Z;1;PROSPECTIVE;1"
+"RTN","PSSHRIT",329,0)
+ S DRUG1="CLARITHROMYCIN 250MG TAB",DRUG2="DIAZEPAM 5MG TAB"
+"RTN","PSSHRIT",330,0)
+ K ^TMP($J,BASE)
+"RTN","PSSHRIT",331,0)
+ S ^TMP($J,BASE,"IN","DRUGDRUG")=""
+"RTN","PSSHRIT",332,0)
+ S ^TMP($J,BASE,"IN","PROSPECTIVE","Z;1;PROSPECTIVE;1")="16373^4010075F^^CLARITHROMYCIN 250MG TAB"
+"RTN","PSSHRIT",333,0)
+ S ^TMP($J,BASE,"IN","PROFILE","I;10U;PROFILE;10")="3768^4002216^^DIAZEPAM 5MG TAB" ; VEN/SMH - Changed b/c VUID wrong in FOIA
+"RTN","PSSHRIT",334,0)
+ D IN^PSSHRQ2(BASE)
+"RTN","PSSHRIT",335,0)
+ ;
+"RTN","PSSHRIT",336,0)
+ S STATUS=$G(^TMP($J,BASE,"OUT",0))
+"RTN","PSSHRIT",337,0)
+ S INTRO="Performing Custom Drug-Drug Interaction Order Check for "_DRUG1_" and "_DRUG2
+"RTN","PSSHRIT",338,0)
+ D SCUST
+"RTN","PSSHRIT",339,0)
+ S INTRO=INTRO_$S($L(INFO):"...OK",STATUS=0:"...OK",1:"...Not OK")
+"RTN","PSSHRIT",340,0)
+ I '$L(INFO) D
+"RTN","PSSHRIT",341,0)
+ .D OUTPUT(INTRO)
+"RTN","PSSHRIT",342,0)
+ .I STATUS'=0 W ! D OUTPUT("Custom Drug-Drug Interaction Order Check could not be performed.",PSSLEFT)
+"RTN","PSSHRIT",343,0)
+ E   D
+"RTN","PSSHRIT",344,0)
+ . W !
+"RTN","PSSHRIT",345,0)
+ . D OUTPUT(INTRO)
+"RTN","PSSHRIT",346,0)
+ . W !
+"RTN","PSSHRIT",347,0)
+ . S PSSPEC("CLINICAL EFFECTS:  ")=""
+"RTN","PSSHRIT",348,0)
+ . S INFO=$$REPLACE^XLFSTR(INFO,.PSSPEC)
+"RTN","PSSHRIT",349,0)
+ .S INFO="Significant Drug Interaction: "_INFO
+"RTN","PSSHRIT",350,0)
+ .D OUTPUT(INFO,PSSLEFT)
+"RTN","PSSHRIT",351,0)
+ W !
+"RTN","PSSHRIT",352,0)
+ Q $S(STATUS=0:1,$L(INFO)=0:0,1:1)
+"RTN","PSSHRIT",353,0)
+ ;
+"RTN","PSSHRIT",354,0)
+ ;
+"RTN","PSSHRIT",355,0)
+INTACT ; check vendor data base link
+"RTN","PSSHRIT",356,0)
+ ; Called from CHECK VENDOR DATABASE LINK  option
+"RTN","PSSHRIT",357,0)
+ N STATUS,PSFIN,BASE,STATUS,Y
+"RTN","PSSHRIT",358,0)
+ S BASE="PSPRE"
+"RTN","PSSHRIT",359,0)
+ K ^TMP($J,BASE)
+"RTN","PSSHRIT",360,0)
+ S ^TMP($J,BASE,"IN","PING")=""
+"RTN","PSSHRIT",361,0)
+ D IN^PSSHRQ2(BASE)
+"RTN","PSSHRIT",362,0)
+ S STATUS=+$G(^TMP($J,BASE,"OUT",0))
+"RTN","PSSHRIT",363,0)
+ I STATUS=0 D
+"RTN","PSSHRIT",364,0)
+ .W !
+"RTN","PSSHRIT",365,0)
+ .W !,"  Database Version: ",$G(^TMP($J,BASE,"OUT","difBuildVersion"))
+"RTN","PSSHRIT",366,0)
+ .W !,"     Build Version: ",$G(^TMP($J,BASE,"OUT","difDbVersion"))
+"RTN","PSSHRIT",367,0)
+ .S Y=$G(^TMP($J,BASE,"OUT","difIssueDate"))
+"RTN","PSSHRIT",368,0)
+ .S:Y?8N Y=$E(Y,5,6)_"/"_$E(Y,7,8)_"/"_$E(Y,1,4)
+"RTN","PSSHRIT",369,0)
+ .W !,"        Issue Date: ",Y,!
+"RTN","PSSHRIT",370,0)
+ .;
+"RTN","PSSHRIT",371,0)
+ .W !,"  Custom Database Version: ",$G(^TMP($J,BASE,"OUT","customBuildVersion"))
+"RTN","PSSHRIT",372,0)
+ .W !,"     Custom Build Version: ",$G(^TMP($J,BASE,"OUT","customDbVersion"))
+"RTN","PSSHRIT",373,0)
+ .S Y=$G(^TMP($J,BASE,"OUT","customIssueDate"))
+"RTN","PSSHRIT",374,0)
+ .S:Y?8N Y=$E(Y,5,6)_"/"_$E(Y,7,8)_"/"_$E(Y,1,4)
+"RTN","PSSHRIT",375,0)
+ .W !,"        Custom Issue Date: ",Y,!
+"RTN","PSSHRIT",376,0)
+ .;
+"RTN","PSSHRIT",377,0)
+ .S Y=$$NOW^XLFDT()
+"RTN","PSSHRIT",378,0)
+ .D DD^%DT                       ; convert current time in Y to external format.
+"RTN","PSSHRIT",379,0)
+ .W !,"Connected to Vendor database successfully @",$E(Y,1,18)
+"RTN","PSSHRIT",380,0)
+ E  D
+"RTN","PSSHRIT",381,0)
+ .W !,"Connection could not be made to Vendor database."
+"RTN","PSSHRIT",382,0)
+ .S Y=$$GLASTRUN()
+"RTN","PSSHRIT",383,0)
+ .IF Y D
+"RTN","PSSHRIT",384,0)
+ ..D DD^%DT                      ; convert last reached time in Y to external format.
+"RTN","PSSHRIT",385,0)
+ ..W !,"  Last reached @"_$E(Y,1,18)
+"RTN","PSSHRIT",386,0)
+ ;
+"RTN","PSSHRIT",387,0)
+ D PRSRTN
+"RTN","PSSHRIT",388,0)
+ Q
+"RTN","PSSHRIT",389,0)
+ ;
+"RTN","PSSHRIT",390,0)
+ ;----------------------------------------------------
+"RTN","PSSHRIT",391,0)
+ ;
+"RTN","PSSHRIT",392,0)
+PRSRTN ;
+"RTN","PSSHRIT",393,0)
+ ;calls std routine to ask user to hit return 
+"RTN","PSSHRIT",394,0)
+ N DIR S DIR(0)="E" D ^DIR
+"RTN","PSSHRIT",395,0)
+ Q
+"RTN","PSSHRIT",396,0)
+ ;
+"RTN","PSSHRIT",397,0)
+PING(BASE) ;
+"RTN","PSSHRIT",398,0)
+ K ^TMP($J,BASE)
+"RTN","PSSHRIT",399,0)
+ S ^TMP($J,BASE,"IN","PING")=""
+"RTN","PSSHRIT",400,0)
+ D IN^PSSHRQ2(BASE)
+"RTN","PSSHRIT",401,0)
+ Q
+"RTN","PSSHRIT",402,0)
+ ;
+"RTN","PSSHRIT",403,0)
+HRSMIN(MIN) ;
+"RTN","PSSHRIT",404,0)
+ ; Called from output transform of VENDOR INTERFACE DATA FILE (#59.54) field TOTAL TIME NOT AVAILABLE (field# 2)
+"RTN","PSSHRIT",405,0)
+ ;INPUTS: MIN-TIME IN MINUTES
+"RTN","PSSHRIT",406,0)
+ ;RETURNS HRS AND MINUTES
+"RTN","PSSHRIT",407,0)
+ N HRS,MINHR,HRSMIN
+"RTN","PSSHRIT",408,0)
+ S HRSMIN=""
+"RTN","PSSHRIT",409,0)
+ S MINHR=60     ;TOTAL # OF MIN IN AN HR
+"RTN","PSSHRIT",410,0)
+ S HRS=MIN\MINHR,MIN=MIN#MINHR
+"RTN","PSSHRIT",411,0)
+ I HRS S HRSMIN=HRS_" HR"_$S(HRS>1:"S",1:"")
+"RTN","PSSHRIT",412,0)
+ I MIN S HRSMIN=HRSMIN_$S(HRSMIN:", ",1:"")_MIN_" MINUTE"_$S(MIN>1:"S",1:"")
+"RTN","PSSHRIT",413,0)
+ Q HRSMIN
+"RTN","PSSHRIT",414,0)
+ ;
+"RTN","PSSHRIT",415,0)
+OUTPUT(INFO,DIWL) ;
+"RTN","PSSHRIT",416,0)
+ K ^UTILITY($J,"W")
+"RTN","PSSHRIT",417,0)
+ N DIWR,DIWF,DIW,DIWT,X
+"RTN","PSSHRIT",418,0)
+ S DIWL=$G(DIWL,1)
+"RTN","PSSHRIT",419,0)
+ S X=INFO,DIWR=$S($G(IOM):IOM,1:60),DIWF="W" D ^DIWP
+"RTN","PSSHRIT",420,0)
+ D ^DIWW
+"RTN","PSSHRIT",421,0)
+ Q
+"RTN","PSSHRIT",422,0)
+ ;
+"RTN","PSSHRIT",423,0)
+ ;
+"RTN","PSSHRIT",424,0)
+SCUST ;Set Custom info
+"RTN","PSSHRIT",425,0)
+ I $D(^TMP($J,BASE,"OUT","DRUGDRUG","S",DRUG1,ORDER,1)) S INFO=$G(^TMP($J,BASE,"OUT","DRUGDRUG","S",DRUG1,ORDER,1,"PMON",9,0)) Q
+"RTN","PSSHRIT",426,0)
+ I $D(^TMP($J,BASE,"OUT","DRUGDRUG","S",DRUG2,"I;10U;PROFILE;10",1)) S INFO=$G(^TMP($J,BASE,"OUT","DRUGDRUG","S",DRUG2,"I;10U;PROFILE;10",1,"PMON",9,0)) Q
+"RTN","PSSHRIT",427,0)
+ S INFO=""
+"RTN","PSSHRIT",428,0)
+ Q
+"RTN","PSSHRIT",429,0)
+ ;
+"RTN","PSSHRIT",430,0)
+VENDRPT ;**Prints out the VENDOR INTERFACE DATA FILE (#59.74) sorted by most recent downtime first**
+"RTN","PSSHRIT",431,0)
+ ;
+"RTN","PSSHRIT",432,0)
+ ;The report retrieves the output using the Fileman EN1^DIP data retrieval call
+"RTN","PSSHRIT",433,0)
+ ;
+"RTN","PSSHRIT",434,0)
+ W !!,"This report will print out all information related to when and for how long the"
+"RTN","PSSHRIT",435,0)
+ W !,"vendor interface is unavailable (sorted by most recent down time first)."
+"RTN","PSSHRIT",436,0)
+ W !,"This information comes from the VENDOR INTERFACE DATA FILE."
+"RTN","PSSHRIT",437,0)
+ W !!,?15,"*** This has the potential to be a long report ***"
+"RTN","PSSHRIT",438,0)
+ W !!,"You may queue the report to print if you wish. You may also ""^"" to halt the"
+"RTN","PSSHRIT",439,0)
+ W !,"report at any time.",!!
+"RTN","PSSHRIT",440,0)
+ ;
+"RTN","PSSHRIT",441,0)
+ N DIC,BY,L,DIPCRIT,FR,TO,DHD,DIOBEG,DIOEND,FLDS
+"RTN","PSSHRIT",442,0)
+ S DIC="^PS(59.74,",BY="-.01",L=0,DIPCRIT=1
+"RTN","PSSHRIT",443,0)
+ S FR="?,",TO="?,",DHD="VENDOR INTERFACE DATA LIST"
+"RTN","PSSHRIT",444,0)
+ S DIOBEG="W @IOF"
+"RTN","PSSHRIT",445,0)
+ S FLDS=".01;""DATE/TIME UNAVAILABLE"",1;""DATE/TIME AVAILABLE"""";C26"",2;""TOTAL DOWNTIME"""
+"RTN","PSSHRIT",446,0)
+ D EN1^DIP
+"RTN","PSSHRIT",447,0)
+ Q
+"RTN","PSSHRQ22")
+0^9^B61732001
+"RTN","PSSHRQ22",1,0)
+PSSHRQ22 ;WOIFO/AV,TS - Handles parsing a PEPS drugTherapyChecks XML element ;2014-02-03  9:12 AM
+"RTN","PSSHRQ22",2,0)
+ ;;1.0;PHARMACY DATA MANAGEMENT;**136,11310000,LOCAL**;9/30/97;Build 9
+"RTN","PSSHRQ22",3,0)
+ ;
+"RTN","PSSHRQ22",4,0)
+ ; @authors - Alex Vazquez, Tim Sabat
+"RTN","PSSHRQ22",5,0)
+ ; @date    - September 19, 2007
+"RTN","PSSHRQ22",6,0)
+ ; @version - 1.0
+"RTN","PSSHRQ22",7,0)
+ ;
+"RTN","PSSHRQ22",8,0)
+ ; *11310000 VEN/SMH - Change GCN reference for Latte to VUID as 
+"RTN","PSSHRQ22",9,0)
+ ; GCN is undefined from Latte interface. GCN is used as a sub. Causes
+"RTN","PSSHRQ22",10,0)
+ ; Null sub error in Mumps. VUID always defined in MOCHA/Latte.
+"RTN","PSSHRQ22",11,0)
+ ;
+"RTN","PSSHRQ22",12,0)
+ QUIT
+"RTN","PSSHRQ22",13,0)
+ ;;
+"RTN","PSSHRQ22",14,0)
+THERAPY(DOCHAND,NODE,BASE) ;
+"RTN","PSSHRQ22",15,0)
+ ; @DRIVER
+"RTN","PSSHRQ22",16,0)
+ ; @DESC Parses the drugTherapyChecks XML elements
+"RTN","PSSHRQ22",17,0)
+ ;
+"RTN","PSSHRQ22",18,0)
+ ; @DOCHAND Handle to XML document
+"RTN","PSSHRQ22",19,0)
+ ; @NODE Node associated with XML element
+"RTN","PSSHRQ22",20,0)
+ ; @PSSHAND Handle to DrugOrderChecks object
+"RTN","PSSHRQ22",21,0)
+ ;
+"RTN","PSSHRQ22",22,0)
+ ; @RETURNS Nothing
+"RTN","PSSHRQ22",23,0)
+ ;
+"RTN","PSSHRQ22",24,0)
+ NEW PSS,MSGHASH,DRUGHASH,PSMSGCNT
+"RTN","PSSHRQ22",25,0)
+ ;
+"RTN","PSSHRQ22",26,0)
+ SET PSS("child")=0
+"RTN","PSSHRQ22",27,0)
+ SET PSS("therapyCount")=0
+"RTN","PSSHRQ22",28,0)
+ SET PSMSGCNT=0
+"RTN","PSSHRQ22",29,0)
+ ;
+"RTN","PSSHRQ22",30,0)
+ FOR  SET PSS("child")=$$CHILD^MXMLDOM(DOCHAND,NODE,PSS("child")) QUIT:PSS("child")=0  DO
+"RTN","PSSHRQ22",31,0)
+ . SET PSS("childName")=$$NAME^MXMLDOM(DOCHAND,PSS("child"))
+"RTN","PSSHRQ22",32,0)
+ . ;
+"RTN","PSSHRQ22",33,0)
+ . ;XML allows messages within both drugTherapyChecks and drugTherapyCheck
+"RTN","PSSHRQ22",34,0)
+ . SET:PSS("childName")="message" PSMSGCNT=PSMSGCNT+1
+"RTN","PSSHRQ22",35,0)
+ . DO:PSS("childName")="message" MSGREAD(DOCHAND,PSS("child"),.MSGHASH,PSMSGCNT)
+"RTN","PSSHRQ22",36,0)
+ . ;
+"RTN","PSSHRQ22",37,0)
+ . SET:PSS("childName")="drugTherapyCheck" PSS("therapyCount")=PSS("therapyCount")+1
+"RTN","PSSHRQ22",38,0)
+ . DO:PSS("childName")="drugTherapyCheck" THERREAD(DOCHAND,PSS("child"),.DRUGHASH,PSS("therapyCount"),.MSGHASH,PSMSGCNT)
+"RTN","PSSHRQ22",39,0)
+ ;
+"RTN","PSSHRQ22",40,0)
+ ;MSGHASH is set in THEREAD
+"RTN","PSSHRQ22",41,0)
+ DO MSGWRITE^PSSHRQ21(.MSGHASH,BASE,"THERAPY")
+"RTN","PSSHRQ22",42,0)
+ DO THERWRIT(.DRUGHASH,BASE)
+"RTN","PSSHRQ22",43,0)
+ ;
+"RTN","PSSHRQ22",44,0)
+ QUIT
+"RTN","PSSHRQ22",45,0)
+ ;;
+"RTN","PSSHRQ22",46,0)
+MSGREAD(DOCHAND,NODE,HASH,COUNT) ;
+"RTN","PSSHRQ22",47,0)
+ ; @DESC Handles parsing message section
+"RTN","PSSHRQ22",48,0)
+ ;
+"RTN","PSSHRQ22",49,0)
+ ; @DOCHAND Handle to XML document
+"RTN","PSSHRQ22",50,0)
+ ; @NODE Node associated with XML element
+"RTN","PSSHRQ22",51,0)
+ ; @COUNT Count of message sections
+"RTN","PSSHRQ22",52,0)
+ ; @HASH Where to store info
+"RTN","PSSHRQ22",53,0)
+ ;
+"RTN","PSSHRQ22",54,0)
+ ; @RETURNS Nothing
+"RTN","PSSHRQ22",55,0)
+ ;
+"RTN","PSSHRQ22",56,0)
+ ; Parse the message and store in hash
+"RTN","PSSHRQ22",57,0)
+ DO PARSEMSG^PSSHRCOM(DOCHAND,NODE,.HASH,COUNT)
+"RTN","PSSHRQ22",58,0)
+ ;
+"RTN","PSSHRQ22",59,0)
+ QUIT
+"RTN","PSSHRQ22",60,0)
+ ;
+"RTN","PSSHRQ22",61,0)
+ ;
+"RTN","PSSHRQ22",62,0)
+THERREAD(DOCHAND,NODE,HASH,COUNT,MSGHASH,MSGCNT) ;
+"RTN","PSSHRQ22",63,0)
+ ; @DESC Handles parsing and storage of drugTherapyCheck element
+"RTN","PSSHRQ22",64,0)
+ ;
+"RTN","PSSHRQ22",65,0)
+ ; @DOCHAND Handle to XML document
+"RTN","PSSHRQ22",66,0)
+ ; @NODE Node associated with XML element
+"RTN","PSSHRQ22",67,0)
+ ; @COUNT Count of drug sections
+"RTN","PSSHRQ22",68,0)
+ ; @HASH Where to store info
+"RTN","PSSHRQ22",69,0)
+ ; @MSGHASH Where message (alert)from FDB is stored
+"RTN","PSSHRQ22",70,0)
+ ; @MSGCNT-The current count of the number of messages (messages can occur in both places)
+"RTN","PSSHRQ22",71,0)
+ ; @RETURNS Nothing
+"RTN","PSSHRQ22",72,0)
+ NEW PSS
+"RTN","PSSHRQ22",73,0)
+ NEW INTDRUG   ;FOR TEST
+"RTN","PSSHRQ22",74,0)
+ SET PSS("child")=0
+"RTN","PSSHRQ22",75,0)
+ SET PSS("messageCount")=MSGCNT
+"RTN","PSSHRQ22",76,0)
+ ;
+"RTN","PSSHRQ22",77,0)
+ FOR  SET PSS("child")=$$CHILD^MXMLDOM(DOCHAND,NODE,PSS("child")) QUIT:PSS("child")=0  DO
+"RTN","PSSHRQ22",78,0)
+ . SET PSS("childName")=$$NAME^MXMLDOM(DOCHAND,PSS("child"))
+"RTN","PSSHRQ22",79,0)
+ . 
+"RTN","PSSHRQ22",80,0)
+ . I PSS("childName")="message" D  Q
+"RTN","PSSHRQ22",81,0)
+ . .S PSS("messageCount")=PSS("messageCount")+1
+"RTN","PSSHRQ22",82,0)
+ . .D MSGREAD(DOCHAND,PSS("child"),.MSGHASH,PSS("messageCount"))
+"RTN","PSSHRQ22",83,0)
+ . ;
+"RTN","PSSHRQ22",84,0)
+ . DO:PSS("childName")="interactedDrugList"
+"RTN","PSSHRQ22",85,0)
+ . . ; Store the interacted drug list
+"RTN","PSSHRQ22",86,0)
+ . . DO DRUGLIST^PSSHRCOM(DOCHAND,PSS("child"),.HASH,COUNT)
+"RTN","PSSHRQ22",87,0)
+ . DO:PSS("childName")="classification"
+"RTN","PSSHRQ22",88,0)
+ . . SET HASH(COUNT,"classification")=$$GETTEXT^PSSHRCOM(DOCHAND,PSS("child"))
+"RTN","PSSHRQ22",89,0)
+ . . QUIT
+"RTN","PSSHRQ22",90,0)
+ . DO:PSS("childName")="duplicateAllowance"
+"RTN","PSSHRQ22",91,0)
+ . . SET HASH(COUNT,"duplicateAllowance")=$$GETTEXT^PSSHRCOM(DOCHAND,PSS("child"))
+"RTN","PSSHRQ22",92,0)
+ . . QUIT
+"RTN","PSSHRQ22",93,0)
+ . DO:PSS("childName")="shortText"
+"RTN","PSSHRQ22",94,0)
+ . . SET HASH(COUNT,"shortText")=$$GETTEXT^PSSHRCOM(DOCHAND,PSS("child"))
+"RTN","PSSHRQ22",95,0)
+ . . QUIT
+"RTN","PSSHRQ22",96,0)
+ . QUIT
+"RTN","PSSHRQ22",97,0)
+ QUIT
+"RTN","PSSHRQ22",98,0)
+ ;;
+"RTN","PSSHRQ22",99,0)
+THERWRIT(HASH,BASE) ;
+"RTN","PSSHRQ22",100,0)
+ ; @DESC Handles writing drugDrugChecks drugTherapy section of the XML document
+"RTN","PSSHRQ22",101,0)
+ ;
+"RTN","PSSHRQ22",102,0)
+ ; @HASH ByRef, Hash used to store response
+"RTN","PSSHRQ22",103,0)
+ ; @BASE Base of output global
+"RTN","PSSHRQ22",104,0)
+ ;
+"RTN","PSSHRQ22",105,0)
+ ; @RETURNS Nothing. Stores values in output global.
+"RTN","PSSHRQ22",106,0)
+ ;
+"RTN","PSSHRQ22",107,0)
+ NEW PSS,I,DRUGNUM,NODE,COUNT,INDX
+"RTN","PSSHRQ22",108,0)
+ ;
+"RTN","PSSHRQ22",109,0)
+ SET I=""
+"RTN","PSSHRQ22",110,0)
+ SET COUNT=0
+"RTN","PSSHRQ22",111,0)
+ ;
+"RTN","PSSHRQ22",112,0)
+ ; Creates the index of drug combinations
+"RTN","PSSHRQ22",113,0)
+ ; Each unique drug combination has the corresponding count
+"RTN","PSSHRQ22",114,0)
+ DO MAKEINDX(.INDX,.HASH)
+"RTN","PSSHRQ22",115,0)
+ ;
+"RTN","PSSHRQ22",116,0)
+ FOR  SET I=$ORDER(HASH(I)) QUIT:I=""  DO
+"RTN","PSSHRQ22",117,0)
+ . ; Get the drugList identifier,
+"RTN","PSSHRQ22",118,0)
+ . ; Then get the count, count will be used to write global
+"RTN","PSSHRQ22",119,0)
+ . SET COUNT=INDX($$DLISTID(.HASH,I))
+"RTN","PSSHRQ22",120,0)
+ . ;
+"RTN","PSSHRQ22",121,0)
+ . ; Create the node to be used with subscript indirection
+"RTN","PSSHRQ22",122,0)
+ . SET NODE="^TMP($JOB,BASE,""OUT"",""THERAPY"",COUNT)"
+"RTN","PSSHRQ22",123,0)
+ . ; Write out the drug list to the global
+"RTN","PSSHRQ22",124,0)
+ . SET DRUGNUM=""
+"RTN","PSSHRQ22",125,0)
+ . FOR  SET DRUGNUM=$ORDER(HASH(I,"drugList",DRUGNUM)) QUIT:DRUGNUM=""  DO
+"RTN","PSSHRQ22",126,0)
+ . . DO TMPGLOB(.HASH,I,COUNT,DRUGNUM,BASE)
+"RTN","PSSHRQ22",127,0)
+ . . QUIT
+"RTN","PSSHRQ22",128,0)
+ . ;
+"RTN","PSSHRQ22",129,0)
+ . ; Write out the nodes to the correct subcount
+"RTN","PSSHRQ22",130,0)
+ . ; Get the correct subcount number first
+"RTN","PSSHRQ22",131,0)
+ . ; Get last count, then add 1 to move to next counter
+"RTN","PSSHRQ22",132,0)
+ . SET PSS("subCount")=$$SUBCOUNT(COUNT,BASE)
+"RTN","PSSHRQ22",133,0)
+ . SET @NODE@(PSS("subCount"),"ALLOW")=HASH(I,"duplicateAllowance")
+"RTN","PSSHRQ22",134,0)
+ . SET @NODE@(PSS("subCount"),"CLASS")=HASH(I,"classification")
+"RTN","PSSHRQ22",135,0)
+ . SET @NODE@(PSS("subCount"),"SHORT")=HASH(I,"shortText")
+"RTN","PSSHRQ22",136,0)
+ . ;
+"RTN","PSSHRQ22",137,0)
+ . QUIT
+"RTN","PSSHRQ22",138,0)
+ ;
+"RTN","PSSHRQ22",139,0)
+ QUIT
+"RTN","PSSHRQ22",140,0)
+ ;;
+"RTN","PSSHRQ22",141,0)
+SUBCOUNT(COUNT,BASE) ;
+"RTN","PSSHRQ22",142,0)
+ ; @DESC Returns the next subcount for drug therapy output global
+"RTN","PSSHRQ22",143,0)
+ ; Format is ^TMP($JOB,BASE,"OUT","THERAPY",COUNT,SUBCOUNT)
+"RTN","PSSHRQ22",144,0)
+ ;
+"RTN","PSSHRQ22",145,0)
+ ; @COUNT The main count of drug therapy
+"RTN","PSSHRQ22",146,0)
+ ; @BASE The base of output global
+"RTN","PSSHRQ22",147,0)
+ ;
+"RTN","PSSHRQ22",148,0)
+ ; @RETURNS The last subcount of drug therapy output global.
+"RTN","PSSHRQ22",149,0)
+ ;
+"RTN","PSSHRQ22",150,0)
+ NEW PSS
+"RTN","PSSHRQ22",151,0)
+ ;
+"RTN","PSSHRQ22",152,0)
+ ; loop through the subcounts of the current count, store highest
+"RTN","PSSHRQ22",153,0)
+ ; subcount and return it
+"RTN","PSSHRQ22",154,0)
+ SET PSS("subCount")=""
+"RTN","PSSHRQ22",155,0)
+ SET PSS("highCount")=0
+"RTN","PSSHRQ22",156,0)
+ FOR  SET PSS("subCount")=$ORDER(^TMP($JOB,BASE,"OUT","THERAPY",COUNT,PSS("subCount"))) QUIT:PSS("subCount")=""  DO
+"RTN","PSSHRQ22",157,0)
+ . IF +PSS("subCount")>PSS("highCount") SET PSS("highCount")=+PSS("subCount")
+"RTN","PSSHRQ22",158,0)
+ . QUIT
+"RTN","PSSHRQ22",159,0)
+ ;
+"RTN","PSSHRQ22",160,0)
+ QUIT PSS("highCount")+1
+"RTN","PSSHRQ22",161,0)
+ ;;
+"RTN","PSSHRQ22",162,0)
+MAKEINDX(INDX,HASH) ;
+"RTN","PSSHRQ22",163,0)
+ ; @DESC Creates index of drug list combinations. Uses gcn as the
+"RTN","PSSHRQ22",164,0)
+ ; unique identifier of drug.
+"RTN","PSSHRQ22",165,0)
+ ;
+"RTN","PSSHRQ22",166,0)
+ ; @HASH ByRef, Holds the list of drugs
+"RTN","PSSHRQ22",167,0)
+ ; @INDX ByRef, Used to store count of drug list
+"RTN","PSSHRQ22",168,0)
+ ;
+"RTN","PSSHRQ22",169,0)
+ ; @RETURNS Nothing.  Values returned in INDX hash
+"RTN","PSSHRQ22",170,0)
+ ;
+"RTN","PSSHRQ22",171,0)
+ NEW I,PSS
+"RTN","PSSHRQ22",172,0)
+ ;
+"RTN","PSSHRQ22",173,0)
+ SET PSS("uniqueDrugCombinationCount")=0
+"RTN","PSSHRQ22",174,0)
+ ;
+"RTN","PSSHRQ22",175,0)
+ SET I=""
+"RTN","PSSHRQ22",176,0)
+ FOR  SET I=$ORDER(HASH(I)) QUIT:I=""  DO
+"RTN","PSSHRQ22",177,0)
+ . ; Get the uniqueDrugCombinationId, i.e. gcn's strung together
+"RTN","PSSHRQ22",178,0)
+ . SET PSS("uniqueDrugCombination")=$$DLISTID(.HASH,I)
+"RTN","PSSHRQ22",179,0)
+ . ;
+"RTN","PSSHRQ22",180,0)
+ . ; Check to see if drug combination already exist
+"RTN","PSSHRQ22",181,0)
+ . ; If it does not exist increase the unique drug count
+"RTN","PSSHRQ22",182,0)
+ . IF $DATA(INDX(PSS("uniqueDrugCombination")))=0 DO
+"RTN","PSSHRQ22",183,0)
+ . . SET PSS("uniqueDrugCombinationCount")=PSS("uniqueDrugCombinationCount")+1
+"RTN","PSSHRQ22",184,0)
+ . . SET INDX(PSS("uniqueDrugCombination"))=PSS("uniqueDrugCombinationCount")
+"RTN","PSSHRQ22",185,0)
+ . QUIT
+"RTN","PSSHRQ22",186,0)
+ ;
+"RTN","PSSHRQ22",187,0)
+ QUIT
+"RTN","PSSHRQ22",188,0)
+ ;;
+"RTN","PSSHRQ22",189,0)
+DLISTID(HASH,I) ;
+"RTN","PSSHRQ22",190,0)
+ ; @DESC Returns the id of the drug list. The id of the drug list
+"RTN","PSSHRQ22",191,0)
+ ; consist of the gcn in sorted order separated by '^'.
+"RTN","PSSHRQ22",192,0)
+ ;
+"RTN","PSSHRQ22",193,0)
+ ; @HASH ByRef, Holds the list of drugs
+"RTN","PSSHRQ22",194,0)
+ ; @I    The current count on the hash
+"RTN","PSSHRQ22",195,0)
+ ;
+"RTN","PSSHRQ22",196,0)
+ ; @RETURNS Id of drug list.
+"RTN","PSSHRQ22",197,0)
+ NEW J,K,PSS,ARRAY
+"RTN","PSSHRQ22",198,0)
+ ; loop through the drug therapy checks count
+"RTN","PSSHRQ22",199,0)
+ ; Create a temp array to sort the gcns in the ascending order
+"RTN","PSSHRQ22",200,0)
+ SET J=""
+"RTN","PSSHRQ22",201,0)
+ FOR  SET J=$ORDER(HASH(I,"drugList",J)) QUIT:J=""  DO
+"RTN","PSSHRQ22",202,0)
+ . ;SET PSS("uniqueDrugID")=HASH(I,"drugList",J,"orderNumber")
+"RTN","PSSHRQ22",203,0)
+ . ; SET PSS("uniqueDrugID")=HASH(I,"drugList",J,"gcn")   ;PO: get GCN; VEN/SMH *11310000 -old
+"RTN","PSSHRQ22",204,0)
+ . SET PSS("uniqueDrugID")=HASH(I,"drugList",J,"vuid") ; VEN/SMH *11310000 -new
+"RTN","PSSHRQ22",205,0)
+ . SET ARRAY(PSS("uniqueDrugID"))=1
+"RTN","PSSHRQ22",206,0)
+ . QUIT
+"RTN","PSSHRQ22",207,0)
+ ;
+"RTN","PSSHRQ22",208,0)
+ ; Create a uniqueDrugCombination from temp array
+"RTN","PSSHRQ22",209,0)
+ SET K=""
+"RTN","PSSHRQ22",210,0)
+ SET PSS("tempCount")=0
+"RTN","PSSHRQ22",211,0)
+ SET PSS("uniqueDrugCombination")=""
+"RTN","PSSHRQ22",212,0)
+ FOR  SET K=$ORDER(ARRAY(K)) QUIT:K=""  DO
+"RTN","PSSHRQ22",213,0)
+ . IF PSS("tempCount")>0 DO
+"RTN","PSSHRQ22",214,0)
+ . . SET PSS("uniqueDrugCombination")=PSS("uniqueDrugCombination")_"^"_K
+"RTN","PSSHRQ22",215,0)
+ . ;
+"RTN","PSSHRQ22",216,0)
+ . ; For first loop do no attach ^ before setting
+"RTN","PSSHRQ22",217,0)
+ . IF PSS("tempCount")=0 DO
+"RTN","PSSHRQ22",218,0)
+ . . SET PSS("tempCount")=PSS("tempCount")+1
+"RTN","PSSHRQ22",219,0)
+ . . SET PSS("uniqueDrugCombination")=K
+"RTN","PSSHRQ22",220,0)
+ . ;
+"RTN","PSSHRQ22",221,0)
+ . QUIT
+"RTN","PSSHRQ22",222,0)
+ ;
+"RTN","PSSHRQ22",223,0)
+ QUIT PSS("uniqueDrugCombination")
+"RTN","PSSHRQ22",224,0)
+ ;;
+"RTN","PSSHRQ22",225,0)
+TMPGLOB(HASH,MAINCNT,CHEKCNT,DRUGNUM,BASE) ;
+"RTN","PSSHRQ22",226,0)
+ ; @DESC Writes the drugList to the proper global
+"RTN","PSSHRQ22",227,0)
+ ;
+"RTN","PSSHRQ22",228,0)
+ ; @HASH ByRef, Has used to store response
+"RTN","PSSHRQ22",229,0)
+ ; @CHECKCNT The current TherapyCheck result
+"RTN","PSSHRQ22",230,0)
+ ; @DRUGNUM The current drug interaction
+"RTN","PSSHRQ22",231,0)
+ ; @BASE Base of the output global
+"RTN","PSSHRQ22",232,0)
+ ;
+"RTN","PSSHRQ22",233,0)
+ ; @RETURNS Nothing.  Stores values in output global.
+"RTN","PSSHRQ22",234,0)
+ ;
+"RTN","PSSHRQ22",235,0)
+ NEW NODE
+"RTN","PSSHRQ22",236,0)
+ SET NODE="^TMP($JOB,BASE,""OUT"",""THERAPY"",CHEKCNT,""DRUGS"",DRUGNUM)"
+"RTN","PSSHRQ22",237,0)
+ SET @NODE=$$VALUE(.HASH,MAINCNT,DRUGNUM)
+"RTN","PSSHRQ22",238,0)
+ QUIT
+"RTN","PSSHRQ22",239,0)
+ ;;
+"RTN","PSSHRQ22",240,0)
+VALUE(HASH,MAINCNT,DRUGNUM) ;
+"RTN","PSSHRQ22",241,0)
+ ; @DESC Provides the ""piece" data we use when creating the output global.
+"RTN","PSSHRQ22",242,0)
+ ;
+"RTN","PSSHRQ22",243,0)
+ ; @HASH ByRef, Has used to store response
+"RTN","PSSHRQ22",244,0)
+ ; @MAINCNT The current TherapyCheck result
+"RTN","PSSHRQ22",245,0)
+ ; @DRUGNUM The current drug interaction
+"RTN","PSSHRQ22",246,0)
+ ;
+"RTN","PSSHRQ22",247,0)
+ ; @RETURNS The right side of the global for therapy.
+"RTN","PSSHRQ22",248,0)
+ ;
+"RTN","PSSHRQ22",249,0)
+ ; PharmacyOrderNumber ^
+"RTN","PSSHRQ22",250,0)
+ ; Drug IEN ^
+"RTN","PSSHRQ22",251,0)
+ ; Drug Name ^
+"RTN","PSSHRQ22",252,0)
+ ; CPRS Order Number ^
+"RTN","PSSHRQ22",253,0)
+ ; Package
+"RTN","PSSHRQ22",254,0)
+ ;
+"RTN","PSSHRQ22",255,0)
+ NEW OUT
+"RTN","PSSHRQ22",256,0)
+ SET OUT=HASH(MAINCNT,"drugList",DRUGNUM,"orderNumber")_"^"
+"RTN","PSSHRQ22",257,0)
+ SET OUT=OUT_HASH(MAINCNT,"drugList",DRUGNUM,"ien")_"^"
+"RTN","PSSHRQ22",258,0)
+ SET OUT=OUT_HASH(MAINCNT,"drugList",DRUGNUM,"drugName")_"^"
+"RTN","PSSHRQ22",259,0)
+ SET OUT=OUT_HASH(MAINCNT,"drugList",DRUGNUM,"cprsOrderNumber")_"^"
+"RTN","PSSHRQ22",260,0)
+ SET OUT=OUT_HASH(MAINCNT,"drugList",DRUGNUM,"package")
+"RTN","PSSHRQ22",261,0)
+ QUIT OUT
+"RTN","PSSHRQ22",262,0)
+ ;;
+"RTN","PSSHRVAL")
+0^5^B153337864
+"RTN","PSSHRVAL",1,0)
+PSSHRVAL ;WOIFO/Alex Vasquez,Timothy Sabat,Steve Gordon - Data Validation routine for drug checks ;2014-02-03  9:12 AM
+"RTN","PSSHRVAL",2,0)
+ ;;1.0;PHARMACY DATA MANAGEMENT;**136,11310000,LOCAL**;9/30/97;Build 9
+"RTN","PSSHRVAL",3,0)
+ ;
+"RTN","PSSHRVAL",4,0)
+ ; VEN/SMH - *11310000: Change the logic so that the interface proceeds anyways
+"RTN","PSSHRVAL",5,0)
+ ; EVEN IF no GCN is provided.
+"RTN","PSSHRVAL",6,0)
+ ;
+"RTN","PSSHRVAL",7,0)
+ ;@NOTE: The exception node looks like this.
+"RTN","PSSHRVAL",8,0)
+ ;PSSHASH("Exception","PROSPECTIVE","DOSE",PharmacyOrderNum,Counter)=Gcn,Vuid,IEN,DrugName,CprsOrderNum,Package,Reason,ReasonCode,ResonSource,ReasonText
+"RTN","PSSHRVAL",9,0)
+ ;PSSHASH("Exception","PROSPECTIVE",PharmacyOrderNum,Counter)=Gcn,Vuid,IEN,DrugName,CprsOrderNum,Package,Reason,ReasonCode,ResonSource,ReasonText
+"RTN","PSSHRVAL",10,0)
+ ;PSSHASH("Exception","PROFILE",PharmacyOrderNum,Counter)=Gcn,Vuid,IEN,DrugName,CprsOrderNum,Package,Reason,ReasonCode,ResonSource,ReasonText
+"RTN","PSSHRVAL",11,0)
+ ;PSSHASH("Exception","PatientIenMissing")=""
+"RTN","PSSHRVAL",12,0)
+ ;PSSHASH("Message")="Failed Validation"
+"RTN","PSSHRVAL",13,0)
+ ;PSSHASH("ReasonCode")="Reason Code Not Determined Yet"
+"RTN","PSSHRVAL",14,0)
+ ;
+"RTN","PSSHRVAL",15,0)
+ ;
+"RTN","PSSHRVAL",16,0)
+ ;^TMP GLOBAL DATA=GCNSEQNO^VUID^IEN^NAME^DOSE AMOUNT^DOSE UNIT^DOSE RATE^FREQ^DURATION^DURATION RATE^ROUTE^DOSE TYPE^not used^DOSE FORM FLAG
+"RTN","PSSHRVAL",17,0)
+ ;
+"RTN","PSSHRVAL",18,0)
+ ;Business rules:
+"RTN","PSSHRVAL",19,0)
+ ;1. If a prospective" node does not have a GCNSEQNO, it will be KILLED - VEN/SMH: *11310000 Changed
+"RTN","PSSHRVAL",20,0)
+ ;2.If a "profile" node does not have a GCNSEQNO, it will be KILLED - VEN/SMH: *11310000 Changed
+"RTN","PSSHRVAL",21,0)
+ ;3.If no prospective nodes exist, DRUGDRUG,THERAPY and DOSE will be killed off
+"RTN","PSSHRVAL",22,0)
+ ;4.Only checks will be performed for those check nodes that still exist (e.g. DRUGDRUG,
+"RTN","PSSHRVAL",23,0)
+ ;THERAPY and DOSE)
+"RTN","PSSHRVAL",24,0)
+ ;If any of the demographics are out of range (age<=0,BSA<0 (or null) or Weight<0 or null) dose node will be killed.
+"RTN","PSSHRVAL",25,0)
+ ;
+"RTN","PSSHRVAL",26,0)
+ QUIT
+"RTN","PSSHRVAL",27,0)
+ ;;
+"RTN","PSSHRVAL",28,0)
+DRIVER(PSSBASE) ;
+"RTN","PSSHRVAL",29,0)
+ ;@DRIVER
+"RTN","PSSHRVAL",30,0)
+ ;@DESC The driver for the validation of drug checks.
+"RTN","PSSHRVAL",31,0)
+ ;@PSSBASE The base
+"RTN","PSSHRVAL",32,0)
+ ;
+"RTN","PSSHRVAL",33,0)
+ NEW PSSHASH
+"RTN","PSSHRVAL",34,0)
+ ;
+"RTN","PSSHRVAL",35,0)
+ SET PSSHASH("Base")=PSSBASE
+"RTN","PSSHRVAL",36,0)
+ SET PSSHASH("ReasonCode")="" ;for version 0.5 version not yet defined.
+"RTN","PSSHRVAL",37,0)
+ ;
+"RTN","PSSHRVAL",38,0)
+ DO BUILD(.PSSHASH)
+"RTN","PSSHRVAL",39,0)
+ ;
+"RTN","PSSHRVAL",40,0)
+ DO WRITE^PSSHRVL1(.PSSHASH)
+"RTN","PSSHRVAL",41,0)
+ DO CHKNODES(.PSSHASH)
+"RTN","PSSHRVAL",42,0)
+ QUIT $$CONTINUE(.PSSHASH)
+"RTN","PSSHRVAL",43,0)
+ ;
+"RTN","PSSHRVAL",44,0)
+CHKNODES(PSSHASH) ;
+"RTN","PSSHRVAL",45,0)
+ ;@DESC Determines which nodes should be killed off or kept
+"RTN","PSSHRVAL",46,0)
+ ;
+"RTN","PSSHRVAL",47,0)
+ ;SET DoseValue,"Demo" PSSHASH array to kill off dose node
+"RTN","PSSHRVAL",48,0)
+ NEW ORDER
+"RTN","PSSHRVAL",49,0)
+ ;
+"RTN","PSSHRVAL",50,0)
+ SET ORDER=""
+"RTN","PSSHRVAL",51,0)
+ IF '$L($O(^TMP($JOB,PSSHASH("Base"),"IN","PROSPECTIVE",ORDER))) DO
+"RTN","PSSHRVAL",52,0)
+ .;If only send in profile with profile flag OK
+"RTN","PSSHRVAL",53,0)
+ .I $D(^TMP($JOB,PSSHASH("Base"),"IN","PROFILEVPROFILE"))&($L($O(^TMP($JOB,PSSHASH("Base"),"IN","PROFILE",ORDER)))) Q
+"RTN","PSSHRVAL",54,0)
+ .DO KILLALL^PSSHRVL1(PSSHASH("Base"))
+"RTN","PSSHRVAL",55,0)
+ IF '$L($O(^TMP($JOB,PSSHASH("Base"),"IN","DOSE",ORDER)))!$D(PSSHASH("DoseValue","Demo")) DO
+"RTN","PSSHRVAL",56,0)
+ .DO KILLCHEK^PSSHRVL1("DOSE",PSSHASH("Base"))
+"RTN","PSSHRVAL",57,0)
+ QUIT
+"RTN","PSSHRVAL",58,0)
+ ;
+"RTN","PSSHRVAL",59,0)
+CONTINUE(PSSHASH) ;
+"RTN","PSSHRVAL",60,0)
+ ;@DESC Determines whether or not to proceed with checks.
+"RTN","PSSHRVAL",61,0)
+ ;@RETURNS 1 if you may continue, 0 if not.
+"RTN","PSSHRVAL",62,0)
+ ;
+"RTN","PSSHRVAL",63,0)
+ NEW PSS
+"RTN","PSSHRVAL",64,0)
+ SET PSS("AnyChecksLeft")=0
+"RTN","PSSHRVAL",65,0)
+ DO:$DATA(^TMP($JOB,PSSHASH("Base"),"IN","DRUGDRUG"))
+"RTN","PSSHRVAL",66,0)
+  . SET PSS("AnyChecksLeft")=1
+"RTN","PSSHRVAL",67,0)
+  . QUIT 
+"RTN","PSSHRVAL",68,0)
+ DO:$DATA(^TMP($JOB,PSSHASH("Base"),"IN","THERAPY"))
+"RTN","PSSHRVAL",69,0)
+ . SET PSS("AnyChecksLeft")=1
+"RTN","PSSHRVAL",70,0)
+ . QUIT
+"RTN","PSSHRVAL",71,0)
+ DO:$DATA(^TMP($JOB,PSSHASH("Base"),"IN","DOSE"))
+"RTN","PSSHRVAL",72,0)
+ . SET PSS("AnyChecksLeft")=1
+"RTN","PSSHRVAL",73,0)
+ . QUIT
+"RTN","PSSHRVAL",74,0)
+ DO:$DATA(^TMP($JOB,PSSHASH("Base"),"IN","PING"))
+"RTN","PSSHRVAL",75,0)
+  . SET PSS("AnyChecksLeft")=1
+"RTN","PSSHRVAL",76,0)
+  . QUIT
+"RTN","PSSHRVAL",77,0)
+ QUIT PSS("AnyChecksLeft")
+"RTN","PSSHRVAL",78,0)
+ ;
+"RTN","PSSHRVAL",79,0)
+BUILD(PSSHASH) ;
+"RTN","PSSHRVAL",80,0)
+ ;@DESC Builds the internal hash used to parse for errors.
+"RTN","PSSHRVAL",81,0)
+ ;@PSSHASH The internal variables.
+"RTN","PSSHRVAL",82,0)
+ ;DO CHKINEXP(.PSSHASH)
+"RTN","PSSHRVAL",83,0)
+ DO CHKINEXP(.PSSHASH) ;CHK FOR "IN" EXCEPTIONS
+"RTN","PSSHRVAL",84,0)
+ DO DRUGPROS(.PSSHASH)
+"RTN","PSSHRVAL",85,0)
+ DO DRUGPROF(.PSSHASH)
+"RTN","PSSHRVAL",86,0)
+ QUIT
+"RTN","PSSHRVAL",87,0)
+ ;
+"RTN","PSSHRVAL",88,0)
+CHKINEXP(PSSHASH) ;
+"RTN","PSSHRVAL",89,0)
+ ;INPUT PSSHASH array
+"RTN","PSSHRVAL",90,0)
+ ;PSSHASH("Exception",TYPE,"DOSE",PSS("PharmOrderNum"),COUNTER)
+"RTN","PSSHRVAL",91,0)
+ ;PSSHASH("Exception",TYPE,PSS("PharmOrderNum"),COUNTER)
+"RTN","PSSHRVAL",92,0)
+ I $D(^TMP($JOB,PSSHASH("Base"),"IN","EXCEPTIONS","OI")) D OIEXP(.PSSHASH)
+"RTN","PSSHRVAL",93,0)
+ I $D(^TMP($JOB,PSSHASH("Base"),"IN","EXCEPTIONS","DOSE")) D DOSINEXP(.PSSHASH)
+"RTN","PSSHRVAL",94,0)
+ Q
+"RTN","PSSHRVAL",95,0)
+ ;
+"RTN","PSSHRVAL",96,0)
+DRUGPROS(PSSHASH) ;
+"RTN","PSSHRVAL",97,0)
+ ;@DESC Loops on the prospective drugs
+"RTN","PSSHRVAL",98,0)
+ ;@PSSHASH The internal variables.
+"RTN","PSSHRVAL",99,0)
+ ;
+"RTN","PSSHRVAL",100,0)
+ NEW PSS
+"RTN","PSSHRVAL",101,0)
+ SET PSS("ProspectiveOrProfile")="PROSPECTIVE"
+"RTN","PSSHRVAL",102,0)
+ SET PSS("PharmOrderNum")=""
+"RTN","PSSHRVAL",103,0)
+ ;
+"RTN","PSSHRVAL",104,0)
+ FOR  SET PSS("PharmOrderNum")=$ORDER(^TMP($JOB,PSSHASH("Base"),"IN","PROSPECTIVE",PSS("PharmOrderNum"))) QUIT:PSS("PharmOrderNum")=""  DO
+"RTN","PSSHRVAL",105,0)
+  . SET PSS("DrugValue")=^TMP($JOB,PSSHASH("Base"),"IN","PROSPECTIVE",PSS("PharmOrderNum"))
+"RTN","PSSHRVAL",106,0)
+  . ; DO CHECKGCN(.PSS,.PSSHASH) ; VEN/SMH *11310000 Don't check for GCN.
+"RTN","PSSHRVAL",107,0)
+  . DO CHECKDOS(.PSS,.PSSHASH)
+"RTN","PSSHRVAL",108,0)
+  . QUIT
+"RTN","PSSHRVAL",109,0)
+ QUIT
+"RTN","PSSHRVAL",110,0)
+ ;
+"RTN","PSSHRVAL",111,0)
+DEMOGRAF(PSS,PSSHASH,PSDRUG) ;
+"RTN","PSSHRVAL",112,0)
+ ;@DESC Validates the demographic info
+"RTN","PSSHRVAL",113,0)
+ ;@PSSHASH The hash the demographic info is stored in
+"RTN","PSSHRVAL",114,0)
+ ;
+"RTN","PSSHRVAL",115,0)
+ ;Gcn
+"RTN","PSSHRVAL",116,0)
+ N AGE,WEIGHT,BSA,MESSAGE,ORDER
+"RTN","PSSHRVAL",117,0)
+ ;
+"RTN","PSSHRVAL",118,0)
+ SET PSS("T")=$PIECE(PSS("DoseValue"),"^",1)_"^"
+"RTN","PSSHRVAL",119,0)
+ ;Vuid
+"RTN","PSSHRVAL",120,0)
+ SET PSS("T")=PSS("T")_$PIECE(PSS("DoseValue"),"^",2)_"^"
+"RTN","PSSHRVAL",121,0)
+ ;Ien
+"RTN","PSSHRVAL",122,0)
+ SET PSS("T")=PSS("T")_$PIECE(PSS("DoseValue"),"^",3)_"^"
+"RTN","PSSHRVAL",123,0)
+ ;DrugName
+"RTN","PSSHRVAL",124,0)
+ SET PSS("T")=PSS("T")_$PIECE(PSS("DoseValue"),"^",4)_"^"
+"RTN","PSSHRVAL",125,0)
+ ;CprsOrderNumber
+"RTN","PSSHRVAL",126,0)
+ SET PSS("T")=PSS("T")_$PIECE(PSS("DoseValue"),"^",5)_"^"
+"RTN","PSSHRVAL",127,0)
+ ;Package
+"RTN","PSSHRVAL",128,0)
+ SET PSS("T")=PSS("T")_$PIECE(PSS("DoseValue"),"^",6)_"^"
+"RTN","PSSHRVAL",129,0)
+ ;Reason
+"RTN","PSSHRVAL",130,0)
+ ;SET PSS("T")=PSS("T")_PSSHASH("Message")_"^"
+"RTN","PSSHRVAL",131,0)
+  I $D(^TMP($JOB,PSSHASH("Base"),"IN","DOSE")) D
+"RTN","PSSHRVAL",132,0)
+  .S AGE=+$G(^TMP($J,PSSHASH("Base"),"IN","DOSE","AGE"))
+"RTN","PSSHRVAL",133,0)
+  .S WEIGHT=+$G(^TMP($J,PSSHASH("Base"),"IN","DOSE","WT"))
+"RTN","PSSHRVAL",134,0)
+  .S BSA=+$G(^TMP($J,PSSHASH("Base"),"IN","DOSE","BSA"))
+"RTN","PSSHRVAL",135,0)
+  . ;Validate age in days exists or BSA or Weight are less than zero.
+"RTN","PSSHRVAL",136,0)
+  .S MESSAGE=$$DEMOCHK^PSSHRVL1(AGE,BSA,WEIGHT,PSDRUG) Q:'$L(MESSAGE)  ;IF NO ISSUE DON'T GO ANY FURTHER
+"RTN","PSSHRVAL",137,0)
+  .D SETDSEXP(.PSS,.PSSHASH,MESSAGE,0)
+"RTN","PSSHRVAL",138,0)
+  .;This is already looping through all dose nodes from DRUGPROS
+"RTN","PSSHRVAL",139,0)
+  .;IF BAD DEMOGRAPHIC Set array node below and have CHKNODES tag kill Dose node
+"RTN","PSSHRVAL",140,0)
+  .S PSSHASH("DoseValue","Demo")=""
+"RTN","PSSHRVAL",141,0)
+ KILL PSS("T")
+"RTN","PSSHRVAL",142,0)
+ QUIT 
+"RTN","PSSHRVAL",143,0)
+ ;
+"RTN","PSSHRVAL",144,0)
+CHECKDOS(PSS,PSSHASH) ; 
+"RTN","PSSHRVAL",145,0)
+ ;@DESC Check if the dose exists.
+"RTN","PSSHRVAL",146,0)
+ ;@PSS The temp hash
+"RTN","PSSHRVAL",147,0)
+ ;@PSSHASH The internal hash
+"RTN","PSSHRVAL",148,0)
+ N DOSEVALUE,DOSE,DOSEUNIT,DOSERATE,FREQ,DURATION,DURRATE,ROUTE,DOSETYPE,DRUGNM,MESSAGE
+"RTN","PSSHRVAL",149,0)
+ DO:$DATA(^TMP($JOB,PSSHASH("Base"),"IN","DOSE",PSS("PharmOrderNum")))
+"RTN","PSSHRVAL",150,0)
+  .;if prospective killed off then GCN bad-no need to go any further
+"RTN","PSSHRVAL",151,0)
+  .I '$DATA(^TMP($JOB,PSSHASH("Base"),"IN","PROSPECTIVE",PSS("PharmOrderNum"))) Q
+"RTN","PSSHRVAL",152,0)
+  . SET PSS("DoseValue")=^TMP($JOB,PSSHASH("Base"),"IN","DOSE",PSS("PharmOrderNum"))
+"RTN","PSSHRVAL",153,0)
+  . SET PSS("Package")=""
+"RTN","PSSHRVAL",154,0)
+  . SET PSS("ReasonSource")=$$GETUCI^PSSHRVL1()
+"RTN","PSSHRVAL",155,0)
+  . ;
+"RTN","PSSHRVAL",156,0)
+  . ;I '$$DEMOGRAF(.PSS,.PSSHASH) Q  ;Check age and other parameters
+"RTN","PSSHRVAL",157,0)
+  . ;If this is a "specific" call
+"RTN","PSSHRVAL",158,0)
+  . ;SET PSS("Package")="N/A"
+"RTN","PSSHRVAL",159,0)
+  . ;SET PSS("ReasonSource")=$$GETUCI^PSSHRVL1()
+"RTN","PSSHRVAL",160,0)
+  . ;SET PSS("Message")=PSSHASH("Message")
+"RTN","PSSHRVAL",161,0)
+  . S DOSEVALUE=PSS("DoseValue")
+"RTN","PSSHRVAL",162,0)
+  . S DRUGNM=$P(DOSEVALUE,U,4)
+"RTN","PSSHRVAL",163,0)
+  . S DOSE=$P(DOSEVALUE,U,5),DOSEUNIT=$P(DOSEVALUE,U,6),DOSERATE=$P(DOSEVALUE,U,7)
+"RTN","PSSHRVAL",164,0)
+  . S FREQ=$P(DOSEVALUE,U,8),DURATION=$P(DOSEVALUE,U,9)
+"RTN","PSSHRVAL",165,0)
+  . S DURRATE=$P(DOSEVALUE,U,10),ROUTE=$P(DOSEVALUE,U,11),DOSETYPE=$P(DOSEVALUE,U,12)
+"RTN","PSSHRVAL",166,0)
+  . ;Check piece 12--if not set correctly go no further
+"RTN","PSSHRVAL",167,0)
+  . S MESSAGE=$$CHKDSTYP^PSSHRVL1(DOSETYPE,DRUGNM) I $L(MESSAGE) D  Q
+"RTN","PSSHRVAL",168,0)
+  . . D SETDSEXP(.PSS,.PSSHASH,MESSAGE,12)
+"RTN","PSSHRVAL",169,0)
+  . D DEMOGRAF(.PSS,.PSSHASH,DRUGNM)  ;Check age and other parameters
+"RTN","PSSHRVAL",170,0)
+  . ;set defaults for all possible errors
+"RTN","PSSHRVAL",171,0)
+  . ;check piece 5 dose
+"RTN","PSSHRVAL",172,0)
+  . S MESSAGE=$$CHKDOSE^PSSHRVL1(DOSE,DRUGNM) I $L(MESSAGE) D
+"RTN","PSSHRVAL",173,0)
+  . .D SETDSEXP(.PSS,.PSSHASH,MESSAGE,5)
+"RTN","PSSHRVAL",174,0)
+  . ;check piece 6-dose units
+"RTN","PSSHRVAL",175,0)
+  . S MESSAGE=$$CHKUNIT^PSSHRVL1(DOSEUNIT,DRUGNM) I $L(MESSAGE) D
+"RTN","PSSHRVAL",176,0)
+  . .D SETDSEXP(.PSS,.PSSHASH,MESSAGE,6)
+"RTN","PSSHRVAL",177,0)
+  . ;Check piece 7--dose rate
+"RTN","PSSHRVAL",178,0)
+  . S MESSAGE=$$CHKRATE^PSSHRVL1(DOSERATE,"DOSE",DRUGNM) I $L(MESSAGE) D
+"RTN","PSSHRVAL",179,0)
+  . . D SETDSEXP(.PSS,.PSSHASH,MESSAGE,7)
+"RTN","PSSHRVAL",180,0)
+  . ;Check Piece 8--frequency
+"RTN","PSSHRVAL",181,0)
+  . S MESSAGE=$$CHKFREQ^PSSHRVL1(FREQ) I $L(MESSAGE) D
+"RTN","PSSHRVAL",182,0)
+  . .D SETDSEXP(.PSS,.PSSHASH,MESSAGE,8)
+"RTN","PSSHRVAL",183,0)
+  . ;Check piece 9-duration
+"RTN","PSSHRVAL",184,0)
+  . S MESSAGE=$$CHKDRATN^PSSHRVL1(DURATION,DRUGNM) I $L(MESSAGE) D
+"RTN","PSSHRVAL",185,0)
+  . .D SETDSEXP(.PSS,.PSSHASH,MESSAGE,9)
+"RTN","PSSHRVAL",186,0)
+  . ;Check piece 10-DURATION RATE
+"RTN","PSSHRVAL",187,0)
+  . S MESSAGE=$$CHKRATE^PSSHRVL1(DURRATE,"DURATION",DRUGNM,DURATION) I $L(MESSAGE) D
+"RTN","PSSHRVAL",188,0)
+  . .D SETDSEXP(.PSS,.PSSHASH,MESSAGE,10)
+"RTN","PSSHRVAL",189,0)
+  . ;PIECE 11-ROUTE
+"RTN","PSSHRVAL",190,0)
+  . S MESSAGE=$$MEDRTE^PSSHRVL1(ROUTE,DRUGNM) I $L(MESSAGE) D
+"RTN","PSSHRVAL",191,0)
+  . .D SETDSEXP(.PSS,.PSSHASH,MESSAGE,11)
+"RTN","PSSHRVAL",192,0)
+  . QUIT   ;Checking if dose exists.
+"RTN","PSSHRVAL",193,0)
+ QUIT
+"RTN","PSSHRVAL",194,0)
+ ;
+"RTN","PSSHRVAL",195,0)
+SETDSEXP(PSS,PSSHASH,MESSAGE,DOSPIECE) ;
+"RTN","PSSHRVAL",196,0)
+ ;SET DOSE EXCEPTION
+"RTN","PSSHRVAL",197,0)
+ ;PSS-ARRAY OF MED PROFILE INFORMATION(BY REF)
+"RTN","PSSHRVAL",198,0)
+ ;PSSHASH-HOLDS DATA EXCEPTION (BY REF)
+"RTN","PSSHRVAL",199,0)
+ ;MESSAGE-REASON AND ERROR REASON
+"RTN","PSSHRVAL",200,0)
+ ;DOSEPIECE-THE OFFENDING PIECE OF DATA FROM DOSING INFORMATON-NOT SENT IF FROM
+"RTN","PSSHRVAL",201,0)
+ ;DEMOGRAF CALL.
+"RTN","PSSHRVAL",202,0)
+ ;
+"RTN","PSSHRVAL",203,0)
+ SET PSS("Counter")=$$NEXTDOS(.PSS,.PSSHASH)
+"RTN","PSSHRVAL",204,0)
+ SET PSS("ReasonCode")=PSSHASH("ReasonCode")
+"RTN","PSSHRVAL",205,0)
+ SET PSS("Message")=$P(MESSAGE,U)
+"RTN","PSSHRVAL",206,0)
+ SET PSS("ReasonText")=$P(MESSAGE,U,2)
+"RTN","PSSHRVAL",207,0)
+ SET PSS("CprsOrderNumber")=""
+"RTN","PSSHRVAL",208,0)
+ SET PSSHASH("Exception",PSS("ProspectiveOrProfile"),"DOSE",PSS("PharmOrderNum"),PSS("Counter"))=$$DOSPIECE(.PSS)
+"RTN","PSSHRVAL",209,0)
+ I $G(DOSPIECE) SET PSSHASH("DoseValue",DOSPIECE)=""
+"RTN","PSSHRVAL",210,0)
+ QUIT
+"RTN","PSSHRVAL",211,0)
+ ;
+"RTN","PSSHRVAL",212,0)
+DOSINEXP(PSSHASH) ;
+"RTN","PSSHRVAL",213,0)
+ N ORDERNUM,MESSAGE,REASON,DRUGNM,ERRNUM,TMPNODE,PSS
+"RTN","PSSHRVAL",214,0)
+ S ORDERNUM=""
+"RTN","PSSHRVAL",215,0)
+ F  S ORDERNUM=$O(^TMP($JOB,PSSHASH("Base"),"IN","EXCEPTIONS","DOSE",ORDERNUM)) Q:'$L(ORDERNUM)  D
+"RTN","PSSHRVAL",216,0)
+ .S TMPNODE=$G(^TMP($JOB,PSSHASH("Base"),"IN","EXCEPTIONS","DOSE",ORDERNUM)) Q:'$L(TMPNODE)
+"RTN","PSSHRVAL",217,0)
+ .S ERRNUM=+TMPNODE  ;ERROR NUMBER
+"RTN","PSSHRVAL",218,0)
+ .S DRUGNM=$P(TMPNODE,U,2)
+"RTN","PSSHRVAL",219,0)
+ .S MESSAGE=$$DOSEMSG^PSSHRVL1(DRUGNM)
+"RTN","PSSHRVAL",220,0)
+ .S REASON=$$INRSON^PSSHRVL1(ERRNUM)
+"RTN","PSSHRVAL",221,0)
+ .S MESSAGE=MESSAGE_U_REASON
+"RTN","PSSHRVAL",222,0)
+ .S PSS("PharmOrderNum")=ORDERNUM
+"RTN","PSSHRVAL",223,0)
+ .S PSS("ProspectiveOrProfile")="PROSPECTIVE"
+"RTN","PSSHRVAL",224,0)
+ .S PSS("Package")=""
+"RTN","PSSHRVAL",225,0)
+ .S PSS("DoseValue")=""
+"RTN","PSSHRVAL",226,0)
+ .S PSS("ReasonSource")=$$GETUCI^PSSHRVL1()
+"RTN","PSSHRVAL",227,0)
+ .D SETDSEXP(.PSS,.PSSHASH,MESSAGE)
+"RTN","PSSHRVAL",228,0)
+ .D KILLNODE^PSSHRVL1(PSSHASH("Base"),"DOSE",ORDERNUM) ;remove so no more checks
+"RTN","PSSHRVAL",229,0)
+ .D KILLNODE^PSSHRVL1(PSSHASH("Base"),"PROSPECTIVE",ORDERNUM)
+"RTN","PSSHRVAL",230,0)
+ Q
+"RTN","PSSHRVAL",231,0)
+ ;
+"RTN","PSSHRVAL",232,0)
+OIEXP(PSSHASH) ;
+"RTN","PSSHRVAL",233,0)
+ N ORDITEM,ERRNUM,MESSAGE,REASON,PSS,ORDERNUM,TMPNODE
+"RTN","PSSHRVAL",234,0)
+ S ORDITEM=""
+"RTN","PSSHRVAL",235,0)
+ F  S ORDITEM=$O(^TMP($JOB,PSSHASH("Base"),"IN","EXCEPTIONS","OI",ORDITEM)) Q:'$L(ORDITEM)  D
+"RTN","PSSHRVAL",236,0)
+ .S TMPNODE=$G(^TMP($JOB,PSSHASH("Base"),"IN","EXCEPTIONS","OI",ORDITEM)) Q:'$L(TMPNODE)
+"RTN","PSSHRVAL",237,0)
+ .S ERRNUM=+TMPNODE  ;ERROR NUMBER
+"RTN","PSSHRVAL",238,0)
+ .S ORDERNUM=$P(TMPNODE,U,2)
+"RTN","PSSHRVAL",239,0)
+ .S MESSAGE=$$OIMSG^PSSHRVL1(ORDITEM)
+"RTN","PSSHRVAL",240,0)
+ .S REASON=$$INRSON^PSSHRVL1(ERRNUM,ORDERNUM)
+"RTN","PSSHRVAL",241,0)
+ .S $P(PSS("I"),U,7)=MESSAGE
+"RTN","PSSHRVAL",242,0)
+ .S $P(PSS("I"),U,10)=REASON
+"RTN","PSSHRVAL",243,0)
+ .S PSS("PharmOrderNum")=ORDERNUM
+"RTN","PSSHRVAL",244,0)
+ .S PSS("ProspectiveOrProfile")=$S($$ISPROF^PSSHRCOM(ORDERNUM):"PROFILE",1:"PROSPECTIVE")
+"RTN","PSSHRVAL",245,0)
+ .S PSS("Package")=""
+"RTN","PSSHRVAL",246,0)
+ .S PSS("DoseValue")=""
+"RTN","PSSHRVAL",247,0)
+ .S PSS("ReasonSource")=$$GETUCI^PSSHRVL1()
+"RTN","PSSHRVAL",248,0)
+ .S PSS("Counter")=$$NEXTGCN(.PSS,.PSSHASH)
+"RTN","PSSHRVAL",249,0)
+ .D SETEXCP(.PSS,.PSSHASH)
+"RTN","PSSHRVAL",250,0)
+ .D KILLNODE^PSSHRVL1(PSSHASH("Base"),PSS("ProspectiveOrProfile"),ORDERNUM)
+"RTN","PSSHRVAL",251,0)
+ Q
+"RTN","PSSHRVAL",252,0)
+ ;
+"RTN","PSSHRVAL",253,0)
+NEXTDOS(PSS,PSSHASH) ;
+"RTN","PSSHRVAL",254,0)
+ ;@DESC Gets the next dose
+"RTN","PSSHRVAL",255,0)
+ ;@PSS The temp hash
+"RTN","PSSHRVAL",256,0)
+ ;@PSSHASH The internal hash ;
+"RTN","PSSHRVAL",257,0)
+ ;@NOTE PSSHASH looks like this: 
+"RTN","PSSHRVAL",258,0)
+ ; PSSHASH("Exception","PROSPECTIVE","DOSE",PharmacyOrderNum,Counter
+"RTN","PSSHRVAL",259,0)
+ ; 
+"RTN","PSSHRVAL",260,0)
+ N PSNEXT
+"RTN","PSSHRVAL",261,0)
+ S PSNEXT=":"
+"RTN","PSSHRVAL",262,0)
+ S PSNEXT=$ORDER(PSSHASH("Exception","PROSPECTIVE","DOSE",PSS("PharmOrderNum"),PSNEXT),-1)
+"RTN","PSSHRVAL",263,0)
+ Q PSNEXT+1
+"RTN","PSSHRVAL",264,0)
+ ;
+"RTN","PSSHRVAL",265,0)
+NEXTGCN(PSS,PSSHASH) ;
+"RTN","PSSHRVAL",266,0)
+ ;@DESC Gets the next Gcn
+"RTN","PSSHRVAL",267,0)
+ ;@PSS The temp hash
+"RTN","PSSHRVAL",268,0)
+ ;@PSSHASH The internal hash
+"RTN","PSSHRVAL",269,0)
+ ;
+"RTN","PSSHRVAL",270,0)
+ N PSNEXT
+"RTN","PSSHRVAL",271,0)
+ S PSNEXT=":"
+"RTN","PSSHRVAL",272,0)
+ S PSNEXT=$ORDER(PSSHASH("Exception",PSS("ProspectiveOrProfile"),PSS("PharmOrderNum"),PSNEXT),-1)
+"RTN","PSSHRVAL",273,0)
+ Q PSNEXT+1
+"RTN","PSSHRVAL",274,0)
+ ;
+"RTN","PSSHRVAL",275,0)
+DOSPIECE(PSS) ;
+"RTN","PSSHRVAL",276,0)
+ ;@DESC Appends all pre-defined pieces to a temp var
+"RTN","PSSHRVAL",277,0)
+ ;@PSS The temp hash
+"RTN","PSSHRVAL",278,0)
+ ;@RETURNS The appended temp var.
+"RTN","PSSHRVAL",279,0)
+ ;
+"RTN","PSSHRVAL",280,0)
+ SET PSS("I")=$PIECE(PSS("DoseValue"),"^",1)_"^" ;GCN
+"RTN","PSSHRVAL",281,0)
+ SET PSS("I")=PSS("I")_$PIECE(PSS("DoseValue"),"^",2)_"^" ;Vuid
+"RTN","PSSHRVAL",282,0)
+ SET PSS("I")=PSS("I")_$PIECE(PSS("DoseValue"),"^",3)_"^" ;Ien
+"RTN","PSSHRVAL",283,0)
+ SET PSS("I")=PSS("I")_$PIECE(PSS("DoseValue"),"^",4)_"^" ;DrugName
+"RTN","PSSHRVAL",284,0)
+ SET PSS("I")=PSS("I")_PSS("CprsOrderNumber")_"^" ;CprsOrderNumber
+"RTN","PSSHRVAL",285,0)
+ SET PSS("I")=PSS("I")_PSS("Package")_"^" ;Package
+"RTN","PSSHRVAL",286,0)
+ SET PSS("I")=PSS("I")_PSS("Message")_"^"
+"RTN","PSSHRVAL",287,0)
+ SET PSS("I")=PSS("I")_PSS("ReasonCode")_"^"
+"RTN","PSSHRVAL",288,0)
+ SET PSS("I")=PSS("I")_PSS("ReasonSource")_"^"
+"RTN","PSSHRVAL",289,0)
+ SET PSS("I")=PSS("I")_PSS("ReasonText")
+"RTN","PSSHRVAL",290,0)
+ QUIT PSS("I")
+"RTN","PSSHRVAL",291,0)
+ ;
+"RTN","PSSHRVAL",292,0)
+CHECKGCN(PSS,PSSHASH) ;
+"RTN","PSSHRVAL",293,0)
+ ;@DESC Checks the GCN for a Drug
+"RTN","PSSHRVAL",294,0)
+ ;@PSS A temp array
+"RTN","PSSHRVAL",295,0)
+ ;@PSSHASH The input array
+"RTN","PSSHRVAL",296,0)
+ ;@ASSERT PSS("DrugValue") exists.
+"RTN","PSSHRVAL",297,0)
+ ;
+"RTN","PSSHRVAL",298,0)
+ N DRUGNM,DRUGIEN,MESSAGE,REASON,BADGCN
+"RTN","PSSHRVAL",299,0)
+ SET PSS("Counter")="0"
+"RTN","PSSHRVAL",300,0)
+ DO:'$PIECE(PSS("DrugValue"),"^",1)
+"RTN","PSSHRVAL",301,0)
+  . SET DRUGIEN=$P(PSS("DrugValue"),"^",3)
+"RTN","PSSHRVAL",302,0)
+  . SET DRUGNM=$P(PSS("DrugValue"),"^",4)
+"RTN","PSSHRVAL",303,0)
+  . S BADGCN=0
+"RTN","PSSHRVAL",304,0)
+  . S:$PIECE(PSS("DrugValue"),"^",1)'?1.N BADGCN=-1
+"RTN","PSSHRVAL",305,0)
+  . SET MESSAGE=$$GCNREASN^PSSHRVL1(DRUGIEN,DRUGNM,PSS("PharmOrderNum"),BADGCN)
+"RTN","PSSHRVAL",306,0)
+  . I $L(MESSAGE) SET REASON=$P(MESSAGE,U,2,3),MESSAGE=$P(MESSAGE,U)
+"RTN","PSSHRVAL",307,0)
+  . SET PSS("Counter")=$$NEXTGCN(.PSS,.PSSHASH)
+"RTN","PSSHRVAL",308,0)
+  . SET PSS("I")="^" ;Gcn
+"RTN","PSSHRVAL",309,0)
+  . SET PSS("I")=PSS("I")_$PIECE(PSS("DrugValue"),"^",2)_"^" ;Vuid
+"RTN","PSSHRVAL",310,0)
+  . SET PSS("I")=PSS("I")_$PIECE(PSS("DrugValue"),"^",3)_"^" ;Ien
+"RTN","PSSHRVAL",311,0)
+  . SET PSS("I")=PSS("I")_$PIECE(PSS("DrugValue"),"^",4)_"^" ;DrugName
+"RTN","PSSHRVAL",312,0)
+  . SET PSS("I")=PSS("I")_$PIECE(PSS("DrugValue"),"^",5)_"^" ;CprsOrderNumber
+"RTN","PSSHRVAL",313,0)
+  . SET PSS("I")=PSS("I")_$PIECE(PSS("DrugValue"),"^",6)_"^" ;Package
+"RTN","PSSHRVAL",314,0)
+  . SET PSS("I")=PSS("I")_MESSAGE_"^"
+"RTN","PSSHRVAL",315,0)
+  . ;Reason code is null for 0.5
+"RTN","PSSHRVAL",316,0)
+  . SET PSS("I")=PSS("I")_PSSHASH("ReasonCode")_U
+"RTN","PSSHRVAL",317,0)
+  . ;Set reason text
+"RTN","PSSHRVAL",318,0)
+  . SET PSS("I")=PSS("I")_$$GETUCI^PSSHRVL1()_U
+"RTN","PSSHRVAL",319,0)
+  . SET PSS("I")=PSS("I")_REASON
+"RTN","PSSHRVAL",320,0)
+  . ;
+"RTN","PSSHRVAL",321,0)
+  . D SETEXCP(.PSS,.PSSHASH)
+"RTN","PSSHRVAL",322,0)
+  . D KILLNODE^PSSHRVL1(PSSHASH("Base"),PSS("ProspectiveOrProfile"),PSS("PharmOrderNum"))
+"RTN","PSSHRVAL",323,0)
+ QUIT
+"RTN","PSSHRVAL",324,0)
+ ;
+"RTN","PSSHRVAL",325,0)
+SETEXCP(PSS,PSSHASH) ;
+"RTN","PSSHRVAL",326,0)
+ SET PSSHASH("Exception",PSS("ProspectiveOrProfile"),PSS("PharmOrderNum"),PSS("Counter"))=PSS("I")
+"RTN","PSSHRVAL",327,0)
+ Q
+"RTN","PSSHRVAL",328,0)
+ ;
+"RTN","PSSHRVAL",329,0)
+DRUGPROF(PSSHASH) ;
+"RTN","PSSHRVAL",330,0)
+ ;@DESC Checks the profile drugs.
+"RTN","PSSHRVAL",331,0)
+ ;@PSSHASH The internal hash
+"RTN","PSSHRVAL",332,0)
+ ;
+"RTN","PSSHRVAL",333,0)
+ NEW PSS
+"RTN","PSSHRVAL",334,0)
+ SET PSS("ProspectiveOrProfile")="PROFILE"
+"RTN","PSSHRVAL",335,0)
+ SET PSS("PharmOrderNum")=""
+"RTN","PSSHRVAL",336,0)
+ FOR  SET PSS("PharmOrderNum")=$ORDER(^TMP($JOB,PSSHASH("Base"),"IN",PSS("ProspectiveOrProfile"),PSS("PharmOrderNum"))) QUIT:PSS("PharmOrderNum")=""  DO
+"RTN","PSSHRVAL",337,0)
+  . SET PSS("DrugValue")=^TMP($JOB,PSSHASH("Base"),"IN",PSS("ProspectiveOrProfile"),PSS("PharmOrderNum"))
+"RTN","PSSHRVAL",338,0)
+  . ; DO CHECKGCN(.PSS,.PSSHASH) ; VEN/SMH *11310000 Don't check for GCN.
+"RTN","PSSHRVAL",339,0)
+  . QUIT
+"RTN","PSSHRVAL",340,0)
+ QUIT
+"RTN","PSSHRVAL",341,0)
+ ;
+"RTN","PSSHTTP")
+0^3^B17204961
+"RTN","PSSHTTP",1,0)
+PSSHTTP ;WOIFO/AV - REENGINERING Sends XML Request to PEPS via HWSC ;2014-02-03  9:12 AM
+"RTN","PSSHTTP",2,0)
+ ;;1.0;PHARMACY DATA MANAGEMENT;**136,11310000,LOCAL**;9/30/97;Build 9
+"RTN","PSSHTTP",3,0)
+ ;
+"RTN","PSSHTTP",4,0)
+ ; @author  - Alex Vazquez, Chris Flegel, Timothy Sabat, S Gordon
+"RTN","PSSHTTP",5,0)
+ ; @date    - September 19, 2007
+"RTN","PSSHTTP",6,0)
+ ; @version - 1.0
+"RTN","PSSHTTP",7,0)
+ ;
+"RTN","PSSHTTP",8,0)
+ ; Modifications for Mocha bypass by VEN/SMH (*11310000)
+"RTN","PSSHTTP",9,0)
+ ;
+"RTN","PSSHTTP",10,0)
+ QUIT
+"RTN","PSSHTTP",11,0)
+ ;;
+"RTN","PSSHTTP",12,0)
+PEPSPOST(DOCHAND,XML) ;
+"RTN","PSSHTTP",13,0)
+ ; @DESC Sends an HTTP request to PEPS as a POST
+"RTN","PSSHTTP",14,0)
+ ;
+"RTN","PSSHTTP",15,0)
+ ; @DOCHAND Handle to XML document
+"RTN","PSSHTTP",16,0)
+ ; @XML XML request as string
+"RTN","PSSHTTP",17,0)
+ ;
+"RTN","PSSHTTP",18,0)
+ ; @RETURNS A handle to response XML document
+"RTN","PSSHTTP",19,0)
+ ;          1 for success, 0 for failure
+"RTN","PSSHTTP",20,0)
+ ;
+"RTN","PSSHTTP",21,0)
+ ;
+"RTN","PSSHTTP",22,0)
+ NEW PSS,PSSERR,$ETRAP,$ESTACK
+"RTN","PSSHTTP",23,0)
+ ;
+"RTN","PSSHTTP",24,0)
+ ; Set error trap
+"RTN","PSSHTTP",25,0)
+ SET $ETRAP="DO ERROR^PSSHTTP"
+"RTN","PSSHTTP",26,0)
+ ;
+"RTN","PSSHTTP",27,0)
+ IF $$GET^XPAR("SYS^PKG","PSS KBAN LATTE ENABLE?") Q $$LATTE(.DOCHAND,XML) ; *11310000 - Divergence to Latte...
+"RTN","PSSHTTP",28,0)
+ ;
+"RTN","PSSHTTP",29,0)
+ SET PSS("server")="PEPS"
+"RTN","PSSHTTP",30,0)
+ SET PSS("webserviceName")="ORDER_CHECKS"
+"RTN","PSSHTTP",31,0)
+ SET PSS("path")="ordercheck"
+"RTN","PSSHTTP",32,0)
+ ;
+"RTN","PSSHTTP",33,0)
+ SET PSS("parameterName")="xmlRequest"
+"RTN","PSSHTTP",34,0)
+ SET PSS("parameterValue")=XML
+"RTN","PSSHTTP",35,0)
+ ;
+"RTN","PSSHTTP",36,0)
+ ; Get instance of client REST request object
+"RTN","PSSHTTP",37,0)
+ SET PSS("restObject")=$$GETREST^XOBWLIB(PSS("webserviceName"),PSS("server"))
+"RTN","PSSHTTP",38,0)
+ IF $DATA(^TMP($JOB,"OUT","EXCEPTION"))>0 QUIT 0
+"RTN","PSSHTTP",39,0)
+ ;
+"RTN","PSSHTTP",40,0)
+ ; Insert XML as parameter
+"RTN","PSSHTTP",41,0)
+ DO PSS("restObject").InsertFormData(PSS("parameterName"),PSS("parameterValue"))
+"RTN","PSSHTTP",42,0)
+ IF $DATA(^TMP($JOB,"OUT","EXCEPTION"))>0 QUIT 0
+"RTN","PSSHTTP",43,0)
+ ;
+"RTN","PSSHTTP",44,0)
+ ; Execute HTTP Post method
+"RTN","PSSHTTP",45,0)
+ SET PSS("postResult")=$$POST^XOBWLIB(PSS("restObject"),PSS("path"),.PSSERR)
+"RTN","PSSHTTP",46,0)
+ IF $DATA(^TMP($JOB,"OUT","EXCEPTION"))>0 QUIT 0
+"RTN","PSSHTTP",47,0)
+ ;
+"RTN","PSSHTTP",48,0)
+ DO:PSS("postResult")
+"RTN","PSSHTTP",49,0)
+ . SET PSS("result")=##class(gov.va.med.pre.ws.XMLHandler).getHandleToXmlDoc(PSS("restObject").HttpResponse.Data, .DOCHAND)
+"RTN","PSSHTTP",50,0)
+ . QUIT
+"RTN","PSSHTTP",51,0)
+ ;
+"RTN","PSSHTTP",52,0)
+ DO:'PSS("postResult")
+"RTN","PSSHTTP",53,0)
+ . SET ^TMP($JOB,"OUT","EXCEPTION")="Unable to make http request."
+"RTN","PSSHTTP",54,0)
+ . SET PSS("result")=0
+"RTN","PSSHTTP",55,0)
+ . QUIT
+"RTN","PSSHTTP",56,0)
+ ;
+"RTN","PSSHTTP",57,0)
+ QUIT PSS("result")
+"RTN","PSSHTTP",58,0)
+ ;;
+"RTN","PSSHTTP",59,0)
+ERROR ; Error Trap; Modified by VEN/SMH to be far more robust - *11310000
+"RTN","PSSHTTP",60,0)
+ ; @DESC Handles error during request to PEPS via webservice.
+"RTN","PSSHTTP",61,0)
+ ;
+"RTN","PSSHTTP",62,0)
+ ; Depends on GLOBAL variable PSSERR to be set in previous call.
+"RTN","PSSHTTP",63,0)
+ ;
+"RTN","PSSHTTP",64,0)
+ ; @RETURNS Nothing. Value store in global.
+"RTN","PSSHTTP",65,0)
+ ;
+"RTN","PSSHTTP",66,0)
+ ; Emergency Trap; replaces the original error trap.
+"RTN","PSSHTTP",67,0)
+ ; NB: We are now at a higher level, so we are replacing the original $ET
+"RTN","PSSHTTP",68,0)
+ S $ET="D ^%ZTER,H^XUSCLEAN HALT"
+"RTN","PSSHTTP",69,0)
+ ;
+"RTN","PSSHTTP",70,0)
+ NEW ERRARRAY
+"RTN","PSSHTTP",71,0)
+ ;
+"RTN","PSSHTTP",72,0)
+ I +$SY=0 D  ;Cache
+"RTN","PSSHTTP",73,0)
+ . ; Get error object from Error Object Factory
+"RTN","PSSHTTP",74,0)
+ . IF $GET(PSSERR)="" SET PSSERR=$$EOFAC^XOBWLIB()
+"RTN","PSSHTTP",75,0)
+ . ; Store the error object in the error array
+"RTN","PSSHTTP",76,0)
+ . DO ERR2ARR^XOBWLIB(PSSERR,.ERRARRAY)
+"RTN","PSSHTTP",77,0)
+ . ;
+"RTN","PSSHTTP",78,0)
+ . ; Parse out the error text and store in global
+"RTN","PSSHTTP",79,0)
+ . SET ^TMP($JOB,"OUT","EXCEPTION")=$$GETTEXT(.ERRARRAY)
+"RTN","PSSHTTP",80,0)
+ ;
+"RTN","PSSHTTP",81,0)
+ I +$SY=47 D  ; GT.M
+"RTN","PSSHTTP",82,0)
+ . SET PSSERR=$S($D(%XOBWERR):%XOBWERR,1:$$EC^%ZOSV())
+"RTN","PSSHTTP",83,0)
+ . SET ^TMP($JOB,"OUT","EXCEPTION")=PSSERR ; Get Error Code
+"RTN","PSSHTTP",84,0)
+ . DO APPERROR^%ZTER(PSSERR) ; Log the error (BTW, automatically clears $EC)
+"RTN","PSSHTTP",85,0)
+ ; DEBUG
+"RTN","PSSHTTP",86,0)
+ ; W !,PSSERR,!
+"RTN","PSSHTTP",87,0)
+ ; DEBUG
+"RTN","PSSHTTP",88,0)
+ ;
+"RTN","PSSHTTP",89,0)
+ ; Pop the stack
+"RTN","PSSHTTP",90,0)
+ ; Original trap now is this; notice how it gets reset in the process.
+"RTN","PSSHTTP",91,0)
+ ; The Quit 0 is to return from the function to say that it didn't succeed.
+"RTN","PSSHTTP",92,0)
+ S $ET="Q:$ES>1  S $EC="""",$ET=""DO ERROR^PSSHTTP"" QUIT 0" 
+"RTN","PSSHTTP",93,0)
+ S $EC=",UQUIT," ; Force the pop
+"RTN","PSSHTTP",94,0)
+ ;
+"RTN","PSSHTTP",95,0)
+ QUIT
+"RTN","PSSHTTP",96,0)
+ ;
+"RTN","PSSHTTP",97,0)
+GETTEXT(ERRARRAY) ;
+"RTN","PSSHTTP",98,0)
+ ; @DESC Gets the error text from the array
+"RTN","PSSHTTP",99,0)
+ ;
+"RTN","PSSHTTP",100,0)
+ ; @ERRARRAY Error array stores error in format defined by web service product.
+"RTN","PSSHTTP",101,0)
+ ;
+"RTN","PSSHTTP",102,0)
+ ; @RETURNS Error info as a single string
+"RTN","PSSHTTP",103,0)
+ ;
+"RTN","PSSHTTP",104,0)
+ NEW PSS
+"RTN","PSSHTTP",105,0)
+ ;
+"RTN","PSSHTTP",106,0)
+ ; Loop through the text subscript of error array and concatenate
+"RTN","PSSHTTP",107,0)
+ SET PSS("errorText")=""
+"RTN","PSSHTTP",108,0)
+ SET PSS("I")=""
+"RTN","PSSHTTP",109,0)
+ FOR  SET PSS("I")=$ORDER(ERRARRAY("text",PSS("I"))) QUIT:PSS("I")=""  DO
+"RTN","PSSHTTP",110,0)
+ . SET PSS("errorText")=PSS("errorText")_ERRARRAY("text",PSS("I"))
+"RTN","PSSHTTP",111,0)
+ . QUIT
+"RTN","PSSHTTP",112,0)
+ ;
+"RTN","PSSHTTP",113,0)
+ QUIT PSS("errorText")
+"RTN","PSSHTTP",114,0)
+ ;;
+"RTN","PSSHTTP",115,0)
+LATTE(DOCHAND,XML) ; Do Latte instead of MOCHA. VEN/SMH *11310000
+"RTN","PSSHTTP",116,0)
+ ; Intercept message and process it inside of VISTA.
+"RTN","PSSHTTP",117,0)
+ ;
+"RTN","PSSHTTP",118,0)
+ ;DEBUG
+"RTN","PSSHTTP",119,0)
+ ;ZWRITE XML
+"RTN","PSSHTTP",120,0)
+ ;R %
+"RTN","PSSHTTP",121,0)
+ ;DEBUG
+"RTN","PSSHTTP",122,0)
+ ;
+"RTN","PSSHTTP",123,0)
+ ; VEN/SMH - MOCHA External Interface replacement
+"RTN","PSSHTTP",124,0)
+ ;
+"RTN","PSSHTTP",125,0)
+ ; Grab Input XML and parse.
+"RTN","PSSHTTP",126,0)
+ K ^TMP($J,"INPUT XML")
+"RTN","PSSHTTP",127,0)
+ M ^TMP($J,"INPUT XML",1)=XML
+"RTN","PSSHTTP",128,0)
+ N DOCHAND2 S DOCHAND2=$$EN^MXMLDOM($NA(^TMP($J,"INPUT XML")),"W")
+"RTN","PSSHTTP",129,0)
+ K ^TMP($J,"INPUT XML")
+"RTN","PSSHTTP",130,0)
+ ;
+"RTN","PSSHTTP",131,0)
+ ; Send parsed XML to be analyzed for drug checks. Response XML produced
+"RTN","PSSHTTP",132,0)
+ ; will be found in RESULT.
+"RTN","PSSHTTP",133,0)
+ ;
+"RTN","PSSHTTP",134,0)
+ N RESULT
+"RTN","PSSHTTP",135,0)
+ D EN^KBANLATT(.RESULT,DOCHAND2)
+"RTN","PSSHTTP",136,0)
+ ;
+"RTN","PSSHTTP",137,0)
+ ; Remove parsed input XML.
+"RTN","PSSHTTP",138,0)
+ D DELETE^MXMLDOM(DOCHAND2)
+"RTN","PSSHTTP",139,0)
+ ;
+"RTN","PSSHTTP",140,0)
+ ;DEBUG
+"RTN","PSSHTTP",141,0)
+ ; ZWRITE RESULT
+"RTN","PSSHTTP",142,0)
+ ; R %
+"RTN","PSSHTTP",143,0)
+ ;DEBUG
+"RTN","PSSHTTP",144,0)
+ ;
+"RTN","PSSHTTP",145,0)
+ ; Parse output XML and return Handle in DOCHAND (passed here by ref).
+"RTN","PSSHTTP",146,0)
+ K ^TMP($J,"OUTPUT XML")
+"RTN","PSSHTTP",147,0)
+ M ^TMP($J,"OUTPUT XML")=RESULT
+"RTN","PSSHTTP",148,0)
+ ; Parse the XML (W = No DTD supplied)
+"RTN","PSSHTTP",149,0)
+ SET DOCHAND=$$EN^MXMLDOM($NA(^TMP($J,"OUTPUT XML")),"W")
+"RTN","PSSHTTP",150,0)
+ K ^TMP($J,"OUTPUT XML")
+"RTN","PSSHTTP",151,0)
+ ;
+"RTN","PSSHTTP",152,0)
+ IF DOCHAND<1 QUIT 0 ; XML Parsing failure
+"RTN","PSSHTTP",153,0)
+ ;
+"RTN","PSSHTTP",154,0)
+ ; Success!
+"RTN","PSSHTTP",155,0)
+ QUIT 1
+"RTN","PSSHTTP",156,0)
+ ; /END VEN/SMH - MOCHA External Interface replacement
+"VER")
+8.0^22.0
+**END**
+**END**
