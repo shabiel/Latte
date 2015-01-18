@@ -1,0 +1,82 @@
+NB: These are some programming notes for myself.
+
+D %^%WC(.RTN,"GET","http://rxnav.nlm.nih.gov/REST/interaction/list.json?rxcuis=207106+152923+656659",5,.H)
+
+D DECODE^VPRJSON("RTN","SAM")
+
+SAM("fullInteractionTypeGroup",1,"fullInteractionType",1,"comment")="Drug1 (rxcui = 152923, name = Simvastatin 40 MG Oral Tablet [Zoco
+r], tty = SBD). Drug2 (rxcui = 656659, name = bosentan 125 MG Oral Tablet, tty = SCD). Drug1 is resolved to Simvastatin, Drug2 is reso
+lved to bosentan and interaction asserted in DrugBank between Simvastatin and Bosentan."
+SAM("fullInteractionTypeGroup",1,"fullInteractionType",1,"interactionPair",1,"description")="Bosentan may decrease the serum concentra
+tion of simvastatin by increasing its metabolism. Monitor for changes in the therapeutic and adverse effects of simvastatin if bosenta
+n is initiated, discontinued or dose changed."
+SAM("fullInteractionTypeGroup",1,"fullInteractionType",1,"interactionPair",1,"interactionConcept",1,"minConceptItem","name")="Simvasta
+tin"
+SAM("fullInteractionTypeGroup",1,"fullInteractionType",1,"interactionPair",1,"interactionConcept",1,"minConceptItem","rxcui")=36567
+SAM("fullInteractionTypeGroup",1,"fullInteractionType",1,"interactionPair",1,"interactionConcept",1,"minConceptItem","tty")="IN"
+SAM("fullInteractionTypeGroup",1,"fullInteractionType",1,"interactionPair",1,"interactionConcept",1,"sourceConceptItem","id")="DB00641
+,APRD00104"
+SAM("fullInteractionTypeGroup",1,"fullInteractionType",1,"interactionPair",1,"interactionConcept",1,"sourceConceptItem","name")="Simva
+statin"
+SAM("fullInteractionTypeGroup",1,"fullInteractionType",1,"interactionPair",1,"interactionConcept",1,"sourceConceptItem","url")="http:/
+/www.drugbank.ca/drugs/DB00641#interactions"
+SAM("fullInteractionTypeGroup",1,"fullInteractionType",1,"interactionPair",1,"interactionConcept",2,"minConceptItem","name")="bosentan
+"
+SAM("fullInteractionTypeGroup",1,"fullInteractionType",1,"interactionPair",1,"interactionConcept",2,"minConceptItem","rxcui")=75207
+SAM("fullInteractionTypeGroup",1,"fullInteractionType",1,"interactionPair",1,"interactionConcept",2,"minConceptItem","tty")="IN"
+SAM("fullInteractionTypeGroup",1,"fullInteractionType",1,"interactionPair",1,"interactionConcept",2,"sourceConceptItem","id")="DB00559
+,APRD00829"
+SAM("fullInteractionTypeGroup",1,"fullInteractionType",1,"interactionPair",1,"interactionConcept",2,"sourceConceptItem","name")="Bosen
+tan"
+SAM("fullInteractionTypeGroup",1,"fullInteractionType",1,"interactionPair",1,"interactionConcept",2,"sourceConceptItem","url")="http:/
+/www.drugbank.ca/drugs/DB00559#interactions"
+SAM("fullInteractionTypeGroup",1,"fullInteractionType",1,"interactionPair",1,"severity")="N/A"
+SAM("fullInteractionTypeGroup",1,"fullInteractionType",1,"minConcept",1,"name")="Simvastatin 40 MG Oral Tablet [Zocor]"
+SAM("fullInteractionTypeGroup",1,"fullInteractionType",1,"minConcept",1,"rxcui")=152923
+SAM("fullInteractionTypeGroup",1,"fullInteractionType",1,"minConcept",1,"tty")="SBD"
+SAM("fullInteractionTypeGroup",1,"fullInteractionType",1,"minConcept",2,"name")="bosentan 125 MG Oral Tablet"
+SAM("fullInteractionTypeGroup",1,"fullInteractionType",1,"minConcept",2,"rxcui")=656659
+SAM("fullInteractionTypeGroup",1,"fullInteractionType",1,"minConcept",2,"tty")="SCD"
+SAM("fullInteractionTypeGroup",1,"fullInteractionType",2,"comment")="Drug1 (rxcui = 152923, name = Simvastatin 40 MG Oral Tablet [Zoco
+r], tty = SBD). Drug2 (rxcui = 207106, name = Fluconazole 50 MG Oral Tablet [Diflucan], tty = SBD). Drug1 is resolved to Simvastatin, 
+Drug2 is resolved to Fluconazole and interaction asserted in DrugBank between Simvastatin and Fluconazole."
+SAM("fullInteractionTypeGroup",1,"fullInteractionType",2,"interactionPair",1,"description")="Increased risk of myopathy/rhabdomyolysis
+"
+SAM("fullInteractionTypeGroup",1,"fullInteractionType",2,"interactionPair",1,"interactionConcept",1,"minConceptItem","name")="Simvasta
+tin"
+SAM("fullInteractionTypeGroup",1,"fullInteractionType",2,"interactionPair",1,"interactionConcept",1,"minConceptItem","rxcui")=36567
+SAM("fullInteractionTypeGroup",1,"fullInteractionType",2,"interactionPair",1,"interactionConcept",1,"minConceptItem","tty")="IN"
+SAM("fullInteractionTypeGroup",1,"fullInteractionType",2,"interactionPair",1,"interactionConcept",1,"sourceConceptItem","id")="DB00641
+,APRD00104"
+SAM("fullInteractionTypeGroup",1,"fullInteractionType",2,"interactionPair",1,"interactionConcept",1,"sourceConceptItem","name")="Simva
+statin"
+SAM("fullInteractionTypeGroup",1,"fullInteractionType",2,"interactionPair",1,"interactionConcept",1,"sourceConceptItem","url")="http:/
+/www.drugbank.ca/drugs/DB00641#interactions"
+SAM("fullInteractionTypeGroup",1,"fullInteractionType",2,"interactionPair",1,"interactionConcept",2,"minConceptItem","name")="Fluconaz
+ole"
+SAM("fullInteractionTypeGroup",1,"fullInteractionType",2,"interactionPair",1,"interactionConcept",2,"minConceptItem","rxcui")=4450
+SAM("fullInteractionTypeGroup",1,"fullInteractionType",2,"interactionPair",1,"interactionConcept",2,"minConceptItem","tty")="IN"
+SAM("fullInteractionTypeGroup",1,"fullInteractionType",2,"interactionPair",1,"interactionConcept",2,"sourceConceptItem","id")="DB00196
+,APRD00327"
+SAM("fullInteractionTypeGroup",1,"fullInteractionType",2,"interactionPair",1,"interactionConcept",2,"sourceConceptItem","name")="Fluco
+nazole"
+SAM("fullInteractionTypeGroup",1,"fullInteractionType",2,"interactionPair",1,"interactionConcept",2,"sourceConceptItem","url")="http:/
+/www.drugbank.ca/drugs/DB00196#interactions"
+SAM("fullInteractionTypeGroup",1,"fullInteractionType",2,"interactionPair",1,"severity")="N/A"
+SAM("fullInteractionTypeGroup",1,"fullInteractionType",2,"minConcept",1,"name")="Simvastatin 40 MG Oral Tablet [Zocor]"
+SAM("fullInteractionTypeGroup",1,"fullInteractionType",2,"minConcept",1,"rxcui")=152923
+SAM("fullInteractionTypeGroup",1,"fullInteractionType",2,"minConcept",1,"tty")="SBD"
+SAM("fullInteractionTypeGroup",1,"fullInteractionType",2,"minConcept",2,"name")="Fluconazole 50 MG Oral Tablet [Diflucan]"
+SAM("fullInteractionTypeGroup",1,"fullInteractionType",2,"minConcept",2,"rxcui")=207106
+SAM("fullInteractionTypeGroup",1,"fullInteractionType",2,"minConcept",2,"tty")="SBD"
+SAM("fullInteractionTypeGroup",1,"sourceDisclaimer")="The content of DrugBank is intended for educational and scientific research purp
+oses only. It is notintended as a substitute for professional medical advice, diagnosis or treatment.[www.drugbank.ca]"
+SAM("fullInteractionTypeGroup",1,"sourceName")="DrugBank"
+SAM("nlmDisclaimer")="It is not the intention of NLM to provide specific medical advice, but rather to provide users with information 
+to better understand their health and their medications. NLM urges you to consult with a qualified physician for advice about medicati
+ons."
+SAM("userInput","rxcuis",1)=207106
+SAM("userInput","rxcuis",2)=152923
+SAM("userInput","rxcuis",3)=656659
+SAM("userInput","sources",1)=""
+
