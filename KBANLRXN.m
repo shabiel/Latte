@@ -1,4 +1,4 @@
-KBANLRXN ; VEN/SMH - Drug-drug checks done via DrugBank.ca through RxNorm;2015-01-18  1:30 PM
+KBANLRXN ; VEN/SMH - Drug-drug checks done via DrugBank.ca through RxNorm;2015-06-02  6:29 AM
 	;;3.0;KBAN LATTE;;;Build 9
 	; (c) Sam Habiel 2015.
 	;
@@ -104,6 +104,8 @@ INTERACT(INTERACTIONS,DUPCLASS,DRUGS,PROS,NOCHECKDRUGS)	; Private; Drugbank.ca d
 	;    < INTERACTIONS(D1,D2,"preDisposingFactors")="Pre-disposing factors for interaction"
 	;    < INTERACTIONS(D1,D2,"patientManagement")="How to deal with the interactions"
 	;    * INTERACTIONS(D1,D2,"discussion")="Further information"
+	;
+	I '$data(RXNOUT("fullInteractionTypeGroup")) quit
 	;
 	N r S r=$NA(RXNOUT("fullInteractionTypeGroup",1))
 	N source S source=@r@("sourceName")
