@@ -1,0 +1,7 @@
+^XTMP("K2VC","EXPORT","KRN",8989.51,IEN,-1)="0^1"
+^XTMP("K2VC","EXPORT","KRN",8989.51,IEN,0)="PSS KBAN LATTE ENABLE?^Enable Latte?^0^"
+^XTMP("K2VC","EXPORT","KRN",8989.51,IEN,1)="Y^^Latte is an alternate way to do pharmacy order checks. Choose yes to enable it."
+^XTMP("K2VC","EXPORT","KRN",8989.51,IEN,4,0)="^8989.514^^0"
+^XTMP("K2VC","EXPORT","KRN",8989.51,IEN,30,0)="^8989.513I^2^2"
+^XTMP("K2VC","EXPORT","KRN",8989.51,IEN,30,1,0)="10^4.2"
+^XTMP("K2VC","EXPORT","KRN",8989.51,IEN,30,2,0)="20^9.4"
