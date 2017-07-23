@@ -1,4 +1,4 @@
-C0DIMP ; VEN/SMH - Import French Drug Interactions;2017-07-04  1:46 PM
+C0DIMP ; VEN/SMH - Import French Drug Interactions;2017-07-23  1:45 PM
  ;
 engrp(path) ; [Public] - Import Entry Point for Groups
  ; rm file data
@@ -225,6 +225,94 @@ reformatText(txt,n) ; [Private] Reformat word processing fields into 80 long lin
  m txt(n)=^UTILITY($J,"W",1)
  quit
  ;
+popVUID ; [Public] Populate VUIDs. Must be run AFTER drugs and groups are loaded
+ s u="^"
+ n fda
+ n cnt1 s cnt1=10000000
+ n cnt2 s cnt2=20000000
+ N % S %=$$FILEINIT^XTMLOG("C0DIMP")
+ n i f i=0:0 s i=$o(^C0D(176.202,i)) q:'i  d  ; for each entry
+ . n e1 s e1=^C0D(176.202,i,0) ; entity 1
+ . n e2 s e2=^C0D(176.202,i,2) ; entity 2
+ . n n1,r1,c1,n2,r2,c2 ; name 1, rxnorm 1, class 1 etc
+ . s n1=$p(e1,u,1)
+ . s r1=$p(e1,u,2)
+ . s c1=$p(e1,u,3)
+ . s n2=$p(e2,u,1)
+ . s r2=$p(e2,u,2)
+ . s c2=$p(e2,u,3)
+ . ;
+ . d INFO^XTMLOG("Processing ien "_i_": "_n1_" vs "_n2)
+ . i (r1="")&(c1="") d WARN^XTMLOG("No IDs for "_n1_" at IEN "_i_". Quitting.") quit
+ . i (r2="")&(c2="") d WARN^XTMLOG("No IDs for "_n2_" at IEN "_i_". Quitting.") quit
+ . ;
+ . n vuids1,vuids2
+ . i r1]"" d INFO^XTMLOG("Getting VUIDs for rxn "_r1) s vuids1=$$getVUIDsForRXN(r1)
+ . i c1]"" d INFO^XTMLOG("Getting VUIDs for class "_c1) s vuids1=$$getVUIDsForClass(c1)
+ . i vuids1="" d WARN^XTMLOG("No VUIDs found for "_n1_". Quitting.") quit
+ . ;
+ . i r2]"" d INFO^XTMLOG("Getting VUIDs for rxn "_r2) s vuids2=$$getVUIDsForRXN(r2)
+ . i c2]"" d INFO^XTMLOG("Getting VUIDs for class "_c2) s vuids2=$$getVUIDsForClass(c2)
+ . i vuids2="" d WARN^XTMLOG("No VUIDs found for "_n2_". Quitting.") quit
+ . ;
+ . n j,vuid,iens
+ . f j=1:1:$l(vuids1,",") d
+ .. s vuid=$p(vuids1,",",j)
+ .. i vuid="" quit
+ .. s cnt1=cnt1+1
+ .. s iens="?+"_cnt1_","_i_","
+ .. s fda(176.2027,iens,.01)=vuid
+ . f j=1:1:$l(vuids2,",") d
+ .. s vuid=$p(vuids2,",",j)
+ .. i vuid="" quit
+ .. s cnt2=cnt2+1
+ .. s iens="?+"_cnt2_","_i_","
+ .. s fda(176.2028,iens,.01)=vuid
+ n err
+ d DEBUG^XTMLOG("FDA Array","fda,",1)
+ d:$d(fda) UPDATE^DIE(,$na(fda),,$na(err))
+ i $d(err) b  ; ***
+ ;
+ d ENDLOG^XTMLOG("C0DIMP")
+ quit
+ ;
+getVUIDsForRXN(rxn) ; [Private] Get VUIDs for this RxNorm Ingredient
+ n otherRxns s otherRxns=$$getAllPossibleRXNs(rxn)
+ d DEBUG^XTMLOG("Other rxns: "_otherRxns)
+ n allrxns s allrxns=$s(otherRxns]"":rxn_","_otherRxns,1:rxn)
+ n vuids s vuids=""
+ n eachrxn
+ n i,j
+ ; ^C0CRXN(176.001,"STX","VANDF","IN",1366467,1008555)=4031768
+ f i=1:1:$l(allrxns,",") s eachrxn=$p(allrxns,",",i) d
+ . f j=0:0 s j=$o(^C0CRXN(176.001,"STX","VANDF","IN",eachrxn,j)) q:'j  s vuids=vuids_^(j)_","
+ s $e(vuids,$l(vuids))="" ; rm trailing comma
+ d DEBUG^XTMLOG("Returned VUIDs:"_vuids)
+ quit vuids
+ ;
+getAllPossibleRXNs(inrxn) ; [Private] Get all RxNorms associated with a specific ingredient
+ n rxns s rxns=""
+ n ix
+ for ix="part_of","form_of","has_form" do
+ . n rxn for rxn=0:0 s rxn=$o(^C0CRXN(176.005,"B",inrxn,ix,rxn)) q:'rxn  s rxns=rxns_rxn_","
+ s $e(rxns,$l(rxns))=""
+ quit rxns
+ ;
+getVUIDsForClass(classID) ; [Private] Get all VUIDs associated with a class 
+ ; by iterating through all the rxnorm codes in the class
+ n classIEN s classIEN=$o(^C0D(176.201,"C",classID,""))
+ i 'classIEN d WARN^XTMLOG("NO CLASS OF "_classID) QUIT
+ ;
+ n vuids s vuids=""
+ n i f i=0:0 s i=$o(^C0D(176.201,classIEN,1,i)) q:'i  d
+ . n z s z=^C0D(176.201,classIEN,1,i,0)
+ . n rxn s rxn=$p(z,u,2)
+ . i 'rxn d WARN^XTMLOG("NO RXNORM FOR "_$p(z,u)) quit
+ . n innervuids s innervuids=$$getVUIDsForRXN(rxn)
+ . i innervuids]"" s vuids=vuids_innervuids_","
+ s $e(vuids,$l(vuids))="" ; rm trailing comma
+ d DEBUG^XTMLOG("Returned VUIDs:"_vuids)
+ q vuids
  ; =============
  ; 
  ; QA Entry Points. Must use M-Unit.
@@ -395,19 +483,26 @@ T6 ; @TEST Each Interaction must have a severity
  quit
  ;
 assert(x,y) d CHKTF^%ut(x,$g(y)) quit
-crIndex ;
+ ;
+ ; TODO: This index needs to go into Fileman
+crIndex ; [Private] Create the actual interactions index
  k ^C0D(176.202,"AIXN")
  n i f i=0:0 s i=$o(^C0D(176.202,i)) q:'i  d
- . n %0 s %0=^C0D(176.202,i,0)
- . n %2 s %2=^C0D(176.202,i,2)
- . n class1,class2
- . n rxncui1,rxncui2
- . i $p(%0,U,2)]"" s rxncui1=$p(%0,U,2)
- . i $p(%2,U,2)]"" s rxncui2=$p(%2,U,2)
- . i $p(%0,U,3)]"" s class1=$p(%0,U,3)
- . i $p(%2,U,3)]"" s class2=$p(%2,U,3)
- . n e1 s e1=$s($g(rxncui1)'="":rxncui1,1:$g(class1))
- . n e2 s e2=$s($g(rxncui2)'="":rxncui2,1:$g(class2))
- . i e1=""!(e2="") w "#" quit
- . s ^C0D(176.202,"AIXN",e1,e2,i)=""
+ . w i,!
+ . n vuid1ien,vuid2ien,vuid1,vuid2
+ . f vuid1ien=0:0 s vuid1ien=$o(^C0D(176.202,i,7,vuid1ien)) q:'vuid1ien  d
+ .. w vuid1ien," "
+ .. s vuid1=$p(^C0D(176.202,i,7,vuid1ien,0),u)
+ .. f vuid2ien=0:0 s vuid2ien=$o(^C0D(176.202,i,8,vuid2ien)) q:'vuid2ien  d
+ ... w vuid2ien," "
+ ... s vuid2=$p(^C0D(176.202,i,8,vuid2ien,0),u)
+ ... s ^C0D(176.202,"AIXN",vuid1,vuid2,i)=""
+ quit
+chkIndex ;
+ n i,j,k
+ n cnt s cnt=0
+ f i=0:0 s i=$o(^C0D(176.202,"AIXN",i)) q:'i  d
+ . f j=0:0 s j=$o(^C0D(176.202,"AIXN",i,j)) q:'j  d
+ .. f k=0:0 s k=$o(^C0D(176.202,"AIXN",i,j,k)) q:'k  s cnt=cnt+1
+ w "===",cnt,"==="
  quit
