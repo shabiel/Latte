@@ -1,5 +1,13 @@
-C0DIMP ; VEN/SMH - Import French Drug Interactions;2017-07-23  1:45 PM
+C0DIMP ; VEN/SMH - Import French Drug Interactions;2017-08-06  6:11 PM
+ ;4.0;Latté;;
  ;
+ ; Instructions:
+ ; - Clone the osdi repo from https://github.com/glilly/osdi
+ ; - d engrp^C0DIMP("path/to/classes_xml folder")
+ ; - d enDrug^C0DIMP("path/to/tables_xml folder")
+ ; - d popVUID^C0DIMP
+ ; - d crIndexFile^C0DIMP
+ ; 
 engrp(path) ; [Public] - Import Entry Point for Groups
  ; rm file data
  n z s z=^C0D(176.201,0)
@@ -313,8 +321,29 @@ getVUIDsForClass(classID) ; [Private] Get all VUIDs associated with a class
  s $e(vuids,$l(vuids))="" ; rm trailing comma
  d DEBUG^XTMLOG("Returned VUIDs:"_vuids)
  q vuids
- ; =============
- ; 
+ ;
+crIndexFile ; [Public] Create the interactions file using VUID data.
+ n z s z=^C0D(176.203,0)
+ s $p(z,u,3,4)=""
+ k ^C0D(176.203)
+ s ^C0D(176.203,0)=z
+ ;
+ n newRec s newRec=0
+ n i f i=0:0 s i=$o(^C0D(176.202,i)) q:'i  d
+ . w i,!
+ . n vuid1ien,vuid2ien,vuid1,vuid2
+ . f vuid1ien=0:0 s vuid1ien=$o(^C0D(176.202,i,7,vuid1ien)) q:'vuid1ien  d
+ .. w vuid1ien," "
+ .. s vuid1=$p(^C0D(176.202,i,7,vuid1ien,0),u)
+ .. f vuid2ien=0:0 s vuid2ien=$o(^C0D(176.202,i,8,vuid2ien)) q:'vuid2ien  d
+ ... w vuid2ien," "
+ ... s vuid2=$p(^C0D(176.202,i,8,vuid2ien,0),u)
+ ... s newRec=newRec+1
+ ... s ^C0D(176.203,newRec,0)=vuid1_u_vuid2_u_i
+ ;
+ N DIK,DA S DIK="^C0D(176.203," D IXALL^DIK
+ quit
+ ;
  ; QA Entry Points. Must use M-Unit.
  ;
  ; =============
@@ -484,25 +513,3 @@ T6 ; @TEST Each Interaction must have a severity
  ;
 assert(x,y) d CHKTF^%ut(x,$g(y)) quit
  ;
- ; TODO: This index needs to go into Fileman
-crIndex ; [Private] Create the actual interactions index
- k ^C0D(176.202,"AIXN")
- n i f i=0:0 s i=$o(^C0D(176.202,i)) q:'i  d
- . w i,!
- . n vuid1ien,vuid2ien,vuid1,vuid2
- . f vuid1ien=0:0 s vuid1ien=$o(^C0D(176.202,i,7,vuid1ien)) q:'vuid1ien  d
- .. w vuid1ien," "
- .. s vuid1=$p(^C0D(176.202,i,7,vuid1ien,0),u)
- .. f vuid2ien=0:0 s vuid2ien=$o(^C0D(176.202,i,8,vuid2ien)) q:'vuid2ien  d
- ... w vuid2ien," "
- ... s vuid2=$p(^C0D(176.202,i,8,vuid2ien,0),u)
- ... s ^C0D(176.202,"AIXN",vuid1,vuid2,i)=""
- quit
-chkIndex ;
- n i,j,k
- n cnt s cnt=0
- f i=0:0 s i=$o(^C0D(176.202,"AIXN",i)) q:'i  d
- . f j=0:0 s j=$o(^C0D(176.202,"AIXN",i,j)) q:'j  d
- .. f k=0:0 s k=$o(^C0D(176.202,"AIXN",i,j,k)) q:'k  s cnt=cnt+1
- w "===",cnt,"==="
- quit
