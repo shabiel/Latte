@@ -1,5 +1,5 @@
-KBANLDIT ; VEN/SMH - Latte against DIT;2015-01-09  1:40 PM
- ;;3.0;KBAN LATTE;;;Build 12
+C0DDIT ; VEN/SMH - Latte against DIT;2017-09-24  11:47 AM
+ ;;4.0;LATTE;;
  ; (c) Sam Habiel 2013.
  ;
  ; Usage is granted to the user under accompanying license.
@@ -187,16 +187,25 @@ TEXT(DOCHAND,C) ; Private; Return first line of MXML Text Node
  ;
  ;
 RXN(VUID) ; Private $$; Obtain RxNorm by VUID. Only get RXNS that have NDCs.
- N RXN S RXN=+$$VUI2RXN^C0CRXNLK(VUID) ; Get first RxNorm code
- N NDCS S NDCS=$$RXN2NDC^C0CRXNLK(RXN) ; Convert RXN to NDCs...
+ N RXN ; return
+ I $T(^C0CRXNLK)]"" D  Q RXN
+ . S RXN=+$$VUI2RXN^C0CRXNLK(VUID,"CD") ; Get first RxNorm code
+ . N NDCS S NDCS=$$RXN2NDC^C0CRXNLK(RXN) ; Convert RXN to NDCs...
+ . ;
+ . ; No NDCs? Try getting NDCs for Brand Names, brand after brand
+ . I NDCS="" D
+ . . N BRRXNS S BRRXNS=$$GEN2BR^C0CRXNLK(RXN)
+ . . I BRRXNS="" S RXN="" QUIT
+ . . N J F J=1:1:$L(BRRXNS,U) S NDCS=$$RXN2NDC^C0CRXNLK($P(BRRXNS,U,J)) Q:$L(NDCS)
+ . . S RXN=$P(BRRXNS,U,J)
  ;
- ; No NDCs? Try getting NDCs for Brand Names, brand after brand
- I NDCS="" D
- . N BRRXNS S BRRXNS=$$GEN2BR^C0CRXNLK(RXN)
- . I BRRXNS="" S RXN="" QUIT
- . N J F J=1:1:$L(BRRXNS,U) S NDCS=$$RXN2NDC^C0CRXNLK($P(BRRXNS,U,J)) Q:$L(NDCS)
- . S RXN=$P(BRRXNS,U,J)
- ;
+ ; Otherwise, use RxNorm Web Service to translate VUID
+ N RETURN,HEADERS ; idtype=VUID&id=4000631
+ D GETGTM^C0DDIT(.RETURN,.HEADERS,"RXNORM DI SERVICE","RXNORM VUID2RXNCUI","?idtype=VUID&id="_VUID) ; REST Call
+ N RXNERR,RXNOUT
+ D DECODE^XLFJSON($NA(RETURN),$NA(RXNOUT),$NA(RXNERR))
+ I $D(RXNERR) S $EC=",U-JSON-CONV-FAILED,"
+ N RXN S RXN=RXNOUT("idGroup","rxnormId",1)
  QUIT RXN
  ;
 NDC(VUID) ; Private $$; Obtain NDC by VUID from RxNorm
@@ -477,8 +486,12 @@ GETGTM(RETURN,HEADERS,SERVER,SERVICE,PATH) ; PEP -- GET on GT.M using many files
  N URL S URL="http"_$S(ISTLS:"s",1:"")_"://"_FQDN_":"_PORT_CONTEXT_PATH
  ;
  ; Action
- D %^%WC(.RETURN,"GET",URL,,,TO,.HEADERS)
+ I $T(^%WC)]"" D %^%WC(.RETURN,"GET",URL,,,TO,.HEADERS) I 1
+ E  N STATUS S STATUS=$$GETURL^XTHC10(URL,TO,$NA(RETURN)),HEADERS("STATUS")=STATUS
+ ;
+ ; ZWRITE RETURN
+ ;
  ;
  ; Check status code to be 200.
- I HEADERS("STATUS")'=200 S %XOBWERR=HEADERS("STATUS"),$EC=",UXOBWHTTP,"
+ I "^200^302^"'[HEADERS("STATUS") S %XOBWERR=HEADERS("STATUS"),$EC=",UXOBWHTTP,"
  QUIT

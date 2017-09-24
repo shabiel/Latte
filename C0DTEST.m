@@ -1,27 +1,55 @@
-KBANLUT1 ; VEN/SMH - Unit tests for Latte ;2017-07-04  12:11 PM
- ;;3.0;KBAN LATTE;;;Build 12
+C0DTEST ; SIC/SMH - Unit tests for Latte ;2017-09-19  4:38 PM
+ ;;4.0;LATTE;;;Build 12
  ;
- ; (c) Sam Habiel 2013
+ ; (c) Sam Habiel 2013, 2017
  ;
  ; Usage is granted to the user under accompanying license.
  ; If you can't find the license, you are not allowed to use the software.
  ;
 TEST ; M-Unit Entry point for Unit Testing the MOCHA Interface
+ D VISTA
+ D ANSM
+ D DIT
+ D RXNORM
+ QUIT
+ ;
+VISTA ; No tests should fail here.
  W $C(9),$$RED,"Latte checks inside of VISTA",!!,$$RESET
- ; SAM!: THIS IS TEMPORARY. PUT THAT BACK!
- ;N KBANFORCEINT S KBANFORCEINT=1 ; Force checked to be inside of VISTA.
+ D PUT^XPAR("SYS","C0D DRUG CHECK SERVICE",1,"V")
  S IO=$PRINCIPAL
  N DIQUIET S DIQUIET=1
  D DT^DICRW
  D EN^%ut($T(+0),3)
+ QUIT
  ;
- ;W !!
- ;W $C(9),$$RED,"Latte checks against DIT",!!,$$RESET
- ;K KBANFORCEINT
- ;S IO=$PRINCIPAL
- ;N DIQUIET S DIQUIET=1
- ;D DT^DICRW
- ;D EN^%ut($T(+0),1)
+ANSM ;
+ W !!
+ W $C(9),$$RED,"Latte checks using ANSM",!!,$$RESET
+ D PUT^XPAR("SYS","C0D DRUG CHECK SERVICE",1,"A")
+ S IO=$PRINCIPAL
+ N DIQUIET S DIQUIET=1
+ D DT^DICRW
+ D EN^%ut($T(+0),3)
+ QUIT
+ ;
+DIT ;
+ W !!
+ W $C(9),$$RED,"Latte checks against DIT",!!,$$RESET
+ D PUT^XPAR("SYS","C0D DRUG CHECK SERVICE",1,"D")
+ S IO=$PRINCIPAL
+ N DIQUIET S DIQUIET=1
+ D DT^DICRW
+ D EN^%ut($T(+0),3)
+ QUIT
+ ;
+RXNORM ;
+ W !!
+ W $C(9),$$RED,"Latte checks against RxNorm",!!,$$RESET
+ D PUT^XPAR("SYS","C0D DRUG CHECK SERVICE",1,"R")
+ S IO=$PRINCIPAL
+ N DIQUIET S DIQUIET=1
+ D DT^DICRW
+ D EN^%ut($T(+0),3)
  QUIT
  ;
 CONCHK ; @TEST - Connection Check
@@ -159,6 +187,8 @@ PROFILET ; @TEST - Test that profile drug interactions show up in non-prospectiv
  ;
  N IXNTRUE S IXNTRUE=0
  I $D(^TMP($J,BASE,"OUT","DRUGDRUG","C",PSDRUG(1)))!($D(^TMP($J,BASE,"OUT","DRUGDRUG","C",PSDRUG(4)))) S IXNTRUE=1
+ ; Interaction is SIGNIFICANT in French Drug Interactions
+ I $D(^TMP($J,BASE,"OUT","DRUGDRUG","S",PSDRUG(1)))!($D(^TMP($J,BASE,"OUT","DRUGDRUG","S",PSDRUG(4)))) S IXNTRUE=1
  D CHKTF^%ut(IXNTRUE,"Cimetidine is supposed to show up in message")
  ;
  QUIT
@@ -291,9 +321,9 @@ DXIXT ; @TEST - Test drugs that are excluded from interacting
  D CHKTF^%ut('$D(^TMP($J,BASE,"OUT","DRUGDRUG","S","TRIAMCINOLONE ACETONIDE 0.1% PASTE,DENTAL")),"TAC dental shouldn't be in the drug interaction section")
  QUIT
  ;
-SUPPLYT ; @TEST - Test drugs that can't be found in RxNorm.
- ; Quit if we are just using VISTA internally.
- Q:$D(KBANFORCEINT)
+SUPPLYT ; @TEST - Test drugs that can't be found in DIT via RxNorm
+ ; Quit if we are not using DIT
+ Q:$$GET^XPAR("SYS","C0D DRUG CHECK SERVICE",1)'="D"
  N BASE S BASE=$T(+0)
  K ^TMP($J,BASE)
  S ^TMP($J,BASE,"IN","THERAPY")=""
@@ -317,14 +347,14 @@ SIMERRT ; @TEST - Simulate an error and see that we degrade gracefully
  S PSDRUG(2)="ATORVASTATIN CA 80MG TAB"
  S ^TMP($J,BASE,"IN","PROSPECTIVE",$$SUBBLD("O",1,1))=$$NODEBLD(PSDRUG(1))
  S ^TMP($J,BASE,"IN","PROSPECTIVE",$$SUBBLD("O",1,2))=$$NODEBLD(PSDRUG(2))
- N KBANSIMERR S KBANSIMERR=1 ; Force an error to occur in KBANLDIT...
+ N KBANSIMERR S KBANSIMERR=1
  D IN^PSSHRQ2(BASE)
  D CHKEQ^%ut(+^TMP($J,BASE,"OUT",0),-1,"Error condition should be reported")
  QUIT
  ;
 DITERRT ; @TEST - Make sure DIT doesn't fail on drugs with different routes...
- ; Quit if we are just using VISTA internally.
- Q:$D(KBANFORCEINT)
+ ; Quit if we are not using DIT
+ Q:$$GET^XPAR("SYS","C0D DRUG CHECK SERVICE",1)'="D"
  N BASE S BASE=$T(+0)
  K ^TMP($J,BASE)
  S ^TMP($J,BASE,"IN","THERAPY")=""

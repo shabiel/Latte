@@ -1,5 +1,6 @@
-C0DIXN ; VW/SMH - Latte against ANSM (French) Drug Interacations;2017-08-06  6:11 PM
+C0DIXN ; VW/SMH - Latte against ANSM (French) Drug Interacations;2017-09-17  12:06 PM
  ;;4.0;KBAN LATTE;;;
+ ; (c) Sam Habiel 2017.
  ;
  ; Usage is granted to the user under accompanying license.
  ; If you can't find the license, you are not allowed to use the software.
@@ -86,7 +87,7 @@ INTERACT(INTERACTIONS,DUPCLASS,DRUGS,PROS,NOCHECKDRUGS) ; Private
  . . I $D(DONELIST(J,I)) QUIT  ; ditto
  . . D INTERAC2(.INTERACTIONS,.DRUGS,I,J)
  . . S DONELIST(I,J)=""
- zwrite:$d(INTERACTIONS) INTERACTIONS
+ ; zwrite:$d(INTERACTIONS) INTERACTIONS
  DO DUPCLASS(.DUPCLASS,.DRUGS,PROS)
  QUIT
  ;
@@ -102,7 +103,7 @@ INTERAC2(INTERACTIONS,DRUGS,I,J) ; Private; Core drug interaction code
  F IXN=0:0 S IXN=$O(^C0D(176.203,"B",INVUID2,INVUID1,IXN)) Q:'IXN  S IXNS(IXN)=""
  F IXN=0:0 S IXN=$O(IXNS(IXN)) Q:'IXN  D
  . n drug1,drug2,ien
- . s u="^"
+ . n u s u="^"
  . s ien=IXN
  . s drug1=I,drug2=J
  . s INTERACTIONS(drug1,drug2)=^C0D(176.202,ien,4)

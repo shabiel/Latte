@@ -1,5 +1,5 @@
-C0DLATT ; VEN/SMH - Imitate MOCHA Latte Sytle ;2017-08-06  7:18 PM
- ;;4.0;LATTE;;;Build 12
+C0DLATT ; VW/SMH - Imitate MOCHA Latte Sytle ;2017-09-24  1:14 PM
+ ;;4.0;LATTE;;
  ; (c) Sam Habiel 2017.
  ;
  ; Usage is granted to the user under accompanying license.
@@ -48,7 +48,7 @@ EN(RESULT,DOCHAND) ; Public; Main Latte XML parser routine
  ;
  E  D
  . N SERVICE S SERVICE=$$GET^XPAR("ALL","C0D DRUG CHECK SERVICE",,"E")
- . I SERVICE="" S SERVICE="VISTA" QUIT
+ . I SERVICE="" S SERVICE="VISTA"
  . I SERVICE="VISTA" D
  .. DO INTERACT(.INTERACTIONS,.DRUGS,PROS):DRUGDRUGCHECK
  .. DO DUPCLASS(.DUPCLASS,.DRUGS,PROS):DRUGTHERAPYCHECK
@@ -63,6 +63,7 @@ EN(RESULT,DOCHAND) ; Public; Main Latte XML parser routine
  ;
  ; Write the XML back in the RESULT array
  D RESPOND^C0DWRT(.RESULT,DOCHAND,.INTERACTIONS,.DUPCLASS,.DRUGSNOTCHECKED,DRUGDRUGCHECK,DRUGTHERAPYCHECK,DRUGDOSECHECK)
+ ;
  QUIT
  ;
  ; === The rest of the entry points below are private ===
@@ -252,9 +253,55 @@ DUPCLAS2(DUPCLASS,DRUGS,I,J) ; Private Procedure; Perform Duplicate Dose Checkin
  S DUPCLASS(I,J)=CLASSNAME
  QUIT
  ;
+TRAN ; [KIDS ONLY] Transport hook
+ ; ZEXCEPT: XPDGREF
+ M @XPDGREF@(176.201)=^C0D(176.201)
+ M @XPDGREF@(176.202)=^C0D(176.202)
+ M @XPDGREF@(176.203)=^C0D(176.203)
+ QUIT
+ ;
 POST ; Post install hook for KIDS...
- ; Enable Latte by default.
- N KBANERR
- D PUT^XPAR("PKG","PSS KBAN LATTE ENABLE?",1,1,.KBANERR)
- I $G(KBANERR) D MES^XPDUTL("Error: "_KBANERR)
+ ; ZEXCEPT: DIERR,XPDGREF
+ ;
+ ; Install data from transport global
+ M ^C0D(176.201)=@XPDGREF@(176.201)
+ M ^C0D(176.202)=@XPDGREF@(176.202)
+ M ^C0D(176.203)=@XPDGREF@(176.203)
+ ;
+ ; Enable Latte by default at package level
+ N ERR
+ D PUT^XPAR("PKG","C0D LATTE ENABLE?",1,1,.ERR)
+ I $G(ERR) D MES^XPDUTL("Error: "_ERR)
+ ;
+ ; Add RxNorm Services
+ N FDA,IEN18P02,ERR
+ S FDA(18.02,"?+1,",.01)="RXNORM IXNS"
+ S FDA(18.02,"?+1,",.02)="REST"
+ S FDA(18.02,"?+1,",.03)=$$NOW^XLFDT()
+ S FDA(18.02,"?+1,",200)="/REST/interaction/list.json"
+ D UPDATE^DIE("E",$NA(FDA),,$NA(ERR))
+ I $D(DIERR) D MES^XPDUTL("Error. Check Trap."),APPERROR^%ZTER("INSTALL FAILURE")
+ ;
+ N FDA,IEN18P02,ERR
+ S FDA(18.02,"?+1,",.01)="RXNORM VUID2RXNCUI"
+ S FDA(18.02,"?+1,",.02)="REST"
+ S FDA(18.02,"?+1,",.03)=$$NOW^XLFDT()
+ S FDA(18.02,"?+1,",200)="/REST/rxcui.json"
+ D UPDATE^DIE("E",$NA(FDA),,$NA(ERR))
+ I $D(DIERR) D MES^XPDUTL("Error. Check Trap."),APPERROR^%ZTER("INSTALL FAILURE")
+ ;
+ ; Add RxNorm URL
+ N FDA,IEN18P02,ERR
+ S FDA(18.12,"?+1,",.01)="RXNORM DI SERVICE"
+ S FDA(18.12,"?+1,",.04)="rxnav.nlm.nih.gov"
+ S FDA(18.12,"?+1,",.06)="ENABLED"
+ S FDA(18.12,"?+1,",.07)=5
+ S FDA(18.12,"?+1,",3.01)="TRUE"
+ S FDA(18.12,"?+1,",3.03)=443
+ S FDA(18.121,"?+2,?+1,",.01)="RXNORM IXNS"
+ S FDA(18.121,"?+2,?+1,",.06)="ENABLED"
+ S FDA(18.121,"?+3,?+1,",.01)="RXNORM VUID2RXNCUI"
+ S FDA(18.121,"?+3,?+1,",.06)="ENABLED"
+ D UPDATE^DIE("E",$NA(FDA),,$NA(ERR))
+ I $G(DIERR) D MES^XPDUTL("Error: "_ERR)
  QUIT

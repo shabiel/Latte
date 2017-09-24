@@ -1,5 +1,5 @@
-C0DIMP ; VEN/SMH - Import French Drug Interactions;2017-08-06  6:11 PM
- ;4.0;Latté;;
+C0DIMP ; VEN/SMH - Import French Drug Interactions;2017-09-24  12:00 PM
+ ;;4.0;LATTE;
  ;
  ; Instructions:
  ; - Clone the osdi repo from https://github.com/glilly/osdi
