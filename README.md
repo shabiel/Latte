@@ -16,7 +16,7 @@ release (4.0) it allows you to interface to the following databases:
 
 * Latte 1.0 should not be installed. It's kept here for historical reasons.
 * Latte 2.0 should be installed for all MOCHA 1.0 and MOCHA 1.0 Enhancements
-  systems. [Follow this link](KBAN\ LATTE\ 2.0/KBAN_LATTE_2P0.md).
+  systems. [Follow this link]("KBAN LATTE 2.0/KBAN_LATTE_2P0.md").
 * Latte 3.1 should be installed for all MOCHA 2.0 systems. [Follow this link](KBAN LATTE 3.0/KBAN_LATTE_3P0.md).
 * Latte 4.0 should be installed with MOCHA 2.0 Enhancements 1. [Follow this link](https://github.com/shabiel/Latte/releases/tag/4.0).
 * Mocha 2.1 has not been released yet. When it is released, Latte will be
