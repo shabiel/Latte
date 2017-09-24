@@ -12,10 +12,23 @@ release (4.0) it allows you to interface to the following databases:
  * ANSM, as translated and coded by Nancy Van Ness (http://ansm.sante.fr/)
  * Drugbank.ca, as provided by RxNav (https://rxnav.nlm.nih.gov/)
 
+## Installation for Latte
+
+* Latte 1.0 should not be installed. It's kept here for historical reasons.
+* Latte 2.0 should be installed for all MOCHA 1.0 and MOCHA 1.0 Enhancements
+  systems. [Follow this link](KBAN LATTE 2.0/KBAN_LATTE_2P0.md).
+* Latte 3.1 should be installed for all MOCHA 2.0 systems. [Follow this link](KBAN LATTE 3.0/KBAN_LATTE_3P0.md).
+* Latte 4.0 should be installed with MOCHA 2.0 Enhancements 1. [Follow this link](https://github.com/shabiel/Latte/releases/tag/4.0).
+* Mocha 2.1 has not been released yet. When it is released, Latte will be
+updated to include the latest changes in the routines.
+
+
 ## License
 
 (C) Sam Habiel 2014-2017.
+
 ANSM Data Translation and codification (c) Nancy Van Ness 2014-2017, distributed under Apache 2.0.
+
 ANSM Data (c) L’Agence nationale de sécurité du médicament et des produits de santé (ANSM).
 
 Latte comes under an open source license (AGPL 3.0). A commercial license is
@@ -94,19 +107,6 @@ Latte, it's turned on by default.
 ## User interaction changes.
 No changes are performed to the user interface.
 
-## Installation for Latte
-Check each folder for installation instructions.
-
-* Latte 1.0 should not be installed. It's kept here for historical reasons.
-* Latte 2.0 should be installed for all MOCHA 1.0 and MOCHA 1.0 Enhancements
-  systems.
-* Latte 3.1 should be installed for all MOCHA 2.0 systems. As of the time
-  of the writing of this document, MOCHA 2.0 Enhancements 
-* Latte 4.0 should be installed with MOCHA 2.0 Enhancements. 
-* Mocha 2.1 has not been released yet. When it is released, Latte will be
-updated to include the latest changes in the routines.
-
-
 ### RxNorm Installation Warning
 RxNorm installation is not needed except for using DIT.
 
@@ -115,4 +115,3 @@ DATA, IT IS HIGHLY RECOMMENDED THAT YOU MAP ^C0CRXN TO AN UNJOURNALED REGION OF
 YOUR MUMPS DATABASE. IT'S ALSO RECOMMENDED THAT YOU PUT IT IN A SEPARATE DATA
 FILE OTHER THAN YOUR MAIN VISTA DATABASE. BOTH CACHE AND GT.M HAVE WAYS YOU CAN
 ACCOMPLISH THAT.*
-
